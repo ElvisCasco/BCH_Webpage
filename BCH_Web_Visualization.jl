@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.18.0
+# v0.14.7
 
 using Markdown
 using InteractiveUtils
@@ -55,6 +55,53 @@ begin
 	CSV.read(
 		"./data/csv/PIB_Enfoque_Ingreso.csv",
 		DataFrames.DataFrame)
+end
+
+# ╔═╡ 5c1466c7-9535-4f08-83fa-b3c4a1533196
+md"##### PIB e Ingreso Nacional Per-Cápita, Lempiras"
+
+# ╔═╡ 5e0f77e1-9da7-482a-8e6e-c3559b5400e7
+begin
+	PIB_INPC_L()
+	CSV.read(
+		"./data/csv/PIB_IN_L.csv",
+		DataFrames.DataFrame)
+end
+
+# ╔═╡ 4eee9466-4369-4c32-b128-03768388a47a
+md"##### PIB e Ingreso Nacional Per-Cápita, Dólares"
+
+# ╔═╡ 92456ed5-232f-485b-baf4-5598984344f2
+let
+#function PIB_INPC_D()
+	# Descargar archivo
+	webpage = "https://www.bch.hn/estadisticos/EME/Producto%20Interno%20Bruto%20Anual%20Base%202000/Producto%20Interno%20Bruto%20e%20Ingreso%20Nacional%20en%20D%C3%B3lares.xls"
+    file = "./data/xls/PIB_INPC_D.xls"
+    sheet = "PIB per-cápita \$"
+    Base.download(
+        webpage,
+        file)
+    f = ExcelReaders.openxl(file)
+    data = ExcelReaders.readxlsheet(
+        file, sheet)
+    data = DataFrames.DataFrame(data, :auto)
+	# Depurar dataframe
+    data = dataframe_clean(data)
+	names_data = DataFrames.names(data)
+	DataFrames.rename!(data, Symbol(names_data[1]) => :Variable)
+	DataFrames.delete!(data, [1])
+	#=DataFrames.filter!(
+		row -> !(row.Variable == "#NA"),  
+		data)=#
+    # Separar datos
+	n_years = Int((Base.size(data)[2] - 2) / 2)
+    data = data[1:end, 1:(n_years+2)]
+	data = resize_data(data)
+	data[!, :Fechas] = Base.map(s -> s[1:4], data[!, :Fechas])
+	data[!, :Tipo_Valores] .= "Corrientes"
+	data[!, :Enfoque] .= "missing"
+    # Escribir en CSV
+    CSV.write("./data/csv/PIB_INPC_D.csv", data)
 end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -516,5 +563,9 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═df8ce105-1d8e-40ee-a2af-ab2e7d7b26c6
 # ╟─e88f909f-8aa0-4ac2-8349-a14aca52970c
 # ╠═b4718a47-b761-4646-b434-a8ce40d6fa6c
+# ╟─5c1466c7-9535-4f08-83fa-b3c4a1533196
+# ╠═5e0f77e1-9da7-482a-8e6e-c3559b5400e7
+# ╟─4eee9466-4369-4c32-b128-03768388a47a
+# ╠═92456ed5-232f-485b-baf4-5598984344f2
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
