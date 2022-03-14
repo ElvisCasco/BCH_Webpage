@@ -1,0 +1,1681 @@
+Fechas,Variable,Valores,Periodicidad,Sector
+2000-01-01,BANANO:     Valor,124.2,Anual,Externo
+2000-01-01,BANANO:     Volumen Cajas 40 Lbs.,20686.3,Anual,Externo
+2000-01-01,BANANO:     Precio,6.01,Anual,Externo
+2000-01-01,CAFÉ:     Valor,362.5,Anual,Externo
+2000-01-01,CAFÉ:     Volumen Sacos 60 Kg.,3100.9,Anual,Externo
+2000-01-01,CAFÉ:     Precio,116.9,Anual,Externo
+2000-01-01,CAFÉ:     Volumen Sacos 46 Kg.,4044.5,Anual,Externo
+2000-01-01,CAFÉ:     Precio,89.63,Anual,Externo
+2000-01-01,MADERA:     Valor,33.5,Anual,Externo
+2000-01-01,MADERA:     Volumen P.T.,44178.6,Anual,Externo
+2000-01-01,MADERA:     Precio,0.76,Anual,Externo
+2000-01-01,ACEÍTE DE PALMA:     Valor,16.3,Anual,Externo
+2000-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,27000.0,Anual,Externo
+2000-01-01,ACEÍTE DE PALMA:     Precio,0.6,Anual,Externo
+2000-01-01,PLATA:     Valor,2.7,Anual,Externo
+2000-01-01,PLATA:     Volumen Onzas Troy,1053.8,Anual,Externo
+2000-01-01,PLATA:     Precio,2.52,Anual,Externo
+2000-01-01,PLOMO:     Valor,1.0,Anual,Externo
+2000-01-01,PLOMO:     Volumen Libras,8307.3,Anual,Externo
+2000-01-01,PLOMO:     Precio,0.12,Anual,Externo
+2000-01-01,ZINC:     Valor,18.4,Anual,Externo
+2000-01-01,ZINC:     Volumen Libras,85865.6,Anual,Externo
+2000-01-01,ZINC:     Precio,0.21,Anual,Externo
+2000-01-01,AZÚCAR:     Valor,7.8,Anual,Externo
+2000-01-01,AZÚCAR:     Volumen Kilos,25498.7,Anual,Externo
+2000-01-01,AZÚCAR:     Precio,0.31,Anual,Externo
+2000-01-01,CAMARÓN CULTIVADO:     Valor,90.6,Anual,Externo
+2000-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,8273.0,Anual,Externo
+2000-01-01,CAMARÓN CULTIVADO:     Precio,10.95,Anual,Externo
+2000-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,29.4,Anual,Externo
+2000-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,2688.1,Anual,Externo
+2000-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,10.95,Anual,Externo
+2000-01-01,LANGOSTAS:     Valor,23.4,Anual,Externo
+2000-01-01,LANGOSTAS:     Volumen Kilos,897.0,Anual,Externo
+2000-01-01,LANGOSTAS:     Precio,26.06,Anual,Externo
+2000-01-01,TILAPIAS:     Valor,5.3,Anual,Externo
+2000-01-01,TILAPIAS:     Volumen Kilos,1103.8,Anual,Externo
+2000-01-01,TILAPIAS:     Precio,4.8,Anual,Externo
+2000-01-01,MELONES Y SANDÍAS:     Valor,34.4,Anual,Externo
+2000-01-01,MELONES Y SANDÍAS:     Volumen Kilos,132402.5,Anual,Externo
+2000-01-01,MELONES Y SANDÍAS:     Precio,0.26,Anual,Externo
+2000-01-01,PIÑAS:     Valor,11.3,Anual,Externo
+2000-01-01,PIÑAS:     Volumen Kilos,41710.0,Anual,Externo
+2000-01-01,PIÑAS:     Precio,0.27,Anual,Externo
+2000-01-01,LEGUMBRES Y HORTALIZAS:     Valor,16.5,Anual,Externo
+2000-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,54724.3,Anual,Externo
+2000-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.3,Anual,Externo
+2000-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,20.7,Anual,Externo
+2000-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,32107.9,Anual,Externo
+2000-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.65,Anual,Externo
+2000-01-01,PUROS O CIGARROS:     Valor,10.5,Anual,Externo
+2000-01-01,PUROS O CIGARROS:     Volumen Kilos,1067.2,Anual,Externo
+2000-01-01,PUROS O CIGARROS:     Precio,9.82,Anual,Externo
+2000-01-01,CIGARRILLOS:     Valor,6.9,Anual,Externo
+2000-01-01,CIGARRILLOS:     Volumen Kilos,1581.2,Anual,Externo
+2000-01-01,CIGARRILLOS:     Precio,4.39,Anual,Externo
+2000-01-01,TABACO:     Valor,12.6,Anual,Externo
+2000-01-01,TABACO:     Volumen Kilos,4606.3,Anual,Externo
+2000-01-01,TABACO:     Precio,2.75,Anual,Externo
+2000-01-01,MANUFACTURAS DE MADERA:     Valor,32.0,Anual,Externo
+2000-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,46338.0,Anual,Externo
+2000-01-01,MANUFACTURAS DE MADERA:     Precio,0.69,Anual,Externo
+2000-01-01,MUEBLES DE MADERA:     Valor,12.3,Anual,Externo
+2000-01-01,MUEBLES DE MADERA:     Volumen Kilos,4254.9,Anual,Externo
+2000-01-01,MUEBLES DE MADERA:     Precio,2.89,Anual,Externo
+2000-01-01,TEXTILES:     Valor,7.4,Anual,Externo
+2000-01-01,TEXTILES:     Volumen Kilos,4135.9,Anual,Externo
+2000-01-01,TEXTILES:     Precio,1.8,Anual,Externo
+2000-01-01,JABONES:     Valor,45.7,Anual,Externo
+2000-01-01,JABONES:     Volumen Kilos,51932.0,Anual,Externo
+2000-01-01,JABONES:     Precio,0.88,Anual,Externo
+2000-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,7.8,Anual,Externo
+2000-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,6221.6,Anual,Externo
+2000-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.26,Anual,Externo
+2000-01-01,PAPEL Y CARTÓN:     Valor,5.4,Anual,Externo
+2000-01-01,PAPEL Y CARTÓN:     Volumen Kilos,6029.4,Anual,Externo
+2000-01-01,PAPEL Y CARTÓN:     Precio,0.9,Anual,Externo
+2000-01-01,SUB-TOTAL,938.6,Anual,Externo
+2000-01-01,OTROS PRODUCTOS,352.6,Anual,Externo
+2000-01-01,TOTAL MERCANCÍAS GENERALES,1291.2,Anual,Externo
+2001-01-01,BANANO:     Valor,204.7,Anual,Externo
+2001-01-01,BANANO:     Volumen Cajas 40 Lbs.,25564.5,Anual,Externo
+2001-01-01,BANANO:     Precio,8.01,Anual,Externo
+2001-01-01,CAFÉ:     Valor,178.9,Anual,Externo
+2001-01-01,CAFÉ:     Volumen Sacos 60 Kg.,2661.8,Anual,Externo
+2001-01-01,CAFÉ:     Precio,67.21,Anual,Externo
+2001-01-01,CAFÉ:     Volumen Sacos 46 Kg.,3472.8,Anual,Externo
+2001-01-01,CAFÉ:     Precio,51.51,Anual,Externo
+2001-01-01,MADERA:     Valor,35.3,Anual,Externo
+2001-01-01,MADERA:     Volumen P.T.,45783.4,Anual,Externo
+2001-01-01,MADERA:     Precio,0.77,Anual,Externo
+2001-01-01,ACEÍTE DE PALMA:     Valor,31.4,Anual,Externo
+2001-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,64583.9,Anual,Externo
+2001-01-01,ACEÍTE DE PALMA:     Precio,0.49,Anual,Externo
+2001-01-01,PLATA:     Valor,3.5,Anual,Externo
+2001-01-01,PLATA:     Volumen Onzas Troy,1374.9,Anual,Externo
+2001-01-01,PLATA:     Precio,2.56,Anual,Externo
+2001-01-01,PLOMO:     Valor,1.8,Anual,Externo
+2001-01-01,PLOMO:     Volumen Libras,15091.7,Anual,Externo
+2001-01-01,PLOMO:     Precio,0.12,Anual,Externo
+2001-01-01,ZINC:     Valor,12.2,Anual,Externo
+2001-01-01,ZINC:     Volumen Libras,84309.8,Anual,Externo
+2001-01-01,ZINC:     Precio,0.14,Anual,Externo
+2001-01-01,AZÚCAR:     Valor,28.1,Anual,Externo
+2001-01-01,AZÚCAR:     Volumen Kilos,130353.1,Anual,Externo
+2001-01-01,AZÚCAR:     Precio,0.22,Anual,Externo
+2001-01-01,CAMARÓN CULTIVADO:     Valor,93.2,Anual,Externo
+2001-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,10006.2,Anual,Externo
+2001-01-01,CAMARÓN CULTIVADO:     Precio,9.31,Anual,Externo
+2001-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,13.6,Anual,Externo
+2001-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,1456.4,Anual,Externo
+2001-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,9.31,Anual,Externo
+2001-01-01,LANGOSTAS:     Valor,29.9,Anual,Externo
+2001-01-01,LANGOSTAS:     Volumen Kilos,1029.0,Anual,Externo
+2001-01-01,LANGOSTAS:     Precio,29.01,Anual,Externo
+2001-01-01,TILAPIAS:     Valor,7.5,Anual,Externo
+2001-01-01,TILAPIAS:     Volumen Kilos,1560.4,Anual,Externo
+2001-01-01,TILAPIAS:     Precio,4.8,Anual,Externo
+2001-01-01,MELONES Y SANDÍAS:     Valor,25.2,Anual,Externo
+2001-01-01,MELONES Y SANDÍAS:     Volumen Kilos,133583.9,Anual,Externo
+2001-01-01,MELONES Y SANDÍAS:     Precio,0.19,Anual,Externo
+2001-01-01,PIÑAS:     Valor,9.6,Anual,Externo
+2001-01-01,PIÑAS:     Volumen Kilos,34274.3,Anual,Externo
+2001-01-01,PIÑAS:     Precio,0.28,Anual,Externo
+2001-01-01,LEGUMBRES Y HORTALIZAS:     Valor,17.0,Anual,Externo
+2001-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,60549.9,Anual,Externo
+2001-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.28,Anual,Externo
+2001-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,17.9,Anual,Externo
+2001-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,26077.1,Anual,Externo
+2001-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.69,Anual,Externo
+2001-01-01,PUROS O CIGARROS:     Valor,8.7,Anual,Externo
+2001-01-01,PUROS O CIGARROS:     Volumen Kilos,933.1,Anual,Externo
+2001-01-01,PUROS O CIGARROS:     Precio,9.34,Anual,Externo
+2001-01-01,CIGARRILLOS:     Valor,6.0,Anual,Externo
+2001-01-01,CIGARRILLOS:     Volumen Kilos,1234.8,Anual,Externo
+2001-01-01,CIGARRILLOS:     Precio,4.82,Anual,Externo
+2001-01-01,TABACO:     Valor,11.1,Anual,Externo
+2001-01-01,TABACO:     Volumen Kilos,3906.2,Anual,Externo
+2001-01-01,TABACO:     Precio,2.84,Anual,Externo
+2001-01-01,MANUFACTURAS DE MADERA:     Valor,28.9,Anual,Externo
+2001-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,55859.0,Anual,Externo
+2001-01-01,MANUFACTURAS DE MADERA:     Precio,0.52,Anual,Externo
+2001-01-01,MUEBLES DE MADERA:     Valor,6.1,Anual,Externo
+2001-01-01,MUEBLES DE MADERA:     Volumen Kilos,2024.6,Anual,Externo
+2001-01-01,MUEBLES DE MADERA:     Precio,3.0,Anual,Externo
+2001-01-01,TEXTILES:     Valor,5.3,Anual,Externo
+2001-01-01,TEXTILES:     Volumen Kilos,3126.0,Anual,Externo
+2001-01-01,TEXTILES:     Precio,1.7,Anual,Externo
+2001-01-01,JABONES:     Valor,54.8,Anual,Externo
+2001-01-01,JABONES:     Volumen Kilos,72092.1,Anual,Externo
+2001-01-01,JABONES:     Precio,0.76,Anual,Externo
+2001-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,11.9,Anual,Externo
+2001-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,9561.9,Anual,Externo
+2001-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.24,Anual,Externo
+2001-01-01,PAPEL Y CARTÓN:     Valor,5.4,Anual,Externo
+2001-01-01,PAPEL Y CARTÓN:     Volumen Kilos,5828.8,Anual,Externo
+2001-01-01,PAPEL Y CARTÓN:     Precio,0.92,Anual,Externo
+2001-01-01,SUB-TOTAL,847.7,Anual,Externo
+2001-01-01,OTROS PRODUCTOS,352.4,Anual,Externo
+2001-01-01,TOTAL MERCANCÍAS GENERALES,1200.1,Anual,Externo
+2002-01-01,BANANO:     Valor,172.3,Anual,Externo
+2002-01-01,BANANO:     Volumen Cajas 40 Lbs.,23451.1,Anual,Externo
+2002-01-01,BANANO:     Precio,7.35,Anual,Externo
+2002-01-01,CAFÉ:     Valor,190.2,Anual,Externo
+2002-01-01,CAFÉ:     Volumen Sacos 60 Kg.,2825.5,Anual,Externo
+2002-01-01,CAFÉ:     Precio,67.3,Anual,Externo
+2002-01-01,CAFÉ:     Volumen Sacos 46 Kg.,3684.6,Anual,Externo
+2002-01-01,CAFÉ:     Precio,51.61,Anual,Externo
+2002-01-01,MADERA:     Valor,33.9,Anual,Externo
+2002-01-01,MADERA:     Volumen P.T.,43645.3,Anual,Externo
+2002-01-01,MADERA:     Precio,0.78,Anual,Externo
+2002-01-01,ACEÍTE DE PALMA:     Valor,29.9,Anual,Externo
+2002-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,59367.8,Anual,Externo
+2002-01-01,ACEÍTE DE PALMA:     Precio,0.5,Anual,Externo
+2002-01-01,PLATA:     Valor,2.9,Anual,Externo
+2002-01-01,PLATA:     Volumen Onzas Troy,1165.0,Anual,Externo
+2002-01-01,PLATA:     Precio,2.5,Anual,Externo
+2002-01-01,PLOMO:     Valor,1.6,Anual,Externo
+2002-01-01,PLOMO:     Volumen Libras,15966.4,Anual,Externo
+2002-01-01,PLOMO:     Precio,0.1,Anual,Externo
+2002-01-01,ZINC:     Valor,14.3,Anual,Externo
+2002-01-01,ZINC:     Volumen Libras,93556.8,Anual,Externo
+2002-01-01,ZINC:     Precio,0.15,Anual,Externo
+2002-01-01,AZÚCAR:     Valor,15.6,Anual,Externo
+2002-01-01,AZÚCAR:     Volumen Kilos,70889.2,Anual,Externo
+2002-01-01,AZÚCAR:     Precio,0.22,Anual,Externo
+2002-01-01,CAMARÓN CULTIVADO:     Valor,78.3,Anual,Externo
+2002-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,12046.0,Anual,Externo
+2002-01-01,CAMARÓN CULTIVADO:     Precio,6.5,Anual,Externo
+2002-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,10.4,Anual,Externo
+2002-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,1599.8,Anual,Externo
+2002-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,6.5,Anual,Externo
+2002-01-01,LANGOSTAS:     Valor,37.0,Anual,Externo
+2002-01-01,LANGOSTAS:     Volumen Kilos,1192.6,Anual,Externo
+2002-01-01,LANGOSTAS:     Precio,31.05,Anual,Externo
+2002-01-01,TILAPIAS:     Valor,17.5,Anual,Externo
+2002-01-01,TILAPIAS:     Volumen Kilos,2674.9,Anual,Externo
+2002-01-01,TILAPIAS:     Precio,6.54,Anual,Externo
+2002-01-01,MELONES Y SANDÍAS:     Valor,28.5,Anual,Externo
+2002-01-01,MELONES Y SANDÍAS:     Volumen Kilos,147377.4,Anual,Externo
+2002-01-01,MELONES Y SANDÍAS:     Precio,0.19,Anual,Externo
+2002-01-01,PIÑAS:     Valor,8.7,Anual,Externo
+2002-01-01,PIÑAS:     Volumen Kilos,33810.0,Anual,Externo
+2002-01-01,PIÑAS:     Precio,0.34,Anual,Externo
+2002-01-01,LEGUMBRES Y HORTALIZAS:     Valor,30.5,Anual,Externo
+2002-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,106620.6,Anual,Externo
+2002-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.29,Anual,Externo
+2002-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,19.1,Anual,Externo
+2002-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,31150.7,Anual,Externo
+2002-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.61,Anual,Externo
+2002-01-01,PUROS O CIGARROS:     Valor,9.6,Anual,Externo
+2002-01-01,PUROS O CIGARROS:     Volumen Kilos,957.0,Anual,Externo
+2002-01-01,PUROS O CIGARROS:     Precio,10.0,Anual,Externo
+2002-01-01,CIGARRILLOS:     Valor,15.2,Anual,Externo
+2002-01-01,CIGARRILLOS:     Volumen Kilos,3163.8,Anual,Externo
+2002-01-01,CIGARRILLOS:     Precio,4.8,Anual,Externo
+2002-01-01,TABACO:     Valor,20.3,Anual,Externo
+2002-01-01,TABACO:     Volumen Kilos,7259.8,Anual,Externo
+2002-01-01,TABACO:     Precio,2.8,Anual,Externo
+2002-01-01,MANUFACTURAS DE MADERA:     Valor,25.0,Anual,Externo
+2002-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,57861.4,Anual,Externo
+2002-01-01,MANUFACTURAS DE MADERA:     Precio,0.43,Anual,Externo
+2002-01-01,MUEBLES DE MADERA:     Valor,5.2,Anual,Externo
+2002-01-01,MUEBLES DE MADERA:     Volumen Kilos,2074.5,Anual,Externo
+2002-01-01,MUEBLES DE MADERA:     Precio,2.49,Anual,Externo
+2002-01-01,TEXTILES:     Valor,5.2,Anual,Externo
+2002-01-01,TEXTILES:     Volumen Kilos,2879.2,Anual,Externo
+2002-01-01,TEXTILES:     Precio,1.8,Anual,Externo
+2002-01-01,JABONES:     Valor,25.8,Anual,Externo
+2002-01-01,JABONES:     Volumen Kilos,39661.0,Anual,Externo
+2002-01-01,JABONES:     Precio,0.65,Anual,Externo
+2002-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,12.6,Anual,Externo
+2002-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,13910.0,Anual,Externo
+2002-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,0.9,Anual,Externo
+2002-01-01,PAPEL Y CARTÓN:     Valor,8.3,Anual,Externo
+2002-01-01,PAPEL Y CARTÓN:     Volumen Kilos,12933.6,Anual,Externo
+2002-01-01,PAPEL Y CARTÓN:     Precio,0.64,Anual,Externo
+2002-01-01,SUB-TOTAL,817.9,Anual,Externo
+2002-01-01,OTROS PRODUCTOS,341.4,Anual,Externo
+2002-01-01,TOTAL MERCANCÍAS GENERALES,1159.3,Anual,Externo
+2003-01-01,BANANO:     Valor,133.3,Anual,Externo
+2003-01-01,BANANO:     Volumen Cajas 40 Lbs.,24492.4,Anual,Externo
+2003-01-01,BANANO:     Precio,5.44,Anual,Externo
+2003-01-01,CAFÉ:     Valor,192.0,Anual,Externo
+2003-01-01,CAFÉ:     Volumen Sacos 60 Kg.,2540.0,Anual,Externo
+2003-01-01,CAFÉ:     Precio,75.6,Anual,Externo
+2003-01-01,CAFÉ:     Volumen Sacos 46 Kg.,3313.1,Anual,Externo
+2003-01-01,CAFÉ:     Precio,57.96,Anual,Externo
+2003-01-01,MADERA:     Valor,32.9,Anual,Externo
+2003-01-01,MADERA:     Volumen P.T.,36310.6,Anual,Externo
+2003-01-01,MADERA:     Precio,0.9,Anual,Externo
+2003-01-01,ACEÍTE DE PALMA:     Valor,55.5,Anual,Externo
+2003-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,121510.2,Anual,Externo
+2003-01-01,ACEÍTE DE PALMA:     Precio,0.46,Anual,Externo
+2003-01-01,PLATA:     Valor,2.5,Anual,Externo
+2003-01-01,PLATA:     Volumen Onzas Troy,898.4,Anual,Externo
+2003-01-01,PLATA:     Precio,2.75,Anual,Externo
+2003-01-01,PLOMO:     Valor,1.8,Anual,Externo
+2003-01-01,PLOMO:     Volumen Libras,13943.0,Anual,Externo
+2003-01-01,PLOMO:     Precio,0.13,Anual,Externo
+2003-01-01,ZINC:     Valor,15.1,Anual,Externo
+2003-01-01,ZINC:     Volumen Libras,79898.1,Anual,Externo
+2003-01-01,ZINC:     Precio,0.19,Anual,Externo
+2003-01-01,AZÚCAR:     Valor,13.2,Anual,Externo
+2003-01-01,AZÚCAR:     Volumen Kilos,56932.6,Anual,Externo
+2003-01-01,AZÚCAR:     Precio,0.23,Anual,Externo
+2003-01-01,CAMARÓN CULTIVADO:     Valor,117.9,Anual,Externo
+2003-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,16521.4,Anual,Externo
+2003-01-01,CAMARÓN CULTIVADO:     Precio,7.13,Anual,Externo
+2003-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,5.0,Anual,Externo
+2003-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,702.2,Anual,Externo
+2003-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,7.13,Anual,Externo
+2003-01-01,LANGOSTAS:     Valor,42.0,Anual,Externo
+2003-01-01,LANGOSTAS:     Volumen Kilos,1395.0,Anual,Externo
+2003-01-01,LANGOSTAS:     Precio,30.11,Anual,Externo
+2003-01-01,TILAPIAS:     Valor,16.6,Anual,Externo
+2003-01-01,TILAPIAS:     Volumen Kilos,2622.9,Anual,Externo
+2003-01-01,TILAPIAS:     Precio,6.33,Anual,Externo
+2003-01-01,MELONES Y SANDÍAS:     Valor,35.5,Anual,Externo
+2003-01-01,MELONES Y SANDÍAS:     Volumen Kilos,189846.8,Anual,Externo
+2003-01-01,MELONES Y SANDÍAS:     Precio,0.19,Anual,Externo
+2003-01-01,PIÑAS:     Valor,16.6,Anual,Externo
+2003-01-01,PIÑAS:     Volumen Kilos,34744.6,Anual,Externo
+2003-01-01,PIÑAS:     Precio,0.48,Anual,Externo
+2003-01-01,LEGUMBRES Y HORTALIZAS:     Valor,35.0,Anual,Externo
+2003-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,111429.7,Anual,Externo
+2003-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.31,Anual,Externo
+2003-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,22.8,Anual,Externo
+2003-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,38336.9,Anual,Externo
+2003-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.59,Anual,Externo
+2003-01-01,PUROS O CIGARROS:     Valor,59.4,Anual,Externo
+2003-01-01,PUROS O CIGARROS:     Volumen Kilos,5275.1,Anual,Externo
+2003-01-01,PUROS O CIGARROS:     Precio,11.26,Anual,Externo
+2003-01-01,CIGARRILLOS:     Valor,23.9,Anual,Externo
+2003-01-01,CIGARRILLOS:     Volumen Kilos,4891.7,Anual,Externo
+2003-01-01,CIGARRILLOS:     Precio,4.89,Anual,Externo
+2003-01-01,TABACO:     Valor,11.9,Anual,Externo
+2003-01-01,TABACO:     Volumen Kilos,5657.3,Anual,Externo
+2003-01-01,TABACO:     Precio,2.1,Anual,Externo
+2003-01-01,MANUFACTURAS DE MADERA:     Valor,38.8,Anual,Externo
+2003-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,119452.2,Anual,Externo
+2003-01-01,MANUFACTURAS DE MADERA:     Precio,0.33,Anual,Externo
+2003-01-01,MUEBLES DE MADERA:     Valor,28.8,Anual,Externo
+2003-01-01,MUEBLES DE MADERA:     Volumen Kilos,7229.2,Anual,Externo
+2003-01-01,MUEBLES DE MADERA:     Precio,3.98,Anual,Externo
+2003-01-01,TEXTILES:     Valor,7.2,Anual,Externo
+2003-01-01,TEXTILES:     Volumen Kilos,3509.6,Anual,Externo
+2003-01-01,TEXTILES:     Precio,2.04,Anual,Externo
+2003-01-01,JABONES:     Valor,34.2,Anual,Externo
+2003-01-01,JABONES:     Volumen Kilos,53351.8,Anual,Externo
+2003-01-01,JABONES:     Precio,0.64,Anual,Externo
+2003-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,20.9,Anual,Externo
+2003-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,22361.4,Anual,Externo
+2003-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,0.94,Anual,Externo
+2003-01-01,PAPEL Y CARTÓN:     Valor,20.1,Anual,Externo
+2003-01-01,PAPEL Y CARTÓN:     Volumen Kilos,28814.7,Anual,Externo
+2003-01-01,PAPEL Y CARTÓN:     Precio,0.7,Anual,Externo
+2003-01-01,SUB-TOTAL,982.8,Anual,Externo
+2003-01-01,OTROS PRODUCTOS,305.6,Anual,Externo
+2003-01-01,TOTAL MERCANCÍAS GENERALES,1288.4,Anual,Externo
+2004-01-01,BANANO:     Valor,208.8,Anual,Externo
+2004-01-01,BANANO:     Volumen Cajas 40 Lbs.,29098.2,Anual,Externo
+2004-01-01,BANANO:     Precio,7.17,Anual,Externo
+2004-01-01,CAFÉ:     Valor,277.2,Anual,Externo
+2004-01-01,CAFÉ:     Volumen Sacos 60 Kg.,3088.2,Anual,Externo
+2004-01-01,CAFÉ:     Precio,89.75,Anual,Externo
+2004-01-01,CAFÉ:     Volumen Sacos 46 Kg.,4028.1,Anual,Externo
+2004-01-01,CAFÉ:     Precio,68.81,Anual,Externo
+2004-01-01,MADERA:     Valor,35.0,Anual,Externo
+2004-01-01,MADERA:     Volumen P.T.,38495.8,Anual,Externo
+2004-01-01,MADERA:     Precio,0.91,Anual,Externo
+2004-01-01,ACEÍTE DE PALMA:     Valor,59.3,Anual,Externo
+2004-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,121109.0,Anual,Externo
+2004-01-01,ACEÍTE DE PALMA:     Precio,0.49,Anual,Externo
+2004-01-01,PLATA:     Valor,5.8,Anual,Externo
+2004-01-01,PLATA:     Volumen Onzas Troy,1304.3,Anual,Externo
+2004-01-01,PLATA:     Precio,4.46,Anual,Externo
+2004-01-01,PLOMO:     Valor,5.4,Anual,Externo
+2004-01-01,PLOMO:     Volumen Libras,19446.7,Anual,Externo
+2004-01-01,PLOMO:     Precio,0.28,Anual,Externo
+2004-01-01,ZINC:     Valor,20.3,Anual,Externo
+2004-01-01,ZINC:     Volumen Libras,80186.4,Anual,Externo
+2004-01-01,ZINC:     Precio,0.25,Anual,Externo
+2004-01-01,AZÚCAR:     Valor,14.9,Anual,Externo
+2004-01-01,AZÚCAR:     Volumen Kilos,82688.2,Anual,Externo
+2004-01-01,AZÚCAR:     Precio,0.18,Anual,Externo
+2004-01-01,CAMARÓN CULTIVADO:     Valor,128.8,Anual,Externo
+2004-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,18031.1,Anual,Externo
+2004-01-01,CAMARÓN CULTIVADO:     Precio,7.14,Anual,Externo
+2004-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,7.6,Anual,Externo
+2004-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,1061.5,Anual,Externo
+2004-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,7.14,Anual,Externo
+2004-01-01,LANGOSTAS:     Valor,47.2,Anual,Externo
+2004-01-01,LANGOSTAS:     Volumen Kilos,1604.8,Anual,Externo
+2004-01-01,LANGOSTAS:     Precio,29.4,Anual,Externo
+2004-01-01,TILAPIAS:     Valor,23.6,Anual,Externo
+2004-01-01,TILAPIAS:     Volumen Kilos,3816.5,Anual,Externo
+2004-01-01,TILAPIAS:     Precio,6.19,Anual,Externo
+2004-01-01,MELONES Y SANDÍAS:     Valor,35.0,Anual,Externo
+2004-01-01,MELONES Y SANDÍAS:     Volumen Kilos,196405.6,Anual,Externo
+2004-01-01,MELONES Y SANDÍAS:     Precio,0.18,Anual,Externo
+2004-01-01,PIÑAS:     Valor,21.6,Anual,Externo
+2004-01-01,PIÑAS:     Volumen Kilos,47859.3,Anual,Externo
+2004-01-01,PIÑAS:     Precio,0.45,Anual,Externo
+2004-01-01,LEGUMBRES Y HORTALIZAS:     Valor,33.1,Anual,Externo
+2004-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,124005.5,Anual,Externo
+2004-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.27,Anual,Externo
+2004-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,20.8,Anual,Externo
+2004-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,27499.3,Anual,Externo
+2004-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.76,Anual,Externo
+2004-01-01,PUROS O CIGARROS:     Valor,71.3,Anual,Externo
+2004-01-01,PUROS O CIGARROS:     Volumen Kilos,3159.9,Anual,Externo
+2004-01-01,PUROS O CIGARROS:     Precio,22.56,Anual,Externo
+2004-01-01,CIGARRILLOS:     Valor,18.9,Anual,Externo
+2004-01-01,CIGARRILLOS:     Volumen Kilos,4388.2,Anual,Externo
+2004-01-01,CIGARRILLOS:     Precio,4.3,Anual,Externo
+2004-01-01,TABACO:     Valor,8.0,Anual,Externo
+2004-01-01,TABACO:     Volumen Kilos,1549.1,Anual,Externo
+2004-01-01,TABACO:     Precio,5.13,Anual,Externo
+2004-01-01,MANUFACTURAS DE MADERA:     Valor,38.6,Anual,Externo
+2004-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,122216.9,Anual,Externo
+2004-01-01,MANUFACTURAS DE MADERA:     Precio,0.32,Anual,Externo
+2004-01-01,MUEBLES DE MADERA:     Valor,24.5,Anual,Externo
+2004-01-01,MUEBLES DE MADERA:     Volumen Kilos,7862.0,Anual,Externo
+2004-01-01,MUEBLES DE MADERA:     Precio,3.12,Anual,Externo
+2004-01-01,TEXTILES:     Valor,17.4,Anual,Externo
+2004-01-01,TEXTILES:     Volumen Kilos,25625.3,Anual,Externo
+2004-01-01,TEXTILES:     Precio,0.68,Anual,Externo
+2004-01-01,JABONES:     Valor,53.4,Anual,Externo
+2004-01-01,JABONES:     Volumen Kilos,81332.6,Anual,Externo
+2004-01-01,JABONES:     Precio,0.66,Anual,Externo
+2004-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,49.6,Anual,Externo
+2004-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,46381.1,Anual,Externo
+2004-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.07,Anual,Externo
+2004-01-01,PAPEL Y CARTÓN:     Valor,23.8,Anual,Externo
+2004-01-01,PAPEL Y CARTÓN:     Volumen Kilos,36256.4,Anual,Externo
+2004-01-01,PAPEL Y CARTÓN:     Precio,0.66,Anual,Externo
+2004-01-01,SUB-TOTAL,1249.8,Anual,Externo
+2004-01-01,OTROS PRODUCTOS,317.0,Anual,Externo
+2004-01-01,TOTAL MERCANCÍAS GENERALES,1566.8,Anual,Externo
+2005-01-01,BANANO:     Valor,260.3,Anual,Externo
+2005-01-01,BANANO:     Volumen Cajas 40 Lbs.,28419.7,Anual,Externo
+2005-01-01,BANANO:     Precio,9.16,Anual,Externo
+2005-01-01,CAFÉ:     Valor,366.3,Anual,Externo
+2005-01-01,CAFÉ:     Volumen Sacos 60 Kg.,2653.5,Anual,Externo
+2005-01-01,CAFÉ:     Precio,138.05,Anual,Externo
+2005-01-01,CAFÉ:     Volumen Sacos 46 Kg.,3461.1,Anual,Externo
+2005-01-01,CAFÉ:     Precio,105.84,Anual,Externo
+2005-01-01,MADERA:     Valor,43.3,Anual,Externo
+2005-01-01,MADERA:     Volumen P.T.,40054.1,Anual,Externo
+2005-01-01,MADERA:     Precio,1.08,Anual,Externo
+2005-01-01,ACEÍTE DE PALMA:     Valor,56.3,Anual,Externo
+2005-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,124960.4,Anual,Externo
+2005-01-01,ACEÍTE DE PALMA:     Precio,0.45,Anual,Externo
+2005-01-01,PLATA:     Valor,5.2,Anual,Externo
+2005-01-01,PLATA:     Volumen Onzas Troy,737.7,Anual,Externo
+2005-01-01,PLATA:     Precio,7.11,Anual,Externo
+2005-01-01,PLOMO:     Valor,5.5,Anual,Externo
+2005-01-01,PLOMO:     Volumen Libras,18319.8,Anual,Externo
+2005-01-01,PLOMO:     Precio,0.3,Anual,Externo
+2005-01-01,ZINC:     Valor,19.6,Anual,Externo
+2005-01-01,ZINC:     Volumen Libras,66730.3,Anual,Externo
+2005-01-01,ZINC:     Precio,0.29,Anual,Externo
+2005-01-01,AZÚCAR:     Valor,24.8,Anual,Externo
+2005-01-01,AZÚCAR:     Volumen Kilos,114586.8,Anual,Externo
+2005-01-01,AZÚCAR:     Precio,0.22,Anual,Externo
+2005-01-01,CAMARÓN CULTIVADO:     Valor,124.5,Anual,Externo
+2005-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,18432.2,Anual,Externo
+2005-01-01,CAMARÓN CULTIVADO:     Precio,6.76,Anual,Externo
+2005-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,7.9,Anual,Externo
+2005-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,1166.6,Anual,Externo
+2005-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,6.75,Anual,Externo
+2005-01-01,LANGOSTAS:     Valor,48.2,Anual,Externo
+2005-01-01,LANGOSTAS:     Volumen Kilos,1553.5,Anual,Externo
+2005-01-01,LANGOSTAS:     Precio,31.04,Anual,Externo
+2005-01-01,TILAPIAS:     Valor,41.3,Anual,Externo
+2005-01-01,TILAPIAS:     Volumen Kilos,6441.5,Anual,Externo
+2005-01-01,TILAPIAS:     Precio,6.41,Anual,Externo
+2005-01-01,MELONES Y SANDÍAS:     Valor,35.9,Anual,Externo
+2005-01-01,MELONES Y SANDÍAS:     Volumen Kilos,205890.3,Anual,Externo
+2005-01-01,MELONES Y SANDÍAS:     Precio,0.17,Anual,Externo
+2005-01-01,PIÑAS:     Valor,20.2,Anual,Externo
+2005-01-01,PIÑAS:     Volumen Kilos,54798.1,Anual,Externo
+2005-01-01,PIÑAS:     Precio,0.37,Anual,Externo
+2005-01-01,LEGUMBRES Y HORTALIZAS:     Valor,36.6,Anual,Externo
+2005-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,142432.9,Anual,Externo
+2005-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.26,Anual,Externo
+2005-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,25.0,Anual,Externo
+2005-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,35844.6,Anual,Externo
+2005-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.7,Anual,Externo
+2005-01-01,PUROS O CIGARROS:     Valor,75.2,Anual,Externo
+2005-01-01,PUROS O CIGARROS:     Volumen Kilos,2968.1,Anual,Externo
+2005-01-01,PUROS O CIGARROS:     Precio,25.34,Anual,Externo
+2005-01-01,CIGARRILLOS:     Valor,13.1,Anual,Externo
+2005-01-01,CIGARRILLOS:     Volumen Kilos,2978.7,Anual,Externo
+2005-01-01,CIGARRILLOS:     Precio,4.41,Anual,Externo
+2005-01-01,TABACO:     Valor,12.9,Anual,Externo
+2005-01-01,TABACO:     Volumen Kilos,2349.4,Anual,Externo
+2005-01-01,TABACO:     Precio,5.51,Anual,Externo
+2005-01-01,MANUFACTURAS DE MADERA:     Valor,40.8,Anual,Externo
+2005-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,78964.0,Anual,Externo
+2005-01-01,MANUFACTURAS DE MADERA:     Precio,0.52,Anual,Externo
+2005-01-01,MUEBLES DE MADERA:     Valor,27.5,Anual,Externo
+2005-01-01,MUEBLES DE MADERA:     Volumen Kilos,10228.6,Anual,Externo
+2005-01-01,MUEBLES DE MADERA:     Precio,2.69,Anual,Externo
+2005-01-01,TEXTILES:     Valor,56.9,Anual,Externo
+2005-01-01,TEXTILES:     Volumen Kilos,35789.8,Anual,Externo
+2005-01-01,TEXTILES:     Precio,1.59,Anual,Externo
+2005-01-01,JABONES:     Valor,42.5,Anual,Externo
+2005-01-01,JABONES:     Volumen Kilos,63914.1,Anual,Externo
+2005-01-01,JABONES:     Precio,0.67,Anual,Externo
+2005-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,58.7,Anual,Externo
+2005-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,112028.4,Anual,Externo
+2005-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,0.52,Anual,Externo
+2005-01-01,PAPEL Y CARTÓN:     Valor,24.8,Anual,Externo
+2005-01-01,PAPEL Y CARTÓN:     Volumen Kilos,32353.2,Anual,Externo
+2005-01-01,PAPEL Y CARTÓN:     Precio,0.77,Anual,Externo
+2005-01-01,SUB-TOTAL,1473.7,Anual,Externo
+2005-01-01,OTROS PRODUCTOS,355.5,Anual,Externo
+2005-01-01,TOTAL MERCANCÍAS GENERALES,1829.2,Anual,Externo
+2006-01-01,BANANO:     Valor,241.3,Anual,Externo
+2006-01-01,BANANO:     Volumen Cajas 40 Lbs.,27290.3,Anual,Externo
+2006-01-01,BANANO:     Precio,8.84,Anual,Externo
+2006-01-01,CAFÉ:     Valor,425.8,Anual,Externo
+2006-01-01,CAFÉ:     Volumen Sacos 60 Kg.,3071.8,Anual,Externo
+2006-01-01,CAFÉ:     Precio,138.62,Anual,Externo
+2006-01-01,CAFÉ:     Volumen Sacos 46 Kg.,4006.7,Anual,Externo
+2006-01-01,CAFÉ:     Precio,106.28,Anual,Externo
+2006-01-01,MADERA:     Valor,39.2,Anual,Externo
+2006-01-01,MADERA:     Volumen P.T.,31791.7,Anual,Externo
+2006-01-01,MADERA:     Precio,1.23,Anual,Externo
+2006-01-01,ACEÍTE DE PALMA:     Valor,74.8,Anual,Externo
+2006-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,148855.5,Anual,Externo
+2006-01-01,ACEÍTE DE PALMA:     Precio,0.5,Anual,Externo
+2006-01-01,PLATA:     Valor,11.0,Anual,Externo
+2006-01-01,PLATA:     Volumen Onzas Troy,1336.0,Anual,Externo
+2006-01-01,PLATA:     Precio,8.22,Anual,Externo
+2006-01-01,PLOMO:     Valor,8.6,Anual,Externo
+2006-01-01,PLOMO:     Volumen Libras,21727.3,Anual,Externo
+2006-01-01,PLOMO:     Precio,0.4,Anual,Externo
+2006-01-01,ZINC:     Valor,60.7,Anual,Externo
+2006-01-01,ZINC:     Volumen Libras,76456.8,Anual,Externo
+2006-01-01,ZINC:     Precio,0.79,Anual,Externo
+2006-01-01,AZÚCAR:     Valor,29.6,Anual,Externo
+2006-01-01,AZÚCAR:     Volumen Kilos,114115.9,Anual,Externo
+2006-01-01,AZÚCAR:     Precio,0.26,Anual,Externo
+2006-01-01,CAMARÓN CULTIVADO:     Valor,156.4,Anual,Externo
+2006-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,24615.5,Anual,Externo
+2006-01-01,CAMARÓN CULTIVADO:     Precio,6.35,Anual,Externo
+2006-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,5.5,Anual,Externo
+2006-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,908.4,Anual,Externo
+2006-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,6.1,Anual,Externo
+2006-01-01,LANGOSTAS:     Valor,50.1,Anual,Externo
+2006-01-01,LANGOSTAS:     Volumen Kilos,1482.6,Anual,Externo
+2006-01-01,LANGOSTAS:     Precio,33.8,Anual,Externo
+2006-01-01,TILAPIAS:     Valor,48.5,Anual,Externo
+2006-01-01,TILAPIAS:     Volumen Kilos,7282.6,Anual,Externo
+2006-01-01,TILAPIAS:     Precio,6.66,Anual,Externo
+2006-01-01,MELONES Y SANDÍAS:     Valor,35.6,Anual,Externo
+2006-01-01,MELONES Y SANDÍAS:     Volumen Kilos,202929.0,Anual,Externo
+2006-01-01,MELONES Y SANDÍAS:     Precio,0.18,Anual,Externo
+2006-01-01,PIÑAS:     Valor,18.0,Anual,Externo
+2006-01-01,PIÑAS:     Volumen Kilos,46698.6,Anual,Externo
+2006-01-01,PIÑAS:     Precio,0.38,Anual,Externo
+2006-01-01,LEGUMBRES Y HORTALIZAS:     Valor,42.4,Anual,Externo
+2006-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,158730.1,Anual,Externo
+2006-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.27,Anual,Externo
+2006-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,30.8,Anual,Externo
+2006-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,46894.7,Anual,Externo
+2006-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.66,Anual,Externo
+2006-01-01,PUROS O CIGARROS:     Valor,74.9,Anual,Externo
+2006-01-01,PUROS O CIGARROS:     Volumen Kilos,3712.1,Anual,Externo
+2006-01-01,PUROS O CIGARROS:     Precio,20.19,Anual,Externo
+2006-01-01,CIGARRILLOS:     Valor,23.7,Anual,Externo
+2006-01-01,CIGARRILLOS:     Volumen Kilos,5022.1,Anual,Externo
+2006-01-01,CIGARRILLOS:     Precio,4.72,Anual,Externo
+2006-01-01,TABACO:     Valor,15.6,Anual,Externo
+2006-01-01,TABACO:     Volumen Kilos,2386.0,Anual,Externo
+2006-01-01,TABACO:     Precio,6.54,Anual,Externo
+2006-01-01,MANUFACTURAS DE MADERA:     Valor,32.2,Anual,Externo
+2006-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,48786.4,Anual,Externo
+2006-01-01,MANUFACTURAS DE MADERA:     Precio,0.66,Anual,Externo
+2006-01-01,MUEBLES DE MADERA:     Valor,27.7,Anual,Externo
+2006-01-01,MUEBLES DE MADERA:     Volumen Kilos,18786.0,Anual,Externo
+2006-01-01,MUEBLES DE MADERA:     Precio,1.47,Anual,Externo
+2006-01-01,TEXTILES:     Valor,42.2,Anual,Externo
+2006-01-01,TEXTILES:     Volumen Kilos,38868.2,Anual,Externo
+2006-01-01,TEXTILES:     Precio,1.09,Anual,Externo
+2006-01-01,JABONES:     Valor,45.9,Anual,Externo
+2006-01-01,JABONES:     Volumen Kilos,69078.0,Anual,Externo
+2006-01-01,JABONES:     Precio,0.66,Anual,Externo
+2006-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,78.4,Anual,Externo
+2006-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,46113.6,Anual,Externo
+2006-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.7,Anual,Externo
+2006-01-01,PAPEL Y CARTÓN:     Valor,28.8,Anual,Externo
+2006-01-01,PAPEL Y CARTÓN:     Volumen Kilos,32718.8,Anual,Externo
+2006-01-01,PAPEL Y CARTÓN:     Precio,0.88,Anual,Externo
+2006-01-01,SUB-TOTAL,1647.9,Anual,Externo
+2006-01-01,OTROS PRODUCTOS,368.5,Anual,Externo
+2006-01-01,TOTAL MERCANCÍAS GENERALES,2016.3,Anual,Externo
+2007-01-01,BANANO:     Valor,289.3,Anual,Externo
+2007-01-01,BANANO:     Volumen Cajas 40 Lbs.,29721.2,Anual,Externo
+2007-01-01,BANANO:     Precio,9.73,Anual,Externo
+2007-01-01,CAFÉ:     Valor,518.3,Anual,Externo
+2007-01-01,CAFÉ:     Volumen Sacos 60 Kg.,3541.1,Anual,Externo
+2007-01-01,CAFÉ:     Precio,146.36,Anual,Externo
+2007-01-01,CAFÉ:     Volumen Sacos 46 Kg.,4618.8,Anual,Externo
+2007-01-01,CAFÉ:     Precio,112.21,Anual,Externo
+2007-01-01,MADERA:     Valor,44.5,Anual,Externo
+2007-01-01,MADERA:     Volumen P.T.,27085.2,Anual,Externo
+2007-01-01,MADERA:     Precio,1.64,Anual,Externo
+2007-01-01,ACEÍTE DE PALMA:     Valor,121.2,Anual,Externo
+2007-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,166911.0,Anual,Externo
+2007-01-01,ACEÍTE DE PALMA:     Precio,0.73,Anual,Externo
+2007-01-01,PLATA:     Valor,17.6,Anual,Externo
+2007-01-01,PLATA:     Volumen Onzas Troy,1877.5,Anual,Externo
+2007-01-01,PLATA:     Precio,9.35,Anual,Externo
+2007-01-01,PLOMO:     Valor,24.1,Anual,Externo
+2007-01-01,PLOMO:     Volumen Libras,25909.5,Anual,Externo
+2007-01-01,PLOMO:     Precio,0.93,Anual,Externo
+2007-01-01,ZINC:     Valor,58.0,Anual,Externo
+2007-01-01,ZINC:     Volumen Libras,59723.1,Anual,Externo
+2007-01-01,ZINC:     Precio,0.97,Anual,Externo
+2007-01-01,AZÚCAR:     Valor,19.4,Anual,Externo
+2007-01-01,AZÚCAR:     Volumen Kilos,73994.3,Anual,Externo
+2007-01-01,AZÚCAR:     Precio,0.26,Anual,Externo
+2007-01-01,CAMARÓN CULTIVADO:     Valor,120.3,Anual,Externo
+2007-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,21384.3,Anual,Externo
+2007-01-01,CAMARÓN CULTIVADO:     Precio,5.63,Anual,Externo
+2007-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,5.6,Anual,Externo
+2007-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,1179.0,Anual,Externo
+2007-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,4.72,Anual,Externo
+2007-01-01,LANGOSTAS:     Valor,32.0,Anual,Externo
+2007-01-01,LANGOSTAS:     Volumen Kilos,1059.8,Anual,Externo
+2007-01-01,LANGOSTAS:     Precio,30.22,Anual,Externo
+2007-01-01,TILAPIAS:     Valor,55.5,Anual,Externo
+2007-01-01,TILAPIAS:     Volumen Kilos,8456.9,Anual,Externo
+2007-01-01,TILAPIAS:     Precio,6.56,Anual,Externo
+2007-01-01,MELONES Y SANDÍAS:     Valor,46.2,Anual,Externo
+2007-01-01,MELONES Y SANDÍAS:     Volumen Kilos,250551.1,Anual,Externo
+2007-01-01,MELONES Y SANDÍAS:     Precio,0.18,Anual,Externo
+2007-01-01,PIÑAS:     Valor,21.2,Anual,Externo
+2007-01-01,PIÑAS:     Volumen Kilos,56051.7,Anual,Externo
+2007-01-01,PIÑAS:     Precio,0.38,Anual,Externo
+2007-01-01,LEGUMBRES Y HORTALIZAS:     Valor,44.8,Anual,Externo
+2007-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,149632.1,Anual,Externo
+2007-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.3,Anual,Externo
+2007-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,37.1,Anual,Externo
+2007-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,47530.2,Anual,Externo
+2007-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.78,Anual,Externo
+2007-01-01,PUROS O CIGARROS:     Valor,89.4,Anual,Externo
+2007-01-01,PUROS O CIGARROS:     Volumen Kilos,5126.8,Anual,Externo
+2007-01-01,PUROS O CIGARROS:     Precio,17.44,Anual,Externo
+2007-01-01,CIGARRILLOS:     Valor,27.1,Anual,Externo
+2007-01-01,CIGARRILLOS:     Volumen Kilos,5968.3,Anual,Externo
+2007-01-01,CIGARRILLOS:     Precio,4.55,Anual,Externo
+2007-01-01,TABACO:     Valor,16.9,Anual,Externo
+2007-01-01,TABACO:     Volumen Kilos,1947.5,Anual,Externo
+2007-01-01,TABACO:     Precio,8.7,Anual,Externo
+2007-01-01,MANUFACTURAS DE MADERA:     Valor,40.0,Anual,Externo
+2007-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,56449.7,Anual,Externo
+2007-01-01,MANUFACTURAS DE MADERA:     Precio,0.71,Anual,Externo
+2007-01-01,MUEBLES DE MADERA:     Valor,26.2,Anual,Externo
+2007-01-01,MUEBLES DE MADERA:     Volumen Kilos,9896.4,Anual,Externo
+2007-01-01,MUEBLES DE MADERA:     Precio,2.65,Anual,Externo
+2007-01-01,TEXTILES:     Valor,51.3,Anual,Externo
+2007-01-01,TEXTILES:     Volumen Kilos,54294.8,Anual,Externo
+2007-01-01,TEXTILES:     Precio,0.95,Anual,Externo
+2007-01-01,JABONES:     Valor,44.0,Anual,Externo
+2007-01-01,JABONES:     Volumen Kilos,67208.1,Anual,Externo
+2007-01-01,JABONES:     Precio,0.65,Anual,Externo
+2007-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,134.2,Anual,Externo
+2007-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,67046.3,Anual,Externo
+2007-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,2.0,Anual,Externo
+2007-01-01,PAPEL Y CARTÓN:     Valor,51.1,Anual,Externo
+2007-01-01,PAPEL Y CARTÓN:     Volumen Kilos,50822.4,Anual,Externo
+2007-01-01,PAPEL Y CARTÓN:     Precio,1.01,Anual,Externo
+2007-01-01,SUB-TOTAL,1935.1,Anual,Externo
+2007-01-01,OTROS PRODUCTOS,526.2,Anual,Externo
+2007-01-01,TOTAL MERCANCÍAS GENERALES,2461.3,Anual,Externo
+2008-01-01,BANANO:     Valor,383.8,Anual,Externo
+2008-01-01,BANANO:     Volumen Cajas 40 Lbs.,30303.3,Anual,Externo
+2008-01-01,BANANO:     Precio,12.66,Anual,Externo
+2008-01-01,CAFÉ:     Valor,617.9,Anual,Externo
+2008-01-01,CAFÉ:     Volumen Sacos 60 Kg.,3583.3,Anual,Externo
+2008-01-01,CAFÉ:     Precio,172.43,Anual,Externo
+2008-01-01,CAFÉ:     Volumen Sacos 46 Kg.,4673.9,Anual,Externo
+2008-01-01,CAFÉ:     Precio,132.2,Anual,Externo
+2008-01-01,MADERA:     Valor,36.3,Anual,Externo
+2008-01-01,MADERA:     Volumen P.T.,23016.4,Anual,Externo
+2008-01-01,MADERA:     Precio,1.58,Anual,Externo
+2008-01-01,ACEÍTE DE PALMA:     Valor,216.7,Anual,Externo
+2008-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,209439.6,Anual,Externo
+2008-01-01,ACEÍTE DE PALMA:     Precio,1.03,Anual,Externo
+2008-01-01,PLATA:     Valor,21.4,Anual,Externo
+2008-01-01,PLATA:     Volumen Onzas Troy,1931.2,Anual,Externo
+2008-01-01,PLATA:     Precio,11.09,Anual,Externo
+2008-01-01,PLOMO:     Valor,21.1,Anual,Externo
+2008-01-01,PLOMO:     Volumen Libras,28934.1,Anual,Externo
+2008-01-01,PLOMO:     Precio,0.73,Anual,Externo
+2008-01-01,ZINC:     Valor,26.1,Anual,Externo
+2008-01-01,ZINC:     Volumen Libras,56969.4,Anual,Externo
+2008-01-01,ZINC:     Precio,0.46,Anual,Externo
+2008-01-01,AZÚCAR:     Valor,20.9,Anual,Externo
+2008-01-01,AZÚCAR:     Volumen Kilos,73300.1,Anual,Externo
+2008-01-01,AZÚCAR:     Precio,0.28,Anual,Externo
+2008-01-01,CAMARÓN CULTIVADO:     Valor,98.6,Anual,Externo
+2008-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,17633.3,Anual,Externo
+2008-01-01,CAMARÓN CULTIVADO:     Precio,5.59,Anual,Externo
+2008-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,2.4,Anual,Externo
+2008-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,416.3,Anual,Externo
+2008-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,5.78,Anual,Externo
+2008-01-01,LANGOSTAS:     Valor,44.1,Anual,Externo
+2008-01-01,LANGOSTAS:     Volumen Kilos,1431.8,Anual,Externo
+2008-01-01,LANGOSTAS:     Precio,30.79,Anual,Externo
+2008-01-01,TILAPIAS:     Valor,63.0,Anual,Externo
+2008-01-01,TILAPIAS:     Volumen Kilos,8435.9,Anual,Externo
+2008-01-01,TILAPIAS:     Precio,7.47,Anual,Externo
+2008-01-01,MELONES Y SANDÍAS:     Valor,44.5,Anual,Externo
+2008-01-01,MELONES Y SANDÍAS:     Volumen Kilos,210812.4,Anual,Externo
+2008-01-01,MELONES Y SANDÍAS:     Precio,0.21,Anual,Externo
+2008-01-01,PIÑAS:     Valor,21.3,Anual,Externo
+2008-01-01,PIÑAS:     Volumen Kilos,48911.6,Anual,Externo
+2008-01-01,PIÑAS:     Precio,0.44,Anual,Externo
+2008-01-01,LEGUMBRES Y HORTALIZAS:     Valor,52.3,Anual,Externo
+2008-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,134645.3,Anual,Externo
+2008-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.39,Anual,Externo
+2008-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,27.9,Anual,Externo
+2008-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,32240.3,Anual,Externo
+2008-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.86,Anual,Externo
+2008-01-01,PUROS O CIGARROS:     Valor,96.2,Anual,Externo
+2008-01-01,PUROS O CIGARROS:     Volumen Kilos,5994.4,Anual,Externo
+2008-01-01,PUROS O CIGARROS:     Precio,16.05,Anual,Externo
+2008-01-01,CIGARRILLOS:     Valor,25.7,Anual,Externo
+2008-01-01,CIGARRILLOS:     Volumen Kilos,4942.9,Anual,Externo
+2008-01-01,CIGARRILLOS:     Precio,5.2,Anual,Externo
+2008-01-01,TABACO:     Valor,15.0,Anual,Externo
+2008-01-01,TABACO:     Volumen Kilos,1787.8,Anual,Externo
+2008-01-01,TABACO:     Precio,8.4,Anual,Externo
+2008-01-01,MANUFACTURAS DE MADERA:     Valor,28.9,Anual,Externo
+2008-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,38842.9,Anual,Externo
+2008-01-01,MANUFACTURAS DE MADERA:     Precio,0.74,Anual,Externo
+2008-01-01,MUEBLES DE MADERA:     Valor,16.9,Anual,Externo
+2008-01-01,MUEBLES DE MADERA:     Volumen Kilos,7387.5,Anual,Externo
+2008-01-01,MUEBLES DE MADERA:     Precio,2.29,Anual,Externo
+2008-01-01,TEXTILES:     Valor,76.9,Anual,Externo
+2008-01-01,TEXTILES:     Volumen Kilos,67125.5,Anual,Externo
+2008-01-01,TEXTILES:     Precio,1.15,Anual,Externo
+2008-01-01,JABONES:     Valor,52.3,Anual,Externo
+2008-01-01,JABONES:     Volumen Kilos,52690.9,Anual,Externo
+2008-01-01,JABONES:     Precio,0.99,Anual,Externo
+2008-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,83.4,Anual,Externo
+2008-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,54484.7,Anual,Externo
+2008-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.53,Anual,Externo
+2008-01-01,PAPEL Y CARTÓN:     Valor,63.0,Anual,Externo
+2008-01-01,PAPEL Y CARTÓN:     Volumen Kilos,45213.6,Anual,Externo
+2008-01-01,PAPEL Y CARTÓN:     Precio,1.39,Anual,Externo
+2008-01-01,SUB-TOTAL,2156.5,Anual,Externo
+2008-01-01,OTROS PRODUCTOS,627.0,Anual,Externo
+2008-01-01,TOTAL MERCANCÍAS GENERALES,2783.4,Anual,Externo
+2009-01-01,BANANO:     Valor,327.2,Anual,Externo
+2009-01-01,BANANO:     Volumen Cajas 40 Lbs.,26253.1,Anual,Externo
+2009-01-01,BANANO:     Precio,12.46,Anual,Externo
+2009-01-01,CAFÉ:     Valor,531.5,Anual,Externo
+2009-01-01,CAFÉ:     Volumen Sacos 60 Kg.,3432.6,Anual,Externo
+2009-01-01,CAFÉ:     Precio,154.84,Anual,Externo
+2009-01-01,CAFÉ:     Volumen Sacos 46 Kg.,4477.3,Anual,Externo
+2009-01-01,CAFÉ:     Precio,118.71,Anual,Externo
+2009-01-01,MADERA:     Valor,24.1,Anual,Externo
+2009-01-01,MADERA:     Volumen P.T.,18075.6,Anual,Externo
+2009-01-01,MADERA:     Precio,1.33,Anual,Externo
+2009-01-01,ACEÍTE DE PALMA:     Valor,126.5,Anual,Externo
+2009-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,170900.3,Anual,Externo
+2009-01-01,ACEÍTE DE PALMA:     Precio,0.74,Anual,Externo
+2009-01-01,PLATA:     Valor,17.4,Anual,Externo
+2009-01-01,PLATA:     Volumen Onzas Troy,1690.0,Anual,Externo
+2009-01-01,PLATA:     Precio,10.28,Anual,Externo
+2009-01-01,PLOMO:     Valor,18.5,Anual,Externo
+2009-01-01,PLOMO:     Volumen Libras,28681.2,Anual,Externo
+2009-01-01,PLOMO:     Precio,0.65,Anual,Externo
+2009-01-01,ZINC:     Valor,25.1,Anual,Externo
+2009-01-01,ZINC:     Volumen Libras,62355.4,Anual,Externo
+2009-01-01,ZINC:     Precio,0.4,Anual,Externo
+2009-01-01,AZÚCAR:     Valor,29.1,Anual,Externo
+2009-01-01,AZÚCAR:     Volumen Kilos,78699.4,Anual,Externo
+2009-01-01,AZÚCAR:     Precio,0.37,Anual,Externo
+2009-01-01,CAMARÓN CULTIVADO:     Valor,113.1,Anual,Externo
+2009-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,23470.9,Anual,Externo
+2009-01-01,CAMARÓN CULTIVADO:     Precio,4.82,Anual,Externo
+2009-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,2.3,Anual,Externo
+2009-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,689.8,Anual,Externo
+2009-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,3.36,Anual,Externo
+2009-01-01,LANGOSTAS:     Valor,23.0,Anual,Externo
+2009-01-01,LANGOSTAS:     Volumen Kilos,1083.8,Anual,Externo
+2009-01-01,LANGOSTAS:     Precio,21.25,Anual,Externo
+2009-01-01,TILAPIAS:     Valor,55.8,Anual,Externo
+2009-01-01,TILAPIAS:     Volumen Kilos,7125.9,Anual,Externo
+2009-01-01,TILAPIAS:     Precio,7.84,Anual,Externo
+2009-01-01,MELONES Y SANDÍAS:     Valor,49.1,Anual,Externo
+2009-01-01,MELONES Y SANDÍAS:     Volumen Kilos,241389.3,Anual,Externo
+2009-01-01,MELONES Y SANDÍAS:     Precio,0.2,Anual,Externo
+2009-01-01,PIÑAS:     Valor,23.0,Anual,Externo
+2009-01-01,PIÑAS:     Volumen Kilos,45798.6,Anual,Externo
+2009-01-01,PIÑAS:     Precio,0.5,Anual,Externo
+2009-01-01,LEGUMBRES Y HORTALIZAS:     Valor,51.0,Anual,Externo
+2009-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,100515.6,Anual,Externo
+2009-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.51,Anual,Externo
+2009-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,28.7,Anual,Externo
+2009-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,26076.2,Anual,Externo
+2009-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.1,Anual,Externo
+2009-01-01,PUROS O CIGARROS:     Valor,86.2,Anual,Externo
+2009-01-01,PUROS O CIGARROS:     Volumen Kilos,4129.8,Anual,Externo
+2009-01-01,PUROS O CIGARROS:     Precio,20.87,Anual,Externo
+2009-01-01,CIGARRILLOS:     Valor,27.1,Anual,Externo
+2009-01-01,CIGARRILLOS:     Volumen Kilos,4754.7,Anual,Externo
+2009-01-01,CIGARRILLOS:     Precio,5.71,Anual,Externo
+2009-01-01,TABACO:     Valor,11.3,Anual,Externo
+2009-01-01,TABACO:     Volumen Kilos,1208.7,Anual,Externo
+2009-01-01,TABACO:     Precio,9.37,Anual,Externo
+2009-01-01,MANUFACTURAS DE MADERA:     Valor,21.3,Anual,Externo
+2009-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,31325.2,Anual,Externo
+2009-01-01,MANUFACTURAS DE MADERA:     Precio,0.68,Anual,Externo
+2009-01-01,MUEBLES DE MADERA:     Valor,6.2,Anual,Externo
+2009-01-01,MUEBLES DE MADERA:     Volumen Kilos,2683.3,Anual,Externo
+2009-01-01,MUEBLES DE MADERA:     Precio,2.3,Anual,Externo
+2009-01-01,TEXTILES:     Valor,34.4,Anual,Externo
+2009-01-01,TEXTILES:     Volumen Kilos,44681.2,Anual,Externo
+2009-01-01,TEXTILES:     Precio,0.77,Anual,Externo
+2009-01-01,JABONES:     Valor,52.3,Anual,Externo
+2009-01-01,JABONES:     Volumen Kilos,55997.7,Anual,Externo
+2009-01-01,JABONES:     Precio,0.93,Anual,Externo
+2009-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,46.5,Anual,Externo
+2009-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,26966.7,Anual,Externo
+2009-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.72,Anual,Externo
+2009-01-01,PAPEL Y CARTÓN:     Valor,48.7,Anual,Externo
+2009-01-01,PAPEL Y CARTÓN:     Volumen Kilos,44583.6,Anual,Externo
+2009-01-01,PAPEL Y CARTÓN:     Precio,1.09,Anual,Externo
+2009-01-01,SUB-TOTAL,1779.4,Anual,Externo
+2009-01-01,OTROS PRODUCTOS,516.4,Anual,Externo
+2009-01-01,TOTAL MERCANCÍAS GENERALES,2295.8,Anual,Externo
+2010-01-01,BANANO:     Valor,335.4,Anual,Externo
+2010-01-01,BANANO:     Volumen Cajas 40 Lbs.,25979.9,Anual,Externo
+2010-01-01,BANANO:     Precio,12.91,Anual,Externo
+2010-01-01,CAFÉ:     Valor,722.6,Anual,Externo
+2010-01-01,CAFÉ:     Volumen Sacos 60 Kg.,3588.6,Anual,Externo
+2010-01-01,CAFÉ:     Precio,201.37,Anual,Externo
+2010-01-01,CAFÉ:     Volumen Sacos 46 Kg.,4680.7,Anual,Externo
+2010-01-01,CAFÉ:     Precio,154.38,Anual,Externo
+2010-01-01,MADERA:     Valor,22.3,Anual,Externo
+2010-01-01,MADERA:     Volumen P.T.,14530.5,Anual,Externo
+2010-01-01,MADERA:     Precio,1.53,Anual,Externo
+2010-01-01,ACEÍTE DE PALMA:     Valor,165.7,Anual,Externo
+2010-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,183545.8,Anual,Externo
+2010-01-01,ACEÍTE DE PALMA:     Precio,0.9,Anual,Externo
+2010-01-01,PLATA:     Valor,25.2,Anual,Externo
+2010-01-01,PLATA:     Volumen Onzas Troy,1932.5,Anual,Externo
+2010-01-01,PLATA:     Precio,13.02,Anual,Externo
+2010-01-01,PLOMO:     Valor,28.7,Anual,Externo
+2010-01-01,PLOMO:     Volumen Libras,38446.5,Anual,Externo
+2010-01-01,PLOMO:     Precio,0.75,Anual,Externo
+2010-01-01,ZINC:     Valor,42.7,Anual,Externo
+2010-01-01,ZINC:     Volumen Libras,78706.2,Anual,Externo
+2010-01-01,ZINC:     Precio,0.54,Anual,Externo
+2010-01-01,AZÚCAR:     Valor,44.4,Anual,Externo
+2010-01-01,AZÚCAR:     Volumen Kilos,90740.9,Anual,Externo
+2010-01-01,AZÚCAR:     Precio,0.49,Anual,Externo
+2010-01-01,CAMARÓN CULTIVADO:     Valor,135.2,Anual,Externo
+2010-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,21346.9,Anual,Externo
+2010-01-01,CAMARÓN CULTIVADO:     Precio,6.33,Anual,Externo
+2010-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,4.5,Anual,Externo
+2010-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,674.5,Anual,Externo
+2010-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,6.67,Anual,Externo
+2010-01-01,LANGOSTAS:     Valor,36.6,Anual,Externo
+2010-01-01,LANGOSTAS:     Volumen Kilos,1372.5,Anual,Externo
+2010-01-01,LANGOSTAS:     Precio,26.68,Anual,Externo
+2010-01-01,TILAPIAS:     Valor,56.8,Anual,Externo
+2010-01-01,TILAPIAS:     Volumen Kilos,7333.1,Anual,Externo
+2010-01-01,TILAPIAS:     Precio,7.75,Anual,Externo
+2010-01-01,MELONES Y SANDÍAS:     Valor,42.9,Anual,Externo
+2010-01-01,MELONES Y SANDÍAS:     Volumen Kilos,239610.6,Anual,Externo
+2010-01-01,MELONES Y SANDÍAS:     Precio,0.18,Anual,Externo
+2010-01-01,PIÑAS:     Valor,18.1,Anual,Externo
+2010-01-01,PIÑAS:     Volumen Kilos,36118.1,Anual,Externo
+2010-01-01,PIÑAS:     Precio,0.5,Anual,Externo
+2010-01-01,LEGUMBRES Y HORTALIZAS:     Valor,47.4,Anual,Externo
+2010-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,133835.8,Anual,Externo
+2010-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.35,Anual,Externo
+2010-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,30.4,Anual,Externo
+2010-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,29623.3,Anual,Externo
+2010-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.03,Anual,Externo
+2010-01-01,PUROS O CIGARROS:     Valor,73.5,Anual,Externo
+2010-01-01,PUROS O CIGARROS:     Volumen Kilos,3151.4,Anual,Externo
+2010-01-01,PUROS O CIGARROS:     Precio,23.31,Anual,Externo
+2010-01-01,CIGARRILLOS:     Valor,27.9,Anual,Externo
+2010-01-01,CIGARRILLOS:     Volumen Kilos,4326.9,Anual,Externo
+2010-01-01,CIGARRILLOS:     Precio,6.44,Anual,Externo
+2010-01-01,TABACO:     Valor,15.8,Anual,Externo
+2010-01-01,TABACO:     Volumen Kilos,1419.2,Anual,Externo
+2010-01-01,TABACO:     Precio,11.1,Anual,Externo
+2010-01-01,MANUFACTURAS DE MADERA:     Valor,20.4,Anual,Externo
+2010-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,30543.6,Anual,Externo
+2010-01-01,MANUFACTURAS DE MADERA:     Precio,0.67,Anual,Externo
+2010-01-01,MUEBLES DE MADERA:     Valor,3.9,Anual,Externo
+2010-01-01,MUEBLES DE MADERA:     Volumen Kilos,676.9,Anual,Externo
+2010-01-01,MUEBLES DE MADERA:     Precio,5.81,Anual,Externo
+2010-01-01,TEXTILES:     Valor,44.8,Anual,Externo
+2010-01-01,TEXTILES:     Volumen Kilos,63029.6,Anual,Externo
+2010-01-01,TEXTILES:     Precio,0.71,Anual,Externo
+2010-01-01,JABONES:     Valor,59.6,Anual,Externo
+2010-01-01,JABONES:     Volumen Kilos,61707.6,Anual,Externo
+2010-01-01,JABONES:     Precio,0.97,Anual,Externo
+2010-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,52.8,Anual,Externo
+2010-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,32784.5,Anual,Externo
+2010-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.61,Anual,Externo
+2010-01-01,PAPEL Y CARTÓN:     Valor,71.2,Anual,Externo
+2010-01-01,PAPEL Y CARTÓN:     Volumen Kilos,74541.7,Anual,Externo
+2010-01-01,PAPEL Y CARTÓN:     Precio,0.95,Anual,Externo
+2010-01-01,SUB-TOTAL,2128.7,Anual,Externo
+2010-01-01,OTROS PRODUCTOS,606.1,Anual,Externo
+2010-01-01,TOTAL MERCANCÍAS GENERALES,2734.8,Anual,Externo
+2011-01-01,BANANO:     Valor,397.8,Anual,Externo
+2011-01-01,BANANO:     Volumen Cajas 40 Lbs.,26953.1,Anual,Externo
+2011-01-01,BANANO:     Precio,14.76,Anual,Externo
+2011-01-01,CAFÉ:     Valor,1358.4,Anual,Externo
+2011-01-01,CAFÉ:     Volumen Sacos 60 Kg.,4215.5,Anual,Externo
+2011-01-01,CAFÉ:     Precio,322.25,Anual,Externo
+2011-01-01,CAFÉ:     Volumen Sacos 46 Kg.,5498.4,Anual,Externo
+2011-01-01,CAFÉ:     Precio,247.06,Anual,Externo
+2011-01-01,MADERA:     Valor,17.6,Anual,Externo
+2011-01-01,MADERA:     Volumen P.T.,11294.8,Anual,Externo
+2011-01-01,MADERA:     Precio,1.56,Anual,Externo
+2011-01-01,ACEÍTE DE PALMA:     Valor,270.1,Anual,Externo
+2011-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,209325.4,Anual,Externo
+2011-01-01,ACEÍTE DE PALMA:     Precio,1.29,Anual,Externo
+2011-01-01,PLATA:     Valor,40.6,Anual,Externo
+2011-01-01,PLATA:     Volumen Onzas Troy,1742.1,Anual,Externo
+2011-01-01,PLATA:     Precio,23.3,Anual,Externo
+2011-01-01,PLOMO:     Valor,26.2,Anual,Externo
+2011-01-01,PLOMO:     Volumen Libras,30625.5,Anual,Externo
+2011-01-01,PLOMO:     Precio,0.85,Anual,Externo
+2011-01-01,ZINC:     Valor,39.1,Anual,Externo
+2011-01-01,ZINC:     Volumen Libras,58313.7,Anual,Externo
+2011-01-01,ZINC:     Precio,0.67,Anual,Externo
+2011-01-01,AZÚCAR:     Valor,41.1,Anual,Externo
+2011-01-01,AZÚCAR:     Volumen Kilos,71252.8,Anual,Externo
+2011-01-01,AZÚCAR:     Precio,0.58,Anual,Externo
+2011-01-01,CAMARÓN CULTIVADO:     Valor,157.8,Anual,Externo
+2011-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,21885.1,Anual,Externo
+2011-01-01,CAMARÓN CULTIVADO:     Precio,7.21,Anual,Externo
+2011-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,5.6,Anual,Externo
+2011-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,664.4,Anual,Externo
+2011-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,8.42,Anual,Externo
+2011-01-01,LANGOSTAS:     Valor,42.4,Anual,Externo
+2011-01-01,LANGOSTAS:     Volumen Kilos,1437.8,Anual,Externo
+2011-01-01,LANGOSTAS:     Precio,29.51,Anual,Externo
+2011-01-01,TILAPIAS:     Valor,62.8,Anual,Externo
+2011-01-01,TILAPIAS:     Volumen Kilos,8195.2,Anual,Externo
+2011-01-01,TILAPIAS:     Precio,7.66,Anual,Externo
+2011-01-01,MELONES Y SANDÍAS:     Valor,54.0,Anual,Externo
+2011-01-01,MELONES Y SANDÍAS:     Volumen Kilos,291313.0,Anual,Externo
+2011-01-01,MELONES Y SANDÍAS:     Precio,0.19,Anual,Externo
+2011-01-01,PIÑAS:     Valor,20.9,Anual,Externo
+2011-01-01,PIÑAS:     Volumen Kilos,42033.9,Anual,Externo
+2011-01-01,PIÑAS:     Precio,0.5,Anual,Externo
+2011-01-01,LEGUMBRES Y HORTALIZAS:     Valor,72.7,Anual,Externo
+2011-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,120497.6,Anual,Externo
+2011-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.6,Anual,Externo
+2011-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,34.7,Anual,Externo
+2011-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,31372.6,Anual,Externo
+2011-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.11,Anual,Externo
+2011-01-01,PUROS O CIGARROS:     Valor,81.4,Anual,Externo
+2011-01-01,PUROS O CIGARROS:     Volumen Kilos,3252.3,Anual,Externo
+2011-01-01,PUROS O CIGARROS:     Precio,25.03,Anual,Externo
+2011-01-01,CIGARRILLOS:     Valor,30.5,Anual,Externo
+2011-01-01,CIGARRILLOS:     Volumen Kilos,4576.1,Anual,Externo
+2011-01-01,CIGARRILLOS:     Precio,6.66,Anual,Externo
+2011-01-01,TABACO:     Valor,16.6,Anual,Externo
+2011-01-01,TABACO:     Volumen Kilos,1523.1,Anual,Externo
+2011-01-01,TABACO:     Precio,10.87,Anual,Externo
+2011-01-01,MANUFACTURAS DE MADERA:     Valor,16.6,Anual,Externo
+2011-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,28369.1,Anual,Externo
+2011-01-01,MANUFACTURAS DE MADERA:     Precio,0.58,Anual,Externo
+2011-01-01,MUEBLES DE MADERA:     Valor,7.1,Anual,Externo
+2011-01-01,MUEBLES DE MADERA:     Volumen Kilos,1411.9,Anual,Externo
+2011-01-01,MUEBLES DE MADERA:     Precio,5.0,Anual,Externo
+2011-01-01,TEXTILES:     Valor,57.7,Anual,Externo
+2011-01-01,TEXTILES:     Volumen Kilos,84598.1,Anual,Externo
+2011-01-01,TEXTILES:     Precio,0.68,Anual,Externo
+2011-01-01,JABONES:     Valor,68.9,Anual,Externo
+2011-01-01,JABONES:     Volumen Kilos,56965.1,Anual,Externo
+2011-01-01,JABONES:     Precio,1.21,Anual,Externo
+2011-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,78.4,Anual,Externo
+2011-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,40395.2,Anual,Externo
+2011-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.94,Anual,Externo
+2011-01-01,PAPEL Y CARTÓN:     Valor,63.7,Anual,Externo
+2011-01-01,PAPEL Y CARTÓN:     Volumen Kilos,59780.0,Anual,Externo
+2011-01-01,PAPEL Y CARTÓN:     Precio,1.07,Anual,Externo
+2011-01-01,SUB-TOTAL,3062.6,Anual,Externo
+2011-01-01,OTROS PRODUCTOS,803.9,Anual,Externo
+2011-01-01,TOTAL MERCANCÍAS GENERALES,3866.4,Anual,Externo
+2012-01-01,BANANO:     Valor,448.9,Anual,Externo
+2012-01-01,BANANO:     Volumen Cajas 40 Lbs.,29783.0,Anual,Externo
+2012-01-01,BANANO:     Precio,15.07,Anual,Externo
+2012-01-01,CAFÉ:     Valor,1402.4,Anual,Externo
+2012-01-01,CAFÉ:     Volumen Sacos 60 Kg.,5508.0,Anual,Externo
+2012-01-01,CAFÉ:     Precio,254.61,Anual,Externo
+2012-01-01,CAFÉ:     Volumen Sacos 46 Kg.,7184.3,Anual,Externo
+2012-01-01,CAFÉ:     Precio,195.2,Anual,Externo
+2012-01-01,MADERA:     Valor,20.2,Anual,Externo
+2012-01-01,MADERA:     Volumen P.T.,13887.9,Anual,Externo
+2012-01-01,MADERA:     Precio,1.45,Anual,Externo
+2012-01-01,ACEÍTE DE PALMA:     Valor,319.2,Anual,Externo
+2012-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,306228.8,Anual,Externo
+2012-01-01,ACEÍTE DE PALMA:     Precio,1.04,Anual,Externo
+2012-01-01,PLATA:     Valor,23.2,Anual,Externo
+2012-01-01,PLATA:     Volumen Onzas Troy,1005.8,Anual,Externo
+2012-01-01,PLATA:     Precio,23.09,Anual,Externo
+2012-01-01,PLOMO:     Valor,14.0,Anual,Externo
+2012-01-01,PLOMO:     Volumen Libras,18542.5,Anual,Externo
+2012-01-01,PLOMO:     Precio,0.76,Anual,Externo
+2012-01-01,ZINC:     Valor,26.2,Anual,Externo
+2012-01-01,ZINC:     Volumen Libras,58515.2,Anual,Externo
+2012-01-01,ZINC:     Precio,0.45,Anual,Externo
+2012-01-01,AZÚCAR:     Valor,56.3,Anual,Externo
+2012-01-01,AZÚCAR:     Volumen Kilos,90878.9,Anual,Externo
+2012-01-01,AZÚCAR:     Precio,0.62,Anual,Externo
+2012-01-01,CAMARÓN CULTIVADO:     Valor,176.0,Anual,Externo
+2012-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,27155.9,Anual,Externo
+2012-01-01,CAMARÓN CULTIVADO:     Precio,6.48,Anual,Externo
+2012-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,2.0,Anual,Externo
+2012-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,257.0,Anual,Externo
+2012-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,7.71,Anual,Externo
+2012-01-01,LANGOSTAS:     Valor,44.3,Anual,Externo
+2012-01-01,LANGOSTAS:     Volumen Kilos,1773.9,Anual,Externo
+2012-01-01,LANGOSTAS:     Precio,24.95,Anual,Externo
+2012-01-01,TILAPIAS:     Valor,60.4,Anual,Externo
+2012-01-01,TILAPIAS:     Volumen Kilos,7700.0,Anual,Externo
+2012-01-01,TILAPIAS:     Precio,7.85,Anual,Externo
+2012-01-01,MELONES Y SANDÍAS:     Valor,51.5,Anual,Externo
+2012-01-01,MELONES Y SANDÍAS:     Volumen Kilos,266985.0,Anual,Externo
+2012-01-01,MELONES Y SANDÍAS:     Precio,0.19,Anual,Externo
+2012-01-01,PIÑAS:     Valor,20.5,Anual,Externo
+2012-01-01,PIÑAS:     Volumen Kilos,42499.0,Anual,Externo
+2012-01-01,PIÑAS:     Precio,0.48,Anual,Externo
+2012-01-01,LEGUMBRES Y HORTALIZAS:     Valor,57.9,Anual,Externo
+2012-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,138126.5,Anual,Externo
+2012-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.42,Anual,Externo
+2012-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,40.0,Anual,Externo
+2012-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,33828.4,Anual,Externo
+2012-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.18,Anual,Externo
+2012-01-01,PUROS O CIGARROS:     Valor,88.9,Anual,Externo
+2012-01-01,PUROS O CIGARROS:     Volumen Kilos,6353.8,Anual,Externo
+2012-01-01,PUROS O CIGARROS:     Precio,13.99,Anual,Externo
+2012-01-01,CIGARRILLOS:     Valor,30.8,Anual,Externo
+2012-01-01,CIGARRILLOS:     Volumen Kilos,4443.6,Anual,Externo
+2012-01-01,CIGARRILLOS:     Precio,6.94,Anual,Externo
+2012-01-01,TABACO:     Valor,18.3,Anual,Externo
+2012-01-01,TABACO:     Volumen Kilos,1664.7,Anual,Externo
+2012-01-01,TABACO:     Precio,11.0,Anual,Externo
+2012-01-01,MANUFACTURAS DE MADERA:     Valor,19.6,Anual,Externo
+2012-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,35110.4,Anual,Externo
+2012-01-01,MANUFACTURAS DE MADERA:     Precio,0.56,Anual,Externo
+2012-01-01,MUEBLES DE MADERA:     Valor,4.6,Anual,Externo
+2012-01-01,MUEBLES DE MADERA:     Volumen Kilos,732.0,Anual,Externo
+2012-01-01,MUEBLES DE MADERA:     Precio,6.28,Anual,Externo
+2012-01-01,TEXTILES:     Valor,78.0,Anual,Externo
+2012-01-01,TEXTILES:     Volumen Kilos,103684.8,Anual,Externo
+2012-01-01,TEXTILES:     Precio,0.75,Anual,Externo
+2012-01-01,JABONES:     Valor,79.7,Anual,Externo
+2012-01-01,JABONES:     Volumen Kilos,64930.5,Anual,Externo
+2012-01-01,JABONES:     Precio,1.23,Anual,Externo
+2012-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,96.0,Anual,Externo
+2012-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,48375.2,Anual,Externo
+2012-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.98,Anual,Externo
+2012-01-01,PAPEL Y CARTÓN:     Valor,85.3,Anual,Externo
+2012-01-01,PAPEL Y CARTÓN:     Volumen Kilos,85876.6,Anual,Externo
+2012-01-01,PAPEL Y CARTÓN:     Precio,0.99,Anual,Externo
+2012-01-01,SUB-TOTAL,3264.3,Anual,Externo
+2012-01-01,OTROS PRODUCTOS,1031.1,Anual,Externo
+2012-01-01,TOTAL MERCANCÍAS GENERALES,4295.4,Anual,Externo
+2013-01-01,BANANO:     Valor,490.1,Anual,Externo
+2013-01-01,BANANO:     Volumen Cajas 40 Lbs.,35482.4,Anual,Externo
+2013-01-01,BANANO:     Precio,13.81,Anual,Externo
+2013-01-01,CAFÉ:     Valor,749.8,Anual,Externo
+2013-01-01,CAFÉ:     Volumen Sacos 60 Kg.,4184.8,Anual,Externo
+2013-01-01,CAFÉ:     Precio,179.17,Anual,Externo
+2013-01-01,CAFÉ:     Volumen Sacos 46 Kg.,5458.4,Anual,Externo
+2013-01-01,CAFÉ:     Precio,137.36,Anual,Externo
+2013-01-01,MADERA:     Valor,21.5,Anual,Externo
+2013-01-01,MADERA:     Volumen P.T.,15262.2,Anual,Externo
+2013-01-01,MADERA:     Precio,1.41,Anual,Externo
+2013-01-01,ACEÍTE DE PALMA:     Valor,286.4,Anual,Externo
+2013-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,323938.5,Anual,Externo
+2013-01-01,ACEÍTE DE PALMA:     Precio,0.88,Anual,Externo
+2013-01-01,PLATA:     Valor,25.9,Anual,Externo
+2013-01-01,PLATA:     Volumen Onzas Troy,1361.4,Anual,Externo
+2013-01-01,PLATA:     Precio,18.99,Anual,Externo
+2013-01-01,PLOMO:     Valor,15.9,Anual,Externo
+2013-01-01,PLOMO:     Volumen Libras,21244.6,Anual,Externo
+2013-01-01,PLOMO:     Precio,0.75,Anual,Externo
+2013-01-01,ZINC:     Valor,28.5,Anual,Externo
+2013-01-01,ZINC:     Volumen Libras,52575.2,Anual,Externo
+2013-01-01,ZINC:     Precio,0.54,Anual,Externo
+2013-01-01,AZÚCAR:     Valor,66.6,Anual,Externo
+2013-01-01,AZÚCAR:     Volumen Kilos,140268.7,Anual,Externo
+2013-01-01,AZÚCAR:     Precio,0.47,Anual,Externo
+2013-01-01,CAMARÓN CULTIVADO:     Valor,225.3,Anual,Externo
+2013-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,30609.4,Anual,Externo
+2013-01-01,CAMARÓN CULTIVADO:     Precio,7.36,Anual,Externo
+2013-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,5.7,Anual,Externo
+2013-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,617.1,Anual,Externo
+2013-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,9.2,Anual,Externo
+2013-01-01,LANGOSTAS:     Valor,42.2,Anual,Externo
+2013-01-01,LANGOSTAS:     Volumen Kilos,1657.3,Anual,Externo
+2013-01-01,LANGOSTAS:     Precio,25.47,Anual,Externo
+2013-01-01,TILAPIAS:     Valor,65.2,Anual,Externo
+2013-01-01,TILAPIAS:     Volumen Kilos,8303.4,Anual,Externo
+2013-01-01,TILAPIAS:     Precio,7.85,Anual,Externo
+2013-01-01,MELONES Y SANDÍAS:     Valor,58.8,Anual,Externo
+2013-01-01,MELONES Y SANDÍAS:     Volumen Kilos,274679.2,Anual,Externo
+2013-01-01,MELONES Y SANDÍAS:     Precio,0.21,Anual,Externo
+2013-01-01,PIÑAS:     Valor,19.8,Anual,Externo
+2013-01-01,PIÑAS:     Volumen Kilos,41621.5,Anual,Externo
+2013-01-01,PIÑAS:     Precio,0.47,Anual,Externo
+2013-01-01,LEGUMBRES Y HORTALIZAS:     Valor,63.5,Anual,Externo
+2013-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,149474.3,Anual,Externo
+2013-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.42,Anual,Externo
+2013-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,41.1,Anual,Externo
+2013-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,33350.1,Anual,Externo
+2013-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.23,Anual,Externo
+2013-01-01,PUROS O CIGARROS:     Valor,92.6,Anual,Externo
+2013-01-01,PUROS O CIGARROS:     Volumen Kilos,3475.9,Anual,Externo
+2013-01-01,PUROS O CIGARROS:     Precio,26.64,Anual,Externo
+2013-01-01,CIGARRILLOS:     Valor,32.2,Anual,Externo
+2013-01-01,CIGARRILLOS:     Volumen Kilos,4044.9,Anual,Externo
+2013-01-01,CIGARRILLOS:     Precio,7.95,Anual,Externo
+2013-01-01,TABACO:     Valor,18.3,Anual,Externo
+2013-01-01,TABACO:     Volumen Kilos,1326.5,Anual,Externo
+2013-01-01,TABACO:     Precio,13.76,Anual,Externo
+2013-01-01,MANUFACTURAS DE MADERA:     Valor,24.4,Anual,Externo
+2013-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,34537.1,Anual,Externo
+2013-01-01,MANUFACTURAS DE MADERA:     Precio,0.71,Anual,Externo
+2013-01-01,MUEBLES DE MADERA:     Valor,5.3,Anual,Externo
+2013-01-01,MUEBLES DE MADERA:     Volumen Kilos,939.4,Anual,Externo
+2013-01-01,MUEBLES DE MADERA:     Precio,5.63,Anual,Externo
+2013-01-01,TEXTILES:     Valor,86.3,Anual,Externo
+2013-01-01,TEXTILES:     Volumen Kilos,107244.5,Anual,Externo
+2013-01-01,TEXTILES:     Precio,0.81,Anual,Externo
+2013-01-01,JABONES:     Valor,97.0,Anual,Externo
+2013-01-01,JABONES:     Volumen Kilos,81488.3,Anual,Externo
+2013-01-01,JABONES:     Precio,1.19,Anual,Externo
+2013-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,90.1,Anual,Externo
+2013-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,50583.3,Anual,Externo
+2013-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.78,Anual,Externo
+2013-01-01,PAPEL Y CARTÓN:     Valor,94.1,Anual,Externo
+2013-01-01,PAPEL Y CARTÓN:     Volumen Kilos,80244.0,Anual,Externo
+2013-01-01,PAPEL Y CARTÓN:     Precio,1.17,Anual,Externo
+2013-01-01,SUB-TOTAL,2746.3,Anual,Externo
+2013-01-01,OTROS PRODUCTOS,1041.6,Anual,Externo
+2013-01-01,TOTAL MERCANCÍAS GENERALES,3787.9,Anual,Externo
+2014-01-01,BANANO:     Valor,456.0,Anual,Externo
+2014-01-01,BANANO:     Volumen Cajas 40 Lbs.,32988.6,Anual,Externo
+2014-01-01,BANANO:     Precio,13.82,Anual,Externo
+2014-01-01,CAFÉ:     Valor,836.4,Anual,Externo
+2014-01-01,CAFÉ:     Volumen Sacos 60 Kg.,4251.8,Anual,Externo
+2014-01-01,CAFÉ:     Precio,196.72,Anual,Externo
+2014-01-01,CAFÉ:     Volumen Sacos 46 Kg.,5545.9,Anual,Externo
+2014-01-01,CAFÉ:     Precio,150.82,Anual,Externo
+2014-01-01,MADERA:     Valor,30.7,Anual,Externo
+2014-01-01,MADERA:     Volumen P.T.,20764.7,Anual,Externo
+2014-01-01,MADERA:     Precio,1.48,Anual,Externo
+2014-01-01,ACEÍTE DE PALMA:     Valor,312.1,Anual,Externo
+2014-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,331858.2,Anual,Externo
+2014-01-01,ACEÍTE DE PALMA:     Precio,0.94,Anual,Externo
+2014-01-01,PLATA:     Valor,32.4,Anual,Externo
+2014-01-01,PLATA:     Volumen Onzas Troy,1750.0,Anual,Externo
+2014-01-01,PLATA:     Precio,18.52,Anual,Externo
+2014-01-01,PLOMO:     Valor,20.0,Anual,Externo
+2014-01-01,PLOMO:     Volumen Libras,30370.9,Anual,Externo
+2014-01-01,PLOMO:     Precio,0.66,Anual,Externo
+2014-01-01,ZINC:     Valor,27.1,Anual,Externo
+2014-01-01,ZINC:     Volumen Libras,46429.1,Anual,Externo
+2014-01-01,ZINC:     Precio,0.58,Anual,Externo
+2014-01-01,AZÚCAR:     Valor,74.3,Anual,Externo
+2014-01-01,AZÚCAR:     Volumen Kilos,179522.9,Anual,Externo
+2014-01-01,AZÚCAR:     Precio,0.41,Anual,Externo
+2014-01-01,CAMARÓN CULTIVADO:     Valor,242.1,Anual,Externo
+2014-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,30437.2,Anual,Externo
+2014-01-01,CAMARÓN CULTIVADO:     Precio,7.96,Anual,Externo
+2014-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,8.4,Anual,Externo
+2014-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,855.2,Anual,Externo
+2014-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,9.86,Anual,Externo
+2014-01-01,LANGOSTAS:     Valor,38.1,Anual,Externo
+2014-01-01,LANGOSTAS:     Volumen Kilos,1500.5,Anual,Externo
+2014-01-01,LANGOSTAS:     Precio,25.4,Anual,Externo
+2014-01-01,TILAPIAS:     Valor,74.1,Anual,Externo
+2014-01-01,TILAPIAS:     Volumen Kilos,10117.7,Anual,Externo
+2014-01-01,TILAPIAS:     Precio,7.33,Anual,Externo
+2014-01-01,MELONES Y SANDÍAS:     Valor,64.9,Anual,Externo
+2014-01-01,MELONES Y SANDÍAS:     Volumen Kilos,291543.2,Anual,Externo
+2014-01-01,MELONES Y SANDÍAS:     Precio,0.22,Anual,Externo
+2014-01-01,PIÑAS:     Valor,20.7,Anual,Externo
+2014-01-01,PIÑAS:     Volumen Kilos,44306.5,Anual,Externo
+2014-01-01,PIÑAS:     Precio,0.47,Anual,Externo
+2014-01-01,LEGUMBRES Y HORTALIZAS:     Valor,71.1,Anual,Externo
+2014-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,151983.7,Anual,Externo
+2014-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.47,Anual,Externo
+2014-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,69.6,Anual,Externo
+2014-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,76768.1,Anual,Externo
+2014-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,0.91,Anual,Externo
+2014-01-01,PUROS O CIGARROS:     Valor,87.4,Anual,Externo
+2014-01-01,PUROS O CIGARROS:     Volumen Kilos,2295.6,Anual,Externo
+2014-01-01,PUROS O CIGARROS:     Precio,38.05,Anual,Externo
+2014-01-01,CIGARRILLOS:     Valor,32.9,Anual,Externo
+2014-01-01,CIGARRILLOS:     Volumen Kilos,4133.0,Anual,Externo
+2014-01-01,CIGARRILLOS:     Precio,7.95,Anual,Externo
+2014-01-01,TABACO:     Valor,16.9,Anual,Externo
+2014-01-01,TABACO:     Volumen Kilos,1228.3,Anual,Externo
+2014-01-01,TABACO:     Precio,13.78,Anual,Externo
+2014-01-01,MANUFACTURAS DE MADERA:     Valor,24.8,Anual,Externo
+2014-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,37312.7,Anual,Externo
+2014-01-01,MANUFACTURAS DE MADERA:     Precio,0.66,Anual,Externo
+2014-01-01,MUEBLES DE MADERA:     Valor,8.4,Anual,Externo
+2014-01-01,MUEBLES DE MADERA:     Volumen Kilos,1551.2,Anual,Externo
+2014-01-01,MUEBLES DE MADERA:     Precio,5.44,Anual,Externo
+2014-01-01,TEXTILES:     Valor,87.2,Anual,Externo
+2014-01-01,TEXTILES:     Volumen Kilos,120767.3,Anual,Externo
+2014-01-01,TEXTILES:     Precio,0.72,Anual,Externo
+2014-01-01,JABONES:     Valor,88.1,Anual,Externo
+2014-01-01,JABONES:     Volumen Kilos,80380.2,Anual,Externo
+2014-01-01,JABONES:     Precio,1.1,Anual,Externo
+2014-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,88.1,Anual,Externo
+2014-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,57691.6,Anual,Externo
+2014-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.53,Anual,Externo
+2014-01-01,PAPEL Y CARTÓN:     Valor,105.8,Anual,Externo
+2014-01-01,PAPEL Y CARTÓN:     Volumen Kilos,102232.9,Anual,Externo
+2014-01-01,PAPEL Y CARTÓN:     Precio,1.04,Anual,Externo
+2014-01-01,SUB-TOTAL,2917.8,Anual,Externo
+2014-01-01,OTROS PRODUCTOS,1035.4,Anual,Externo
+2014-01-01,TOTAL MERCANCÍAS GENERALES,3953.2,Anual,Externo
+2015-01-01,BANANO:     Valor,505.0,Anual,Externo
+2015-01-01,BANANO:     Volumen Cajas 40 Lbs.,35232.2,Anual,Externo
+2015-01-01,BANANO:     Precio,14.33,Anual,Externo
+2015-01-01,CAFÉ:     Valor,986.0,Anual,Externo
+2015-01-01,CAFÉ:     Volumen Sacos 60 Kg.,5042.3,Anual,Externo
+2015-01-01,CAFÉ:     Precio,195.56,Anual,Externo
+2015-01-01,CAFÉ:     Volumen Sacos 46 Kg.,6576.9,Anual,Externo
+2015-01-01,CAFÉ:     Precio,149.93,Anual,Externo
+2015-01-01,MADERA:     Valor,28.7,Anual,Externo
+2015-01-01,MADERA:     Volumen P.T.,20842.9,Anual,Externo
+2015-01-01,MADERA:     Precio,1.38,Anual,Externo
+2015-01-01,ACEÍTE DE PALMA:     Valor,242.7,Anual,Externo
+2015-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,342405.5,Anual,Externo
+2015-01-01,ACEÍTE DE PALMA:     Precio,0.71,Anual,Externo
+2015-01-01,PLATA:     Valor,16.3,Anual,Externo
+2015-01-01,PLATA:     Volumen Onzas Troy,1045.6,Anual,Externo
+2015-01-01,PLATA:     Precio,15.57,Anual,Externo
+2015-01-01,PLOMO:     Valor,10.1,Anual,Externo
+2015-01-01,PLOMO:     Volumen Libras,21947.8,Anual,Externo
+2015-01-01,PLOMO:     Precio,0.46,Anual,Externo
+2015-01-01,ZINC:     Valor,21.6,Anual,Externo
+2015-01-01,ZINC:     Volumen Libras,42764.1,Anual,Externo
+2015-01-01,ZINC:     Precio,0.5,Anual,Externo
+2015-01-01,AZÚCAR:     Valor,61.1,Anual,Externo
+2015-01-01,AZÚCAR:     Volumen Kilos,159342.1,Anual,Externo
+2015-01-01,AZÚCAR:     Precio,0.38,Anual,Externo
+2015-01-01,CAMARÓN CULTIVADO:     Valor,177.9,Anual,Externo
+2015-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,25775.2,Anual,Externo
+2015-01-01,CAMARÓN CULTIVADO:     Precio,6.9,Anual,Externo
+2015-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,3.5,Anual,Externo
+2015-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,590.0,Anual,Externo
+2015-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,5.9,Anual,Externo
+2015-01-01,LANGOSTAS:     Valor,51.8,Anual,Externo
+2015-01-01,LANGOSTAS:     Volumen Kilos,2052.1,Anual,Externo
+2015-01-01,LANGOSTAS:     Precio,25.23,Anual,Externo
+2015-01-01,TILAPIAS:     Valor,64.2,Anual,Externo
+2015-01-01,TILAPIAS:     Volumen Kilos,9885.3,Anual,Externo
+2015-01-01,TILAPIAS:     Precio,6.5,Anual,Externo
+2015-01-01,MELONES Y SANDÍAS:     Valor,56.8,Anual,Externo
+2015-01-01,MELONES Y SANDÍAS:     Volumen Kilos,265392.4,Anual,Externo
+2015-01-01,MELONES Y SANDÍAS:     Precio,0.21,Anual,Externo
+2015-01-01,PIÑAS:     Valor,25.8,Anual,Externo
+2015-01-01,PIÑAS:     Volumen Kilos,55372.4,Anual,Externo
+2015-01-01,PIÑAS:     Precio,0.47,Anual,Externo
+2015-01-01,LEGUMBRES Y HORTALIZAS:     Valor,73.3,Anual,Externo
+2015-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,162406.1,Anual,Externo
+2015-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.45,Anual,Externo
+2015-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,62.5,Anual,Externo
+2015-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,47655.4,Anual,Externo
+2015-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.31,Anual,Externo
+2015-01-01,PUROS O CIGARROS:     Valor,96.0,Anual,Externo
+2015-01-01,PUROS O CIGARROS:     Volumen Kilos,2284.7,Anual,Externo
+2015-01-01,PUROS O CIGARROS:     Precio,42.02,Anual,Externo
+2015-01-01,CIGARRILLOS:     Valor,34.7,Anual,Externo
+2015-01-01,CIGARRILLOS:     Volumen Kilos,4083.8,Anual,Externo
+2015-01-01,CIGARRILLOS:     Precio,8.49,Anual,Externo
+2015-01-01,TABACO:     Valor,21.5,Anual,Externo
+2015-01-01,TABACO:     Volumen Kilos,1559.2,Anual,Externo
+2015-01-01,TABACO:     Precio,13.79,Anual,Externo
+2015-01-01,MANUFACTURAS DE MADERA:     Valor,28.7,Anual,Externo
+2015-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,40989.3,Anual,Externo
+2015-01-01,MANUFACTURAS DE MADERA:     Precio,0.7,Anual,Externo
+2015-01-01,MUEBLES DE MADERA:     Valor,8.5,Anual,Externo
+2015-01-01,MUEBLES DE MADERA:     Volumen Kilos,1529.9,Anual,Externo
+2015-01-01,MUEBLES DE MADERA:     Precio,5.53,Anual,Externo
+2015-01-01,TEXTILES:     Valor,72.4,Anual,Externo
+2015-01-01,TEXTILES:     Volumen Kilos,128871.4,Anual,Externo
+2015-01-01,TEXTILES:     Precio,0.56,Anual,Externo
+2015-01-01,JABONES:     Valor,95.7,Anual,Externo
+2015-01-01,JABONES:     Volumen Kilos,88841.1,Anual,Externo
+2015-01-01,JABONES:     Precio,1.08,Anual,Externo
+2015-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,86.8,Anual,Externo
+2015-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,55899.7,Anual,Externo
+2015-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.55,Anual,Externo
+2015-01-01,PAPEL Y CARTÓN:     Valor,112.5,Anual,Externo
+2015-01-01,PAPEL Y CARTÓN:     Volumen Kilos,99952.5,Anual,Externo
+2015-01-01,PAPEL Y CARTÓN:     Precio,1.13,Anual,Externo
+2015-01-01,SUB-TOTAL,2943.9,Anual,Externo
+2015-01-01,OTROS PRODUCTOS,918.3,Anual,Externo
+2015-01-01,TOTAL MERCANCÍAS GENERALES,3862.3,Anual,Externo
+2016-01-01,BANANO:     Valor,509.0,Anual,Externo
+2016-01-01,BANANO:     Volumen Cajas 40 Lbs.,33983.9,Anual,Externo
+2016-01-01,BANANO:     Precio,14.98,Anual,Externo
+2016-01-01,CAFÉ:     Valor,912.8,Anual,Externo
+2016-01-01,CAFÉ:     Volumen Sacos 60 Kg.,5489.1,Anual,Externo
+2016-01-01,CAFÉ:     Precio,166.3,Anual,Externo
+2016-01-01,CAFÉ:     Volumen Sacos 46 Kg.,7159.7,Anual,Externo
+2016-01-01,CAFÉ:     Precio,127.5,Anual,Externo
+2016-01-01,MADERA:     Valor,40.0,Anual,Externo
+2016-01-01,MADERA:     Volumen P.T.,32940.4,Anual,Externo
+2016-01-01,MADERA:     Precio,1.21,Anual,Externo
+2016-01-01,ACEÍTE DE PALMA:     Valor,329.5,Anual,Externo
+2016-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,435639.3,Anual,Externo
+2016-01-01,ACEÍTE DE PALMA:     Precio,0.76,Anual,Externo
+2016-01-01,PLATA:     Valor,9.9,Anual,Externo
+2016-01-01,PLATA:     Volumen Onzas Troy,639.6,Anual,Externo
+2016-01-01,PLATA:     Precio,15.43,Anual,Externo
+2016-01-01,PLOMO:     Valor,6.1,Anual,Externo
+2016-01-01,PLOMO:     Volumen Libras,9855.2,Anual,Externo
+2016-01-01,PLOMO:     Precio,0.62,Anual,Externo
+2016-01-01,ZINC:     Valor,23.8,Anual,Externo
+2016-01-01,ZINC:     Volumen Libras,32134.5,Anual,Externo
+2016-01-01,ZINC:     Precio,0.74,Anual,Externo
+2016-01-01,AZÚCAR:     Valor,58.9,Anual,Externo
+2016-01-01,AZÚCAR:     Volumen Kilos,148781.1,Anual,Externo
+2016-01-01,AZÚCAR:     Precio,0.4,Anual,Externo
+2016-01-01,CAMARÓN CULTIVADO:     Valor,216.2,Anual,Externo
+2016-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,30929.4,Anual,Externo
+2016-01-01,CAMARÓN CULTIVADO:     Precio,6.99,Anual,Externo
+2016-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,4.0,Anual,Externo
+2016-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,613.5,Anual,Externo
+2016-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,6.52,Anual,Externo
+2016-01-01,LANGOSTAS:     Valor,41.9,Anual,Externo
+2016-01-01,LANGOSTAS:     Volumen Kilos,1831.9,Anual,Externo
+2016-01-01,LANGOSTAS:     Precio,22.85,Anual,Externo
+2016-01-01,TILAPIAS:     Valor,50.9,Anual,Externo
+2016-01-01,TILAPIAS:     Volumen Kilos,8865.7,Anual,Externo
+2016-01-01,TILAPIAS:     Precio,5.74,Anual,Externo
+2016-01-01,MELONES Y SANDÍAS:     Valor,53.3,Anual,Externo
+2016-01-01,MELONES Y SANDÍAS:     Volumen Kilos,268122.6,Anual,Externo
+2016-01-01,MELONES Y SANDÍAS:     Precio,0.2,Anual,Externo
+2016-01-01,PIÑAS:     Valor,27.2,Anual,Externo
+2016-01-01,PIÑAS:     Volumen Kilos,56705.4,Anual,Externo
+2016-01-01,PIÑAS:     Precio,0.48,Anual,Externo
+2016-01-01,LEGUMBRES Y HORTALIZAS:     Valor,89.7,Anual,Externo
+2016-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,183973.6,Anual,Externo
+2016-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.49,Anual,Externo
+2016-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,60.7,Anual,Externo
+2016-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,36427.3,Anual,Externo
+2016-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.67,Anual,Externo
+2016-01-01,PUROS O CIGARROS:     Valor,99.5,Anual,Externo
+2016-01-01,PUROS O CIGARROS:     Volumen Kilos,2213.4,Anual,Externo
+2016-01-01,PUROS O CIGARROS:     Precio,44.97,Anual,Externo
+2016-01-01,CIGARRILLOS:     Valor,32.9,Anual,Externo
+2016-01-01,CIGARRILLOS:     Volumen Kilos,3711.0,Anual,Externo
+2016-01-01,CIGARRILLOS:     Precio,8.87,Anual,Externo
+2016-01-01,TABACO:     Valor,20.5,Anual,Externo
+2016-01-01,TABACO:     Volumen Kilos,1158.1,Anual,Externo
+2016-01-01,TABACO:     Precio,17.72,Anual,Externo
+2016-01-01,MANUFACTURAS DE MADERA:     Valor,21.1,Anual,Externo
+2016-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,31067.1,Anual,Externo
+2016-01-01,MANUFACTURAS DE MADERA:     Precio,0.68,Anual,Externo
+2016-01-01,MUEBLES DE MADERA:     Valor,7.9,Anual,Externo
+2016-01-01,MUEBLES DE MADERA:     Volumen Kilos,2145.1,Anual,Externo
+2016-01-01,MUEBLES DE MADERA:     Precio,3.68,Anual,Externo
+2016-01-01,TEXTILES:     Valor,59.0,Anual,Externo
+2016-01-01,TEXTILES:     Volumen Kilos,85106.0,Anual,Externo
+2016-01-01,TEXTILES:     Precio,0.69,Anual,Externo
+2016-01-01,JABONES:     Valor,104.1,Anual,Externo
+2016-01-01,JABONES:     Volumen Kilos,98756.3,Anual,Externo
+2016-01-01,JABONES:     Precio,1.05,Anual,Externo
+2016-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,87.1,Anual,Externo
+2016-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,64324.5,Anual,Externo
+2016-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.35,Anual,Externo
+2016-01-01,PAPEL Y CARTÓN:     Valor,72.1,Anual,Externo
+2016-01-01,PAPEL Y CARTÓN:     Volumen Kilos,72717.1,Anual,Externo
+2016-01-01,PAPEL Y CARTÓN:     Precio,0.99,Anual,Externo
+2016-01-01,SUB-TOTAL,2938.0,Anual,Externo
+2016-01-01,OTROS PRODUCTOS,874.6,Anual,Externo
+2016-01-01,TOTAL MERCANCÍAS GENERALES,3812.6,Anual,Externo
+2017-01-01,BANANO:     Valor,522.7,Anual,Externo
+2017-01-01,BANANO:     Volumen Cajas 40 Lbs.,32422.3,Anual,Externo
+2017-01-01,BANANO:     Precio,16.12,Anual,Externo
+2017-01-01,CAFÉ:     Valor,1317.5,Anual,Externo
+2017-01-01,CAFÉ:     Volumen Sacos 60 Kg.,7340.8,Anual,Externo
+2017-01-01,CAFÉ:     Precio,179.47,Anual,Externo
+2017-01-01,CAFÉ:     Volumen Sacos 46 Kg.,9575.0,Anual,Externo
+2017-01-01,CAFÉ:     Precio,137.6,Anual,Externo
+2017-01-01,MADERA:     Valor,37.0,Anual,Externo
+2017-01-01,MADERA:     Volumen P.T.,30655.2,Anual,Externo
+2017-01-01,MADERA:     Precio,1.21,Anual,Externo
+2017-01-01,ACEÍTE DE PALMA:     Valor,415.8,Anual,Externo
+2017-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,531705.8,Anual,Externo
+2017-01-01,ACEÍTE DE PALMA:     Precio,0.78,Anual,Externo
+2017-01-01,PLATA:     Valor,9.8,Anual,Externo
+2017-01-01,PLATA:     Volumen Onzas Troy,537.0,Anual,Externo
+2017-01-01,PLATA:     Precio,18.17,Anual,Externo
+2017-01-01,PLOMO:     Valor,9.6,Anual,Externo
+2017-01-01,PLOMO:     Volumen Libras,10289.6,Anual,Externo
+2017-01-01,PLOMO:     Precio,0.93,Anual,Externo
+2017-01-01,ZINC:     Valor,37.5,Anual,Externo
+2017-01-01,ZINC:     Volumen Libras,34702.2,Anual,Externo
+2017-01-01,ZINC:     Precio,1.08,Anual,Externo
+2017-01-01,AZÚCAR:     Valor,72.1,Anual,Externo
+2017-01-01,AZÚCAR:     Volumen Kilos,157144.8,Anual,Externo
+2017-01-01,AZÚCAR:     Precio,0.46,Anual,Externo
+2017-01-01,CAMARÓN CULTIVADO:     Valor,240.6,Anual,Externo
+2017-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,32810.9,Anual,Externo
+2017-01-01,CAMARÓN CULTIVADO:     Precio,7.33,Anual,Externo
+2017-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,3.7,Anual,Externo
+2017-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,428.2,Anual,Externo
+2017-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,8.53,Anual,Externo
+2017-01-01,LANGOSTAS:     Valor,40.2,Anual,Externo
+2017-01-01,LANGOSTAS:     Volumen Kilos,1855.4,Anual,Externo
+2017-01-01,LANGOSTAS:     Precio,21.67,Anual,Externo
+2017-01-01,TILAPIAS:     Valor,45.0,Anual,Externo
+2017-01-01,TILAPIAS:     Volumen Kilos,7990.7,Anual,Externo
+2017-01-01,TILAPIAS:     Precio,5.63,Anual,Externo
+2017-01-01,MELONES Y SANDÍAS:     Valor,71.4,Anual,Externo
+2017-01-01,MELONES Y SANDÍAS:     Volumen Kilos,281690.9,Anual,Externo
+2017-01-01,MELONES Y SANDÍAS:     Precio,0.25,Anual,Externo
+2017-01-01,PIÑAS:     Valor,29.5,Anual,Externo
+2017-01-01,PIÑAS:     Volumen Kilos,59114.3,Anual,Externo
+2017-01-01,PIÑAS:     Precio,0.5,Anual,Externo
+2017-01-01,LEGUMBRES Y HORTALIZAS:     Valor,96.1,Anual,Externo
+2017-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,201513.8,Anual,Externo
+2017-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.48,Anual,Externo
+2017-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,67.4,Anual,Externo
+2017-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,40317.2,Anual,Externo
+2017-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.67,Anual,Externo
+2017-01-01,PUROS O CIGARROS:     Valor,95.3,Anual,Externo
+2017-01-01,PUROS O CIGARROS:     Volumen Kilos,2160.3,Anual,Externo
+2017-01-01,PUROS O CIGARROS:     Precio,44.12,Anual,Externo
+2017-01-01,CIGARRILLOS:     Valor,30.6,Anual,Externo
+2017-01-01,CIGARRILLOS:     Volumen Kilos,3449.2,Anual,Externo
+2017-01-01,CIGARRILLOS:     Precio,8.87,Anual,Externo
+2017-01-01,TABACO:     Valor,25.0,Anual,Externo
+2017-01-01,TABACO:     Volumen Kilos,1427.9,Anual,Externo
+2017-01-01,TABACO:     Precio,17.5,Anual,Externo
+2017-01-01,MANUFACTURAS DE MADERA:     Valor,22.4,Anual,Externo
+2017-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,35988.7,Anual,Externo
+2017-01-01,MANUFACTURAS DE MADERA:     Precio,0.62,Anual,Externo
+2017-01-01,MUEBLES DE MADERA:     Valor,11.5,Anual,Externo
+2017-01-01,MUEBLES DE MADERA:     Volumen Kilos,2080.9,Anual,Externo
+2017-01-01,MUEBLES DE MADERA:     Precio,5.52,Anual,Externo
+2017-01-01,TEXTILES:     Valor,48.0,Anual,Externo
+2017-01-01,TEXTILES:     Volumen Kilos,80352.4,Anual,Externo
+2017-01-01,TEXTILES:     Precio,0.6,Anual,Externo
+2017-01-01,JABONES:     Valor,100.8,Anual,Externo
+2017-01-01,JABONES:     Volumen Kilos,98207.9,Anual,Externo
+2017-01-01,JABONES:     Precio,1.03,Anual,Externo
+2017-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,102.9,Anual,Externo
+2017-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,64803.6,Anual,Externo
+2017-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.59,Anual,Externo
+2017-01-01,PAPEL Y CARTÓN:     Valor,94.6,Anual,Externo
+2017-01-01,PAPEL Y CARTÓN:     Volumen Kilos,112554.4,Anual,Externo
+2017-01-01,PAPEL Y CARTÓN:     Precio,0.84,Anual,Externo
+2017-01-01,SUB-TOTAL,3546.9,Anual,Externo
+2017-01-01,OTROS PRODUCTOS,891.8,Anual,Externo
+2017-01-01,TOTAL MERCANCÍAS GENERALES,4438.7,Anual,Externo
+2018-01-01,BANANO:     Valor,532.0,Anual,Externo
+2018-01-01,BANANO:     Volumen Cajas 40 Lbs.,32430.7,Anual,Externo
+2018-01-01,BANANO:     Precio,16.41,Anual,Externo
+2018-01-01,CAFÉ:     Valor,1115.3,Anual,Externo
+2018-01-01,CAFÉ:     Volumen Sacos 60 Kg.,7143.9,Anual,Externo
+2018-01-01,CAFÉ:     Precio,156.11,Anual,Externo
+2018-01-01,CAFÉ:     Volumen Sacos 46 Kg.,9318.1,Anual,Externo
+2018-01-01,CAFÉ:     Precio,119.69,Anual,Externo
+2018-01-01,MADERA:     Valor,32.9,Anual,Externo
+2018-01-01,MADERA:     Volumen P.T.,27326.3,Anual,Externo
+2018-01-01,MADERA:     Precio,1.2,Anual,Externo
+2018-01-01,ACEÍTE DE PALMA:     Valor,333.1,Anual,Externo
+2018-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,522318.6,Anual,Externo
+2018-01-01,ACEÍTE DE PALMA:     Precio,0.64,Anual,Externo
+2018-01-01,PLATA:     Valor,10.4,Anual,Externo
+2018-01-01,PLATA:     Volumen Onzas Troy,927.9,Anual,Externo
+2018-01-01,PLATA:     Precio,11.24,Anual,Externo
+2018-01-01,PLOMO:     Valor,18.2,Anual,Externo
+2018-01-01,PLOMO:     Volumen Libras,20188.7,Anual,Externo
+2018-01-01,PLOMO:     Precio,0.9,Anual,Externo
+2018-01-01,ZINC:     Valor,54.1,Anual,Externo
+2018-01-01,ZINC:     Volumen Libras,50075.1,Anual,Externo
+2018-01-01,ZINC:     Precio,1.08,Anual,Externo
+2018-01-01,AZÚCAR:     Valor,55.1,Anual,Externo
+2018-01-01,AZÚCAR:     Volumen Kilos,135771.1,Anual,Externo
+2018-01-01,AZÚCAR:     Precio,0.41,Anual,Externo
+2018-01-01,CAMARÓN CULTIVADO:     Valor,228.8,Anual,Externo
+2018-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,31902.6,Anual,Externo
+2018-01-01,CAMARÓN CULTIVADO:     Precio,7.17,Anual,Externo
+2018-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,5.1,Anual,Externo
+2018-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,587.6,Anual,Externo
+2018-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,8.6,Anual,Externo
+2018-01-01,LANGOSTAS:     Valor,46.2,Anual,Externo
+2018-01-01,LANGOSTAS:     Volumen Kilos,1795.4,Anual,Externo
+2018-01-01,LANGOSTAS:     Precio,25.74,Anual,Externo
+2018-01-01,TILAPIAS:     Valor,47.9,Anual,Externo
+2018-01-01,TILAPIAS:     Volumen Kilos,8208.5,Anual,Externo
+2018-01-01,TILAPIAS:     Precio,5.84,Anual,Externo
+2018-01-01,MELONES Y SANDÍAS:     Valor,76.0,Anual,Externo
+2018-01-01,MELONES Y SANDÍAS:     Volumen Kilos,285726.1,Anual,Externo
+2018-01-01,MELONES Y SANDÍAS:     Precio,0.27,Anual,Externo
+2018-01-01,PIÑAS:     Valor,32.4,Anual,Externo
+2018-01-01,PIÑAS:     Volumen Kilos,64283.6,Anual,Externo
+2018-01-01,PIÑAS:     Precio,0.5,Anual,Externo
+2018-01-01,LEGUMBRES Y HORTALIZAS:     Valor,99.8,Anual,Externo
+2018-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,206430.5,Anual,Externo
+2018-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.48,Anual,Externo
+2018-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,77.9,Anual,Externo
+2018-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,43129.6,Anual,Externo
+2018-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.81,Anual,Externo
+2018-01-01,PUROS O CIGARROS:     Valor,106.4,Anual,Externo
+2018-01-01,PUROS O CIGARROS:     Volumen Kilos,2242.4,Anual,Externo
+2018-01-01,PUROS O CIGARROS:     Precio,47.45,Anual,Externo
+2018-01-01,CIGARRILLOS:     Valor,32.3,Anual,Externo
+2018-01-01,CIGARRILLOS:     Volumen Kilos,3788.3,Anual,Externo
+2018-01-01,CIGARRILLOS:     Precio,8.52,Anual,Externo
+2018-01-01,TABACO:     Valor,29.7,Anual,Externo
+2018-01-01,TABACO:     Volumen Kilos,1518.0,Anual,Externo
+2018-01-01,TABACO:     Precio,19.57,Anual,Externo
+2018-01-01,MANUFACTURAS DE MADERA:     Valor,30.4,Anual,Externo
+2018-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,46394.8,Anual,Externo
+2018-01-01,MANUFACTURAS DE MADERA:     Precio,0.66,Anual,Externo
+2018-01-01,MUEBLES DE MADERA:     Valor,13.7,Anual,Externo
+2018-01-01,MUEBLES DE MADERA:     Volumen Kilos,2268.7,Anual,Externo
+2018-01-01,MUEBLES DE MADERA:     Precio,6.02,Anual,Externo
+2018-01-01,TEXTILES:     Valor,63.7,Anual,Externo
+2018-01-01,TEXTILES:     Volumen Kilos,77713.2,Anual,Externo
+2018-01-01,TEXTILES:     Precio,0.82,Anual,Externo
+2018-01-01,JABONES:     Valor,81.9,Anual,Externo
+2018-01-01,JABONES:     Volumen Kilos,75584.3,Anual,Externo
+2018-01-01,JABONES:     Precio,1.08,Anual,Externo
+2018-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,111.9,Anual,Externo
+2018-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,65373.2,Anual,Externo
+2018-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.71,Anual,Externo
+2018-01-01,PAPEL Y CARTÓN:     Valor,96.3,Anual,Externo
+2018-01-01,PAPEL Y CARTÓN:     Volumen Kilos,86844.1,Anual,Externo
+2018-01-01,PAPEL Y CARTÓN:     Precio,1.11,Anual,Externo
+2018-01-01,SUB-TOTAL,3331.5,Anual,Externo
+2018-01-01,OTROS PRODUCTOS,913.7,Anual,Externo
+2018-01-01,TOTAL MERCANCÍAS GENERALES,4245.2,Anual,Externo
+2019-01-01,BANANO:     Valor,479.1,Anual,Externo
+2019-01-01,BANANO:     Volumen Cajas 40 Lbs.,30724.4,Anual,Externo
+2019-01-01,BANANO:     Precio,15.59,Anual,Externo
+2019-01-01,CAFÉ:     Valor,946.7,Anual,Externo
+2019-01-01,CAFÉ:     Volumen Sacos 60 Kg.,6764.6,Anual,Externo
+2019-01-01,CAFÉ:     Precio,139.95,Anual,Externo
+2019-01-01,CAFÉ:     Volumen Sacos 46 Kg.,8823.3,Anual,Externo
+2019-01-01,CAFÉ:     Precio,107.3,Anual,Externo
+2019-01-01,MADERA:     Valor,28.4,Anual,Externo
+2019-01-01,MADERA:     Volumen P.T.,24708.1,Anual,Externo
+2019-01-01,MADERA:     Precio,1.15,Anual,Externo
+2019-01-01,ACEÍTE DE PALMA:     Valor,324.1,Anual,Externo
+2019-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,575421.2,Anual,Externo
+2019-01-01,ACEÍTE DE PALMA:     Precio,0.56,Anual,Externo
+2019-01-01,PLATA:     Valor,14.1,Anual,Externo
+2019-01-01,PLATA:     Volumen Onzas Troy,1002.9,Anual,Externo
+2019-01-01,PLATA:     Precio,14.11,Anual,Externo
+2019-01-01,PLOMO:     Valor,18.2,Anual,Externo
+2019-01-01,PLOMO:     Volumen Libras,22725.3,Anual,Externo
+2019-01-01,PLOMO:     Precio,0.8,Anual,Externo
+2019-01-01,ZINC:     Valor,39.4,Anual,Externo
+2019-01-01,ZINC:     Volumen Libras,52947.0,Anual,Externo
+2019-01-01,ZINC:     Precio,0.74,Anual,Externo
+2019-01-01,AZÚCAR:     Valor,67.1,Anual,Externo
+2019-01-01,AZÚCAR:     Volumen Kilos,188411.4,Anual,Externo
+2019-01-01,AZÚCAR:     Precio,0.36,Anual,Externo
+2019-01-01,CAMARÓN CULTIVADO:     Valor,229.8,Anual,Externo
+2019-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,32056.4,Anual,Externo
+2019-01-01,CAMARÓN CULTIVADO:     Precio,7.17,Anual,Externo
+2019-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,9.1,Anual,Externo
+2019-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,979.1,Anual,Externo
+2019-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,9.25,Anual,Externo
+2019-01-01,LANGOSTAS:     Valor,46.3,Anual,Externo
+2019-01-01,LANGOSTAS:     Volumen Kilos,1516.8,Anual,Externo
+2019-01-01,LANGOSTAS:     Precio,30.54,Anual,Externo
+2019-01-01,TILAPIAS:     Valor,55.7,Anual,Externo
+2019-01-01,TILAPIAS:     Volumen Kilos,9079.0,Anual,Externo
+2019-01-01,TILAPIAS:     Precio,6.14,Anual,Externo
+2019-01-01,MELONES Y SANDÍAS:     Valor,115.7,Anual,Externo
+2019-01-01,MELONES Y SANDÍAS:     Volumen Kilos,304965.1,Anual,Externo
+2019-01-01,MELONES Y SANDÍAS:     Precio,0.38,Anual,Externo
+2019-01-01,PIÑAS:     Valor,33.3,Anual,Externo
+2019-01-01,PIÑAS:     Volumen Kilos,66882.0,Anual,Externo
+2019-01-01,PIÑAS:     Precio,0.5,Anual,Externo
+2019-01-01,LEGUMBRES Y HORTALIZAS:     Valor,111.3,Anual,Externo
+2019-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,227341.9,Anual,Externo
+2019-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.49,Anual,Externo
+2019-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,76.7,Anual,Externo
+2019-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,43672.3,Anual,Externo
+2019-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.76,Anual,Externo
+2019-01-01,PUROS O CIGARROS:     Valor,87.9,Anual,Externo
+2019-01-01,PUROS O CIGARROS:     Volumen Kilos,1911.5,Anual,Externo
+2019-01-01,PUROS O CIGARROS:     Precio,46.0,Anual,Externo
+2019-01-01,CIGARRILLOS:     Valor,27.1,Anual,Externo
+2019-01-01,CIGARRILLOS:     Volumen Kilos,3317.5,Anual,Externo
+2019-01-01,CIGARRILLOS:     Precio,8.18,Anual,Externo
+2019-01-01,TABACO:     Valor,32.6,Anual,Externo
+2019-01-01,TABACO:     Volumen Kilos,1746.4,Anual,Externo
+2019-01-01,TABACO:     Precio,18.64,Anual,Externo
+2019-01-01,MANUFACTURAS DE MADERA:     Valor,19.8,Anual,Externo
+2019-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,28241.9,Anual,Externo
+2019-01-01,MANUFACTURAS DE MADERA:     Precio,0.7,Anual,Externo
+2019-01-01,MUEBLES DE MADERA:     Valor,12.3,Anual,Externo
+2019-01-01,MUEBLES DE MADERA:     Volumen Kilos,2071.5,Anual,Externo
+2019-01-01,MUEBLES DE MADERA:     Precio,5.96,Anual,Externo
+2019-01-01,TEXTILES:     Valor,68.6,Anual,Externo
+2019-01-01,TEXTILES:     Volumen Kilos,90038.0,Anual,Externo
+2019-01-01,TEXTILES:     Precio,0.76,Anual,Externo
+2019-01-01,JABONES:     Valor,105.8,Anual,Externo
+2019-01-01,JABONES:     Volumen Kilos,106606.5,Anual,Externo
+2019-01-01,JABONES:     Precio,0.99,Anual,Externo
+2019-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,114.1,Anual,Externo
+2019-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,66693.7,Anual,Externo
+2019-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.71,Anual,Externo
+2019-01-01,PAPEL Y CARTÓN:     Valor,83.3,Anual,Externo
+2019-01-01,PAPEL Y CARTÓN:     Volumen Kilos,65559.7,Anual,Externo
+2019-01-01,PAPEL Y CARTÓN:     Precio,1.27,Anual,Externo
+2019-01-01,SUB-TOTAL,3146.6,Anual,Externo
+2019-01-01,OTROS PRODUCTOS,1004.1,Anual,Externo
+2019-01-01,TOTAL MERCANCÍAS GENERALES,4150.6,Anual,Externo
+2020-01-01,BANANO:     Valor,530.3,Anual,Externo
+2020-01-01,BANANO:     Volumen Cajas 40 Lbs.,28312.5,Anual,Externo
+2020-01-01,BANANO:     Precio,18.73,Anual,Externo
+2020-01-01,CAFÉ:     Valor,869.6,Anual,Externo
+2020-01-01,CAFÉ:     Volumen Sacos 60 Kg.,5263.5,Anual,Externo
+2020-01-01,CAFÉ:     Precio,165.22,Anual,Externo
+2020-01-01,CAFÉ:     Volumen Sacos 46 Kg.,6865.5,Anual,Externo
+2020-01-01,CAFÉ:     Precio,126.67,Anual,Externo
+2020-01-01,MADERA:     Valor,17.3,Anual,Externo
+2020-01-01,MADERA:     Volumen P.T.,14804.8,Anual,Externo
+2020-01-01,MADERA:     Precio,1.17,Anual,Externo
+2020-01-01,ACEÍTE DE PALMA:     Valor,378.8,Anual,Externo
+2020-01-01,ACEÍTE DE PALMA:     Volumen Kilos ,536163.2,Anual,Externo
+2020-01-01,ACEÍTE DE PALMA:     Precio,0.71,Anual,Externo
+2020-01-01,PLATA:     Valor,19.1,Anual,Externo
+2020-01-01,PLATA:     Volumen Onzas Troy,1040.0,Anual,Externo
+2020-01-01,PLATA:     Precio,18.32,Anual,Externo
+2020-01-01,PLOMO:     Valor,17.7,Anual,Externo
+2020-01-01,PLOMO:     Volumen Libras,27065.3,Anual,Externo
+2020-01-01,PLOMO:     Precio,0.65,Anual,Externo
+2020-01-01,ZINC:     Valor,27.9,Anual,Externo
+2020-01-01,ZINC:     Volumen Libras,50209.1,Anual,Externo
+2020-01-01,ZINC:     Precio,0.56,Anual,Externo
+2020-01-01,AZÚCAR:     Valor,73.3,Anual,Externo
+2020-01-01,AZÚCAR:     Volumen Kilos,203875.6,Anual,Externo
+2020-01-01,AZÚCAR:     Precio,0.36,Anual,Externo
+2020-01-01,CAMARÓN CULTIVADO:     Valor,241.4,Anual,Externo
+2020-01-01,CAMARÓN CULTIVADO:     Volumen Kilos,32461.0,Anual,Externo
+2020-01-01,CAMARÓN CULTIVADO:     Precio,7.44,Anual,Externo
+2020-01-01,CAMARÓN DE EXTRACCIÓN:     Valor,3.7,Anual,Externo
+2020-01-01,CAMARÓN DE EXTRACCIÓN:     Volumen Kilos,490.1,Anual,Externo
+2020-01-01,CAMARÓN DE EXTRACCIÓN:     Precio,7.6,Anual,Externo
+2020-01-01,LANGOSTAS:     Valor,51.1,Anual,Externo
+2020-01-01,LANGOSTAS:     Volumen Kilos,1600.1,Anual,Externo
+2020-01-01,LANGOSTAS:     Precio,31.93,Anual,Externo
+2020-01-01,TILAPIAS:     Valor,66.1,Anual,Externo
+2020-01-01,TILAPIAS:     Volumen Kilos,9964.0,Anual,Externo
+2020-01-01,TILAPIAS:     Precio,6.64,Anual,Externo
+2020-01-01,MELONES Y SANDÍAS:     Valor,91.4,Anual,Externo
+2020-01-01,MELONES Y SANDÍAS:     Volumen Kilos,253388.3,Anual,Externo
+2020-01-01,MELONES Y SANDÍAS:     Precio,0.36,Anual,Externo
+2020-01-01,PIÑAS:     Valor,34.1,Anual,Externo
+2020-01-01,PIÑAS:     Volumen Kilos,65906.1,Anual,Externo
+2020-01-01,PIÑAS:     Precio,0.52,Anual,Externo
+2020-01-01,LEGUMBRES Y HORTALIZAS:     Valor,115.1,Anual,Externo
+2020-01-01,LEGUMBRES Y HORTALIZAS:     Volumen Kilos,216557.5,Anual,Externo
+2020-01-01,LEGUMBRES Y HORTALIZAS:     Precio,0.53,Anual,Externo
+2020-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Valor,84.1,Anual,Externo
+2020-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Volumen Kilos,44823.3,Anual,Externo
+2020-01-01,PREPARACIONES LEGUMBRES Y FRUTAS:     Precio,1.88,Anual,Externo
+2020-01-01,PUROS O CIGARROS:     Valor,112.5,Anual,Externo
+2020-01-01,PUROS O CIGARROS:     Volumen Kilos,2131.2,Anual,Externo
+2020-01-01,PUROS O CIGARROS:     Precio,52.77,Anual,Externo
+2020-01-01,CIGARRILLOS:     Valor,24.6,Anual,Externo
+2020-01-01,CIGARRILLOS:     Volumen Kilos,2553.3,Anual,Externo
+2020-01-01,CIGARRILLOS:     Precio,9.64,Anual,Externo
+2020-01-01,TABACO:     Valor,29.7,Anual,Externo
+2020-01-01,TABACO:     Volumen Kilos,1847.6,Anual,Externo
+2020-01-01,TABACO:     Precio,16.05,Anual,Externo
+2020-01-01,MANUFACTURAS DE MADERA:     Valor,20.6,Anual,Externo
+2020-01-01,MANUFACTURAS DE MADERA:     Volumen Kilos,25938.0,Anual,Externo
+2020-01-01,MANUFACTURAS DE MADERA:     Precio,0.8,Anual,Externo
+2020-01-01,MUEBLES DE MADERA:     Valor,8.8,Anual,Externo
+2020-01-01,MUEBLES DE MADERA:     Volumen Kilos,2998.7,Anual,Externo
+2020-01-01,MUEBLES DE MADERA:     Precio,2.92,Anual,Externo
+2020-01-01,TEXTILES:     Valor,65.7,Anual,Externo
+2020-01-01,TEXTILES:     Volumen Kilos,76084.9,Anual,Externo
+2020-01-01,TEXTILES:     Precio,0.86,Anual,Externo
+2020-01-01,JABONES:     Valor,103.3,Anual,Externo
+2020-01-01,JABONES:     Volumen Kilos,96749.3,Anual,Externo
+2020-01-01,JABONES:     Precio,1.07,Anual,Externo
+2020-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Valor,101.0,Anual,Externo
+2020-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Volumen Kilos,65410.2,Anual,Externo
+2020-01-01,PLÁSTICOS Y SUS MANUFACTURAS:     Precio,1.54,Anual,Externo
+2020-01-01,PAPEL Y CARTÓN:     Valor,57.6,Anual,Externo
+2020-01-01,PAPEL Y CARTÓN:     Volumen Kilos,51131.7,Anual,Externo
+2020-01-01,PAPEL Y CARTÓN:     Precio,1.13,Anual,Externo
+2020-01-01,SUB-TOTAL,3144.8,Anual,Externo
+2020-01-01,OTROS PRODUCTOS,998.9,Anual,Externo
+2020-01-01,TOTAL MERCANCÍAS GENERALES,4143.7,Anual,Externo
