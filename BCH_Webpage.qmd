@@ -1,0 +1,43 @@
+---
+title: 'BCH_Webpage'
+author: Elvis Casco
+execute:
+  echo: false
+  warning: false
+# format: 
+#   html:
+#     toc: true
+format: 
+  pdf:
+    toc: true
+    warnings: false
+keep-ipynb: true
+lang: es
+jupyter: julia-1.9
+---
+
+# Librerías
+
+Para generar los datos en una carpeta específica, debe tenerse el contenido de la carpeta "functions" y "data".
+
+Las librerías de R que deben instalarse previamente son:
+
+- readxl
+- rio
+
+```{julia}
+#using CategoricalArrays,Chain,CSV,DataFrames,Dates,FileIO,ImageShow,LaTeXStrings,Metrics,Plots,Plotly,PrettyTables,RCall,Statistics,StatsBase,StatsPlots,StateSpaceModels,XLSX;
+using CSV,DataFrames,RCall
+
+wd = "C:/IE/BCH_Webpage";
+include(wd * "/functions/fn_process.jl");
+include(wd * "/functions/fn_get_data.jl");
+```
+
+```{julia}
+data = get_data()
+CSV.write(
+    wd * "/data/database.csv",
+    data;
+    delim = ";")
+```
