@@ -11,7 +11,7 @@ El procedimiento se ejecuta a través de los códigos en "BCH_Webpage.qmd"; si n
 ```
 using CSV,DataFrames,RCall
 
-wd = "C:/IE/BCH_Webpage";
+wd = @__DIR__;
 include(wd * "/functions/fn_process.jl");
 include(wd * "/functions/fn_get_data.jl");
 data = get_data()
