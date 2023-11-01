@@ -9,7 +9,7 @@ Para ejecutar este proceso desde una computadora, una vez descargados todos los 
 El procedimiento se ejecuta a través de los códigos en "BCH_Webpage.qmd"; si no se tiene instalado Quarto, puede ejecutarse directamente desde Julia, pegando estas líneas en el prompt (cambiando previamente la ruta en donde se encuentran las carpetas "data" y "functions" en la variable "wd"; por ejemplo, wd = "C:/Users/your_user/Downloads/BCH_Webpage-main".^[En las rutas por default, debe cambiarse "\" por "/".]):
 
 ```
-using CSV,DataFrames,RCall
+using CSV,DataFrames,Dates,RCall,StatsBase
 
 wd = @__DIR__;
 include(wd * "/functions/fn_process.jl");
