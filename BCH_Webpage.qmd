@@ -27,7 +27,7 @@ Las librerías de R que deben instalarse previamente son:
 
 ```{julia}
 #using CategoricalArrays,Chain,CSV,DataFrames,Dates,FileIO,ImageShow,LaTeXStrings,Metrics,Plots,Plotly,PrettyTables,RCall,Statistics,StatsBase,StatsPlots,StateSpaceModels,XLSX;
-using CSV,DataFrames,RCall
+using CSV,DataFrames,Dates,RCall,StatsBase
 
 wd = @__DIR__;
 include(wd * "/functions/fn_process.jl");
@@ -40,4 +40,9 @@ CSV.write(
     wd * "/data/database.csv",
     data;
     delim = ";")
+```
+
+
+```{julia}
+data
 ```
