@@ -1,6 +1,6 @@
 ## Packages
-using CSV, DataFrames, DataFramesMeta, Dates
-using Plots, RCall, StatsBase, XLSX#, ExcelFiles, ExcelReaders
+#using CSV, DataFrames, DataFramesMeta, Dates
+#using Plots, RCall, StatsBase, XLSX#, ExcelFiles, ExcelReaders
 
 
 ## Depurar fechas
