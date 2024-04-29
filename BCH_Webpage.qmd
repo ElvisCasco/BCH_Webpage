@@ -13,7 +13,7 @@ format:
     warnings: false
 keep-ipynb: true
 lang: es
-jupyter: julia-1.9
+jupyter: julia-1.10
 ---
 
 # Librerías
