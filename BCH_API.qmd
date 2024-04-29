@@ -27,6 +27,7 @@ format:
 #     revealjs:
 #         logo: logo_negro_15x15.png
         # toc: true
+keep-ipynb: true
 jupyter: python3
 # engine: knitr
 ---
@@ -493,6 +494,30 @@ res_nivel_7(
 res_nivel_3("ESR","VAB","Niv_Descr_4")
 ```
 
+#### PIBA = PIB Anual
+
+```{python}
+res_nivel_3("ESR","PIBA","Niv_Descr_4")
+```
+
+#### PIBT = PIB Trimestral
+
+```{python}
+res_nivel_3("ESR","PIBT","Niv_Descr_4")
+```
+
+#### ODA = Oferta y Demanda Agregada
+
+```{python}
+res_nivel_3("ESR","ODA","Niv_Descr_4")
+```
+
+#### IMAE = Índice Mensual de la Actividad Económica
+
+```{python}
+res_nivel_3("ESR","IMAE","Niv_Descr_4")
+```
+
 ### ESE = Estadísticas del Sector Externo
 
 ```{python}
@@ -506,14 +531,13 @@ res_nivel_2("ESE")
 - PII = Posición de Inversión Inernacional
 - IED = Inversión Extranjera Directa
 
-
 #### DE = Deuda Externa
 
 ```{python}
 res_nivel_3("ESE","DE","Niv_Gr_3")
 ```
 
-###### 01 - Deudor
+##### 01 - Deudor
 
 ```{python}
 res_nivel_5(
@@ -532,7 +556,7 @@ res_nivel_6(
     "Nombre","Niv_Descr_1","Niv_Descr_2").sort("Nombre")
 ```
 
-###### 02 - Acreedor
+##### 02 - Acreedor
 
 ```{python}
 res_nivel_5(
@@ -551,7 +575,7 @@ res_nivel_6(
     "Nombre","Niv_Descr_1","Niv_Descr_2").sort("Nombre")
 ```
 
-###### 03 - Acreedor
+##### 03 - Acreedor
 
 ```{python}
 res_nivel_4(
@@ -610,7 +634,7 @@ df_all.filter(
     pl.col("Niv_Gr_3") == "03")
 ```
 
-###### 04 - Acreedor
+##### 04 - Acreedor
 
 - Gobierno general
 - Banco Central
@@ -664,6 +688,37 @@ res_nivel_7(
     "Niv_Gr_3",
     "04",
     "Nombre","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3")
+```
+
+
+#### CEB = Comercio Exterior de Bienes
+
+```{python}
+res_nivel_3("ESE","CEB","Niv_Gr_3")
+```
+
+#### BP = Balanza de Pagos
+
+```{python}
+res_nivel_3("ESE","BP","Niv_Gr_3")
+```
+
+#### IES - Ingresos y Egresos de Servicios
+
+```{python}
+res_nivel_3("ESE","IES","Niv_Gr_3")
+```
+
+#### PII = Posición de Inversión Inernacional
+
+```{python}
+res_nivel_3("ESE","PII","Niv_Gr_3")
+```
+
+#### IED = Inversión Extranjera Directa
+
+```{python}
+res_nivel_3("ESE","IED","Niv_Gr_3")
 ```
 
 ### EMF = Estadísiticas Monetarias y Financieras

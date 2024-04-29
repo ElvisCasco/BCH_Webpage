@@ -85,6 +85,10 @@ require(['plotly'], function(Plotly) {
   <li><a href="#cou-cuadro-de-oferta-y-utilización" id="toc-cou-cuadro-de-oferta-y-utilización" class="nav-link" data-scroll-target="#cou-cuadro-de-oferta-y-utilización">COU = Cuadro de Oferta y Utilización</a></li>
   <li><a href="#cci-clasificación-cruzada-industria" id="toc-cci-clasificación-cruzada-industria" class="nav-link" data-scroll-target="#cci-clasificación-cruzada-industria">CCI = Clasificación Cruzada Industria</a></li>
   <li><a href="#vab-valor-agregado-bruto" id="toc-vab-valor-agregado-bruto" class="nav-link" data-scroll-target="#vab-valor-agregado-bruto">VAB = Valor Agregado Bruto</a></li>
+  <li><a href="#piba-pib-anual" id="toc-piba-pib-anual" class="nav-link" data-scroll-target="#piba-pib-anual">PIBA = PIB Anual</a></li>
+  <li><a href="#pibt-pib-trimestral" id="toc-pibt-pib-trimestral" class="nav-link" data-scroll-target="#pibt-pib-trimestral">PIBT = PIB Trimestral</a></li>
+  <li><a href="#oda-oferta-y-demanda-agregada" id="toc-oda-oferta-y-demanda-agregada" class="nav-link" data-scroll-target="#oda-oferta-y-demanda-agregada">ODA = Oferta y Demanda Agregada</a></li>
+  <li><a href="#imae-índice-mensual-de-la-actividad-económica" id="toc-imae-índice-mensual-de-la-actividad-económica" class="nav-link" data-scroll-target="#imae-índice-mensual-de-la-actividad-económica">IMAE = Índice Mensual de la Actividad Económica</a></li>
   </ul></li>
   <li><a href="#ese-estadísticas-del-sector-externo" id="toc-ese-estadísticas-del-sector-externo" class="nav-link" data-scroll-target="#ese-estadísticas-del-sector-externo">ESE = Estadísticas del Sector Externo</a>
   <ul>
@@ -95,6 +99,11 @@ require(['plotly'], function(Plotly) {
   <li><a href="#acreedor-1" id="toc-acreedor-1" class="nav-link" data-scroll-target="#acreedor-1">03 - Acreedor</a></li>
   <li><a href="#acreedor-2" id="toc-acreedor-2" class="nav-link" data-scroll-target="#acreedor-2">04 - Acreedor</a></li>
   </ul></li>
+  <li><a href="#ceb-comercio-exterior-de-bienes" id="toc-ceb-comercio-exterior-de-bienes" class="nav-link" data-scroll-target="#ceb-comercio-exterior-de-bienes">CEB = Comercio Exterior de Bienes</a></li>
+  <li><a href="#bp-balanza-de-pagos" id="toc-bp-balanza-de-pagos" class="nav-link" data-scroll-target="#bp-balanza-de-pagos">BP = Balanza de Pagos</a></li>
+  <li><a href="#ies---ingresos-y-egresos-de-servicios" id="toc-ies---ingresos-y-egresos-de-servicios" class="nav-link" data-scroll-target="#ies---ingresos-y-egresos-de-servicios">IES - Ingresos y Egresos de Servicios</a></li>
+  <li><a href="#pii-posición-de-inversión-inernacional" id="toc-pii-posición-de-inversión-inernacional" class="nav-link" data-scroll-target="#pii-posición-de-inversión-inernacional">PII = Posición de Inversión Inernacional</a></li>
+  <li><a href="#ied-inversión-extranjera-directa" id="toc-ied-inversión-extranjera-directa" class="nav-link" data-scroll-target="#ied-inversión-extranjera-directa">IED = Inversión Extranjera Directa</a></li>
   </ul></li>
   <li><a href="#emf-estadísiticas-monetarias-y-financieras" id="toc-emf-estadísiticas-monetarias-y-financieras" class="nav-link" data-scroll-target="#emf-estadísiticas-monetarias-y-financieras">EMF = Estadísiticas Monetarias y Financieras</a>
   <ul>
@@ -200,12 +209,12 @@ require(['plotly'], function(Plotly) {
 <p>Como ejemplo de la consulta que contiene todas las variables, se muestran los primeros cinco elementos:</p>
 <div class="cell" data-execution_count="3">
 <div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\ec109004\AppData\Local\Temp\ipykernel_11680\234590326.py:23: FutureWarning:
+<pre><code>C:\Users\ec109004\AppData\Local\Temp\ipykernel_24212\234590326.py:23: FutureWarning:
 
 Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
 </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="111">
+<div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 
 
@@ -284,7 +293,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <pre><code>11519 variables
 54 grupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="112">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -323,8 +332,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"PIBT"</td>
 <td>"PROD"</td>
-<td>"OG"</td>
-<td>"CONST"</td>
+<td>"DES"</td>
+<td>"CORR"</td>
 <td>5</td>
 </tr>
 <tr class="even">
@@ -333,7 +342,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"PIBT"</td>
 <td>"PROD"</td>
-<td>"DES"</td>
+<td>"OG"</td>
 <td>"CORR"</td>
 <td>5</td>
 </tr>
@@ -354,7 +363,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"PIBT"</td>
 <td>"PROD"</td>
 <td>"OG"</td>
-<td>"CORR"</td>
+<td>"CONST"</td>
 <td>5</td>
 </tr>
 <tr class="odd">
@@ -363,7 +372,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"PIBT"</td>
 <td>"GAST"</td>
-<td>"DES"</td>
+<td>"OG"</td>
 <td>"CONST"</td>
 <td>5</td>
 </tr>
@@ -378,6 +387,16 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>…</td>
 </tr>
 <tr class="odd">
+<td>"EOM-OMA-03"</td>
+<td>3</td>
+<td>"EOM"</td>
+<td>"OMA"</td>
+<td>"03"</td>
+<td>null</td>
+<td>null</td>
+<td>3</td>
+</tr>
+<tr class="even">
 <td>"EP-IPC-01"</td>
 <td>3</td>
 <td>"EP"</td>
@@ -387,31 +406,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>null</td>
 <td>3</td>
 </tr>
-<tr class="even">
-<td>"EMF-PFS-01"</td>
-<td>3</td>
-<td>"EMF"</td>
-<td>"PFS"</td>
-<td>"01"</td>
-<td>null</td>
-<td>null</td>
-<td>3</td>
-</tr>
 <tr class="odd">
-<td>"EC-TCN-01"</td>
-<td>2</td>
-<td>"EC"</td>
-<td>"TCN"</td>
-<td>"01"</td>
-<td>null</td>
-<td>null</td>
-<td>3</td>
-</tr>
-<tr class="even">
 <td>"EM-TPM-01"</td>
 <td>2</td>
 <td>"EM"</td>
 <td>"TPM"</td>
+<td>"01"</td>
+<td>null</td>
+<td>null</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>"EC-TCN-01"</td>
+<td>2</td>
+<td>"EC"</td>
+<td>"TCN"</td>
 <td>"01"</td>
 <td>null</td>
 <td>null</td>
@@ -449,7 +458,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 8 grupos
 25 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="113">
+<div class="cell-output cell-output-display" data-execution_count="5">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -526,7 +535,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 1 grupos
 4 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="114">
+<div class="cell-output cell-output-display" data-execution_count="6">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -572,7 +581,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <pre><code>4 subgrupos
 5575 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="115">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -629,7 +638,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <section id="tasas-de-rendimiento-diario-de-valores-gubernamentales" class="level6">
 <h6 class="anchored" data-anchor-id="tasas-de-rendimiento-diario-de-valores-gubernamentales">01 = Tasas de Rendimiento Diario de Valores Gubernamentales</h6>
 <div class="cell" data-execution_count="8">
-<div class="cell-output cell-output-display" data-execution_count="116">
+<div class="cell-output cell-output-display" data-execution_count="8">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -670,7 +679,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>Para ver todas las variables:</p>
 <div class="cell" data-execution_count="9">
-<div class="cell-output cell-output-display" data-execution_count="117">
+<div class="cell-output cell-output-display" data-execution_count="9">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -796,7 +805,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <section id="créditos-niv_descr_4-1-3-e-inversiones-niv_descr_4-4-6-monto-número-de-solicitudes-y-tasa" class="level6">
 <h6 class="anchored" data-anchor-id="créditos-niv_descr_4-1-3-e-inversiones-niv_descr_4-4-6-monto-número-de-solicitudes-y-tasa">02 = Créditos (Niv_Descr_4 = 1-3) e Inversiones (Niv_Descr_4 = 4-6): Monto, Número de Solicitudes y Tasa</h6>
 <div class="cell" data-execution_count="10">
-<div class="cell-output cell-output-display" data-execution_count="118">
+<div class="cell-output cell-output-display" data-execution_count="10">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -827,14 +836,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EOM"</td>
 <td>"OMA"</td>
 <td>"02"</td>
-<td>"Inversiones"</td>
+<td>"Créditos"</td>
 <td>3</td>
 </tr>
 <tr class="even">
 <td>"EOM"</td>
 <td>"OMA"</td>
 <td>"02"</td>
-<td>"Créditos"</td>
+<td>"Inversiones"</td>
 <td>3</td>
 </tr>
 </tbody>
@@ -844,7 +853,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>Para ver todas las variables:</p>
 <div class="cell" data-execution_count="11">
-<div class="cell-output cell-output-display" data-execution_count="119">
+<div class="cell-output cell-output-display" data-execution_count="11">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -938,7 +947,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <section id="monto-número-de-operaciones-y-tasa" class="level6">
 <h6 class="anchored" data-anchor-id="monto-número-de-operaciones-y-tasa">03 = Monto, Número de Operaciones y Tasa</h6>
 <div class="cell" data-execution_count="12">
-<div class="cell-output cell-output-display" data-execution_count="120">
+<div class="cell-output cell-output-display" data-execution_count="12">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -969,14 +978,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EOM"</td>
 <td>"OMA"</td>
 <td>"03"</td>
-<td>"Número de Oper…</td>
+<td>"Monto"</td>
 <td>1</td>
 </tr>
 <tr class="even">
 <td>"EOM"</td>
 <td>"OMA"</td>
 <td>"03"</td>
-<td>"Monto"</td>
+<td>"Número de Oper…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
@@ -993,7 +1002,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>Para ver todas las variables:</p>
 <div class="cell" data-execution_count="13">
-<div class="cell-output cell-output-display" data-execution_count="121">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1055,7 +1064,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <section id="monto-número-de-operaciones-y-tasa-dólares---lempiras" class="level6">
 <h6 class="anchored" data-anchor-id="monto-número-de-operaciones-y-tasa-dólares---lempiras">04 = Monto, Número de Operaciones y Tasa (Dólares - Lempiras)</h6>
 <div class="cell" data-execution_count="14">
-<div class="cell-output cell-output-display" data-execution_count="122">
+<div class="cell-output cell-output-display" data-execution_count="14">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1109,7 +1118,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <div class="cell" data-execution_count="15">
-<div class="cell-output cell-output-display" data-execution_count="123">
+<div class="cell-output cell-output-display" data-execution_count="15">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1142,22 +1151,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EOM"</td>
 <td>"OMA"</td>
 <td>"04"</td>
-<td>"Monto"</td>
-<td>"Lempiras"</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EOM"</td>
-<td>"OMA"</td>
-<td>"04"</td>
-<td>"Número de Oper…</td>
-<td>"Lempiras"</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EOM"</td>
-<td>"OMA"</td>
-<td>"04"</td>
 <td>"Número de Oper…</td>
 <td>"Dólares"</td>
 <td>1</td>
@@ -1174,7 +1167,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EOM"</td>
 <td>"OMA"</td>
 <td>"04"</td>
-<td>"Tasa"</td>
+<td>"Monto"</td>
 <td>"Lempiras"</td>
 <td>1</td>
 </tr>
@@ -1184,6 +1177,22 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"04"</td>
 <td>"Monto"</td>
 <td>"Dólares"</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EOM"</td>
+<td>"OMA"</td>
+<td>"04"</td>
+<td>"Número de Oper…</td>
+<td>"Lempiras"</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EOM"</td>
+<td>"OMA"</td>
+<td>"04"</td>
+<td>"Tasa"</td>
+<td>"Lempiras"</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -1193,7 +1202,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>Para ver todas las variables:</p>
 <div class="cell" data-execution_count="16">
-<div class="cell-output cell-output-display" data-execution_count="124">
+<div class="cell-output cell-output-display" data-execution_count="16">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1294,7 +1303,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 7 grupos
 13 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="125">
+<div class="cell-output cell-output-display" data-execution_count="17">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1382,7 +1391,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <pre><code>1 subgrupos
 3608 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="126">
+<div class="cell-output cell-output-display" data-execution_count="18">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1426,7 +1435,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <li>VALOR BRUTO DE PRODUCCIóN</li>
 </ul>
 <div class="cell" data-execution_count="19">
-<div class="cell-output cell-output-display" data-execution_count="127">
+<div class="cell-output cell-output-display" data-execution_count="19">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1471,14 +1480,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"COU"</td>
 <td>"01"</td>
-<td>"OFERTA"</td>
+<td>"UTILIZACIÓN"</td>
 <td>580</td>
 </tr>
 <tr class="even">
 <td>"ESR"</td>
 <td>"COU"</td>
 <td>"01"</td>
-<td>"UTILIZACIÓN"</td>
+<td>"OFERTA"</td>
 <td>580</td>
 </tr>
 <tr class="odd">
@@ -1495,7 +1504,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>Si se quiere filtrar por las variables que se enumeraron:</p>
 <div class="cell" data-execution_count="20">
-<div class="cell-output cell-output-display" data-execution_count="128">
+<div class="cell-output cell-output-display" data-execution_count="20">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1531,20 +1540,11 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"COU"</td>
 <td>"01"</td>
 <td>"VALOR AGREGADO…</td>
-<td>"ESR-COU-01-220…</td>
-<td>"VALOR AGREGADO…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"COU"</td>
-<td>"01"</td>
-<td>"VALOR AGREGADO…</td>
 <td>"ESR-COU-01-222…</td>
 <td>"VALOR AGREGADO…</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>"ESR"</td>
 <td>"COU"</td>
 <td>"01"</td>
@@ -1553,12 +1553,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"VALOR AGREGADO…</td>
 <td>1</td>
 </tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"COU"</td>
+<td>"01"</td>
+<td>"VALOR AGREGADO…</td>
+<td>"ESR-COU-01-227…</td>
+<td>"VALOR AGREGADO…</td>
+<td>1</td>
+</tr>
 <tr class="even">
 <td>"ESR"</td>
 <td>"COU"</td>
 <td>"01"</td>
 <td>"VALOR AGREGADO…</td>
-<td>"ESR-COU-01-224…</td>
+<td>"ESR-COU-01-227…</td>
 <td>"VALOR AGREGADO…</td>
 <td>1</td>
 </tr>
@@ -1567,7 +1576,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"COU"</td>
 <td>"01"</td>
 <td>"VALOR AGREGADO…</td>
-<td>"ESR-COU-01-225…</td>
+<td>"ESR-COU-01-228…</td>
 <td>"VALOR AGREGADO…</td>
 <td>1</td>
 </tr>
@@ -1579,24 +1588,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>…</td>
 <td>…</td>
 <td>…</td>
-</tr>
-<tr class="odd">
-<td>"ESR"</td>
-<td>"COU"</td>
-<td>"01"</td>
-<td>"VALOR AGREGADO…</td>
-<td>"ESR-COU-01-249…</td>
-<td>"VALOR AGREGADO…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"COU"</td>
-<td>"01"</td>
-<td>"VALOR AGREGADO…</td>
-<td>"ESR-COU-01-250…</td>
-<td>"VALOR AGREGADO…</td>
-<td>1</td>
 </tr>
 <tr class="odd">
 <td>"ESR"</td>
@@ -1608,6 +1599,15 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>1</td>
 </tr>
 <tr class="even">
+<td>"ESR"</td>
+<td>"COU"</td>
+<td>"01"</td>
+<td>"VALOR AGREGADO…</td>
+<td>"ESR-COU-01-252…</td>
+<td>"VALOR AGREGADO…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
 <td>"ESR"</td>
 <td>"COU"</td>
 <td>"01"</td>
@@ -1616,12 +1616,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"VALOR AGREGADO…</td>
 <td>1</td>
 </tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"COU"</td>
+<td>"01"</td>
+<td>"VALOR AGREGADO…</td>
+<td>"ESR-COU-01-254…</td>
+<td>"VALOR AGREGADO…</td>
+<td>1</td>
+</tr>
 <tr class="odd">
 <td>"ESR"</td>
 <td>"COU"</td>
 <td>"01"</td>
 <td>"VALOR AGREGADO…</td>
-<td>"ESR-COU-01-255…</td>
+<td>"ESR-COU-01-254…</td>
 <td>"VALOR AGREGADO…</td>
 <td>1</td>
 </tr>
@@ -1632,7 +1641,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>Para saber el contenido de todas las variables:</p>
 <div class="cell" data-execution_count="21">
-<div class="cell-output cell-output-display" data-execution_count="129">
+<div class="cell-output cell-output-display" data-execution_count="21">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1775,7 +1784,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <pre><code>3 subgrupos
 371 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="130">
+<div class="cell-output cell-output-display" data-execution_count="22">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1830,7 +1839,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </ul>
 <p>“Niv_Descr_2” es el NPH</p>
 <div class="cell" data-execution_count="23">
-<div class="cell-output cell-output-display" data-execution_count="131">
+<div class="cell-output cell-output-display" data-execution_count="23">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1863,79 +1872,15 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"Consumo Interm…</td>
-<td>"Servicios Soci…</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
 <td>"Producción"</td>
-<td>"Servicios de E…</td>
-<td>7</td>
-</tr>
-<tr class="odd">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Valor Agregado…</td>
-<td>"Electricidad y…</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Valor Agregado…</td>
-<td>"Explotación de…</td>
-<td>7</td>
-</tr>
-<tr class="odd">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Consumo Interm…</td>
 <td>"Comercio, Repa…</td>
 <td>7</td>
 </tr>
 <tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="odd">
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"Consumo Interm…</td>
-<td>"Electricidad y…</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Consumo Interm…</td>
-<td>"Transporte y A…</td>
-<td>7</td>
-</tr>
-<tr class="odd">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Consumo Interm…</td>
-<td>"Administración…</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Consumo Interm…</td>
+<td>"Valor Agregado…</td>
 <td>"Servicios de I…</td>
 <td>7</td>
 </tr>
@@ -1943,8 +1888,72 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
+<td>"Consumo Interm…</td>
+<td>"Construcción"</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Consumo Interm…</td>
+<td>"Hoteles y Rest…</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Consumo Interm…</td>
+<td>"Comunicaciones…</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
 <td>"Valor Agregado…</td>
-<td>"Comercio, Repa…</td>
+<td>"Comunicaciones…</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Consumo Interm…</td>
+<td>"Industrias Man…</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Consumo Interm…</td>
+<td>"Transporte y A…</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Producción"</td>
+<td>"Servicios Comu…</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Valor Agregado…</td>
+<td>"Electricidad y…</td>
 <td>7</td>
 </tr>
 </tbody>
@@ -1954,7 +1963,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>“Niv_Descr_3” es la NAEH</p>
 <div class="cell" data-execution_count="24">
-<div class="cell-output cell-output-display" data-execution_count="132">
+<div class="cell-output cell-output-display" data-execution_count="24">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -1988,23 +1997,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"CCI"</td>
 <td>"01"</td>
 <td>"Consumo Interm…</td>
-<td>"SIFMI"</td>
-<td>18</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Valor Agregado…</td>
-<td>"ISFLSH"</td>
-<td>18</td>
-</tr>
-<tr class="odd">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Valor Agregado…</td>
-<td>"Sociedades Fi…</td>
+<td>"Sociedades No…</td>
 <td>18</td>
 </tr>
 <tr class="even">
@@ -2013,6 +2006,22 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"01"</td>
 <td>"Valor Agregado…</td>
 <td>"Sociedades No…</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Consumo Interm…</td>
+<td>"Economía Total…</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Valor Agregado…</td>
+<td>"Economía Total…</td>
 <td>18</td>
 </tr>
 <tr class="odd">
@@ -2036,22 +2045,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"CCI"</td>
 <td>"01"</td>
 <td>"Producción"</td>
-<td>"Economía Total…</td>
-<td>17</td>
-</tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Producción"</td>
-<td>"SIFMI"</td>
-<td>17</td>
-</tr>
-<tr class="odd">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"Producción"</td>
 <td>"ISFLSH"</td>
 <td>17</td>
 </tr>
@@ -2060,7 +2053,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"CCI"</td>
 <td>"01"</td>
 <td>"Producción"</td>
-<td>"Sociedades Fi…</td>
+<td>"Gobierno Gener…</td>
 <td>17</td>
 </tr>
 <tr class="odd">
@@ -2068,7 +2061,23 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"CCI"</td>
 <td>"01"</td>
 <td>"Producción"</td>
+<td>"Sociedades Fi…</td>
+<td>17</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Producción"</td>
 <td>"Sociedades No…</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"Producción"</td>
+<td>"Economía Total…</td>
 <td>17</td>
 </tr>
 </tbody>
@@ -2078,7 +2087,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <p>Para saber el contenido de todas las variables:</p>
 <div class="cell" data-execution_count="25">
-<div class="cell-output cell-output-display" data-execution_count="133">
+<div class="cell-output cell-output-display" data-execution_count="25">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2115,9 +2124,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-3"</td>
+<td>"ESR-CCI-01-24"</td>
 <td>"Consumo Interm…</td>
-<td>"Actividades In…</td>
+<td>"Comercio, Repa…</td>
 <td>"Hogares"</td>
 <td>1</td>
 </tr>
@@ -2125,19 +2134,19 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-19"</td>
+<td>"ESR-CCI-01-91"</td>
 <td>"Consumo Interm…</td>
-<td>"Agricultura, G…</td>
-<td>"SIFMI"</td>
+<td>"Servicios Comu…</td>
+<td>"Sociedades No…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-20"</td>
-<td>"Consumo Interm…</td>
-<td>"Agricultura, G…</td>
+<td>"ESR-CCI-01-132…</td>
+<td>"Producción"</td>
+<td>"Actividades In…</td>
 <td>"Sociedades Fi…</td>
 <td>1</td>
 </tr>
@@ -2145,20 +2154,20 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-32"</td>
-<td>"Consumo Interm…</td>
-<td>"Comunicaciones…</td>
-<td>"ISFLSH"</td>
+<td>"ESR-CCI-01-149…</td>
+<td>"Producción"</td>
+<td>"Comercio, Repa…</td>
+<td>"Gobierno Gener…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-35"</td>
-<td>"Consumo Interm…</td>
-<td>"Comunicaciones…</td>
-<td>"Sociedades No…</td>
+<td>"ESR-CCI-01-163…</td>
+<td>"Producción"</td>
+<td>"Construcción"</td>
+<td>"Gobierno Gener…</td>
 <td>1</td>
 </tr>
 <tr class="even">
@@ -2172,6 +2181,16 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>…</td>
 </tr>
 <tr class="odd">
+<td>"ESR"</td>
+<td>"CCI"</td>
+<td>"01"</td>
+<td>"ESR-CCI-01-288…</td>
+<td>"Valor Agregado…</td>
+<td>"Electricidad y…</td>
+<td>"Economía Total…</td>
+<td>1</td>
+</tr>
+<tr class="even">
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
@@ -2181,23 +2200,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"Hogares"</td>
 <td>1</td>
 </tr>
-<tr class="even">
-<td>"ESR"</td>
-<td>"CCI"</td>
-<td>"01"</td>
-<td>"ESR-CCI-01-294…</td>
-<td>"Valor Agregado…</td>
-<td>"Electricidad y…</td>
-<td>"Sociedades No…</td>
-<td>1</td>
-</tr>
 <tr class="odd">
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-295…</td>
+<td>"ESR-CCI-01-323…</td>
 <td>"Valor Agregado…</td>
-<td>"Explotación de…</td>
+<td>"Propiedad de V…</td>
 <td>"Economía Total…</td>
 <td>1</td>
 </tr>
@@ -2205,20 +2214,20 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-338…</td>
+<td>"ESR-CCI-01-358…</td>
 <td>"Valor Agregado…</td>
-<td>"Servicios de E…</td>
-<td>"Gobierno Gener…</td>
+<td>"Total"</td>
+<td>"Economía Total…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
 <td>"ESR"</td>
 <td>"CCI"</td>
 <td>"01"</td>
-<td>"ESR-CCI-01-345…</td>
+<td>"ESR-CCI-01-371…</td>
 <td>"Valor Agregado…</td>
-<td>"Servicios de I…</td>
-<td>"Gobierno Gener…</td>
+<td>"Transporte y A…</td>
+<td>"Sociedades No…</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -2234,7 +2243,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <pre><code>3 subgrupos
 120 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="134">
+<div class="cell-output cell-output-display" data-execution_count="26">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2283,16 +2292,408 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </section>
+<section id="piba-pib-anual" class="level4">
+<h4 class="anchored" data-anchor-id="piba-pib-anual">PIBA = PIB Anual</h4>
+<div class="cell" data-execution_count="27">
+<div class="cell-output cell-output-stdout">
+<pre><code>7 subgrupos
+118 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="27">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (7, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Descr_4</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBA"</td>
+<td>" Constantes "</td>
+<td>42</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"PIBA"</td>
+<td>" Corrientes "</td>
+<td>34</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBA"</td>
+<td>" Precio "</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"PIBA"</td>
+<td>" Variación "</td>
+<td>13</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBA"</td>
+<td>" Corrientes "</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"PIBA"</td>
+<td>" Lempiras "</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBA"</td>
+<td>" Dólares "</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="pibt-pib-trimestral" class="level4">
+<h4 class="anchored" data-anchor-id="pibt-pib-trimestral">PIBT = PIB Trimestral</h4>
+<div class="cell" data-execution_count="28">
+<div class="cell-output cell-output-stdout">
+<pre><code>24 subgrupos
+97 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (24, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Descr_4</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Producto Inter…</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Gastos de Cons…</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Importación de…</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Servicios de E…</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Más Impuestos …</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Comunicaciones…</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Transporte y A…</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Industrias Man…</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>"Comercio Repar…</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"PIBT"</td>
+<td>null</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="oda-oferta-y-demanda-agregada" class="level4">
+<h4 class="anchored" data-anchor-id="oda-oferta-y-demanda-agregada">ODA = Oferta y Demanda Agregada</h4>
+<div class="cell" data-execution_count="29">
+<div class="cell-output cell-output-stdout">
+<pre><code>20 subgrupos
+94 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="29">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (20, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Descr_4</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"VARIACIONES RE…</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"EN MILLONES DE…</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"VARIACIONES RE…</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"EN MILLONES DE…</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"DEMANDA EXTERN…</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"DEMANDA INTERN…</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"VALOR AGREGADO…</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"VARIACIÓN DE E…</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"TOTAL VALOR AG…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"ODA"</td>
+<td>"VALOR AGREGADO…</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="imae-índice-mensual-de-la-actividad-económica" class="level4">
+<h4 class="anchored" data-anchor-id="imae-índice-mensual-de-la-actividad-económica">IMAE = Índice Mensual de la Actividad Económica</h4>
+<div class="cell" data-execution_count="30">
+<div class="cell-output cell-output-stdout">
+<pre><code>13 subgrupos
+39 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (13, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Descr_4</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Inter. Financ…</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Tendencia Cic…</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Agricultura, …</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Transporte y …</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Industria Man…</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Electricidad …</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Correo y Tele…</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Hoteles y Res…</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Serie Origina…</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>"ESR"</td>
+<td>"IMAE"</td>
+<td>" Construcción …</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="ese-estadísticas-del-sector-externo" class="level3">
 <h3 class="anchored" data-anchor-id="ese-estadísticas-del-sector-externo">ESE = Estadísticas del Sector Externo</h3>
-<div class="cell" data-execution_count="27">
+<div class="cell" data-execution_count="31">
 <div class="cell-output cell-output-stdout">
 <pre><code>1313 variables
 6 grupos
 12 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="135">
+<div class="cell-output cell-output-display" data-execution_count="31">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2368,12 +2769,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </ul>
 <section id="de-deuda-externa" class="level4">
 <h4 class="anchored" data-anchor-id="de-deuda-externa">DE = Deuda Externa</h4>
-<div class="cell" data-execution_count="28">
+<div class="cell" data-execution_count="32">
 <div class="cell-output cell-output-stdout">
 <pre><code>4 subgrupos
 737 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="136">
+<div class="cell-output cell-output-display" data-execution_count="32">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2427,10 +2828,10 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<section id="deudor" class="level6">
-<h6 class="anchored" data-anchor-id="deudor">01 - Deudor</h6>
-<div class="cell" data-execution_count="29">
-<div class="cell-output cell-output-display" data-execution_count="137">
+<section id="deudor" class="level5">
+<h5 class="anchored" data-anchor-id="deudor">01 - Deudor</h5>
+<div class="cell" data-execution_count="33">
+<div class="cell-output cell-output-display" data-execution_count="33">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2472,7 +2873,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"DE"</td>
 <td>"01"</td>
 <td>"Deudor"</td>
-<td>"Empresas Públi…</td>
+<td>"Gobierno Gener…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
@@ -2480,7 +2881,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"DE"</td>
 <td>"01"</td>
 <td>"Deudor"</td>
-<td>"Instituciones …</td>
+<td>"Empresas Públi…</td>
 <td>1</td>
 </tr>
 <tr class="even">
@@ -2488,7 +2889,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"DE"</td>
 <td>"01"</td>
 <td>"Deudor"</td>
-<td>"Gobierno Gener…</td>
+<td>"Instituciones …</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -2497,8 +2898,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="30">
-<div class="cell-output cell-output-display" data-execution_count="138">
+<div class="cell" data-execution_count="34">
+<div class="cell-output cell-output-display" data-execution_count="34">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2571,10 +2972,10 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </section>
-<section id="acreedor" class="level6">
-<h6 class="anchored" data-anchor-id="acreedor">02 - Acreedor</h6>
-<div class="cell" data-execution_count="31">
-<div class="cell-output cell-output-display" data-execution_count="139">
+<section id="acreedor" class="level5">
+<h5 class="anchored" data-anchor-id="acreedor">02 - Acreedor</h5>
+<div class="cell" data-execution_count="35">
+<div class="cell-output cell-output-display" data-execution_count="35">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2657,8 +3058,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="32">
-<div class="cell-output cell-output-display" data-execution_count="140">
+<div class="cell" data-execution_count="36">
+<div class="cell-output cell-output-display" data-execution_count="36">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2749,10 +3150,10 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </section>
-<section id="acreedor-1" class="level6">
-<h6 class="anchored" data-anchor-id="acreedor-1">03 - Acreedor</h6>
-<div class="cell" data-execution_count="33">
-<div class="cell-output cell-output-display" data-execution_count="141">
+<section id="acreedor-1" class="level5">
+<h5 class="anchored" data-anchor-id="acreedor-1">03 - Acreedor</h5>
+<div class="cell" data-execution_count="37">
+<div class="cell-output cell-output-display" data-execution_count="37">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2783,35 +3184,35 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"03"</td>
-<td>"Gobierno gener…</td>
-<td>144</td>
-</tr>
-<tr class="even">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
 <td>"Banco Central"</td>
 <td>144</td>
 </tr>
-<tr class="odd">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
-<td>"Otras sociedad…</td>
-<td>120</td>
-</tr>
 <tr class="even">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"03"</td>
-<td>"Otros Sectores…</td>
-<td>120</td>
+<td>"Gobierno gener…</td>
+<td>144</td>
 </tr>
 <tr class="odd">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"03"</td>
 <td>"Sociedades no …</td>
+<td>120</td>
+</tr>
+<tr class="even">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Otras sociedad…</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Otros Sectores…</td>
 <td>120</td>
 </tr>
 <tr class="even">
@@ -2834,8 +3235,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <li>Saldo bruto de la deuda externa</li>
 <li>Sociedades no financieras</li>
 </ul>
-<div class="cell" data-execution_count="34">
-<div class="cell-output cell-output-display" data-execution_count="142">
+<div class="cell" data-execution_count="38">
+<div class="cell-output cell-output-display" data-execution_count="38">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -2869,22 +3270,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"DE"</td>
 <td>"03"</td>
 <td>"Banco Central"</td>
-<td>"Créditos y ant…</td>
-<td>16</td>
-</tr>
-<tr class="even">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
-<td>"Banco Central"</td>
-<td>"Moneda y depós…</td>
-<td>16</td>
-</tr>
-<tr class="odd">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
-<td>"Banco Central"</td>
 <td>"Otros pasivos …</td>
 <td>16</td>
 </tr>
@@ -2893,48 +3278,16 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"DE"</td>
 <td>"03"</td>
 <td>"Banco Central"</td>
+<td>"Asignación de …</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Banco Central"</td>
 <td>"Préstamos "</td>
 <td>16</td>
-</tr>
-<tr class="odd">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
-<td>"Banco Central"</td>
-<td>"Asignación de …</td>
-<td>16</td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="odd">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
-<td>"Banco Central"</td>
-<td>"Préstamos"</td>
-<td>8</td>
-</tr>
-<tr class="even">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
-<td>"Banco Central"</td>
-<td>"Moneda y depós…</td>
-<td>8</td>
-</tr>
-<tr class="odd">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"03"</td>
-<td>"Banco Central"</td>
-<td>"Asignación de …</td>
-<td>8</td>
 </tr>
 <tr class="even">
 <td>"ESE"</td>
@@ -2942,7 +3295,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"03"</td>
 <td>"Banco Central"</td>
 <td>"Créditos y ant…</td>
-<td>8</td>
+<td>16</td>
 </tr>
 <tr class="odd">
 <td>"ESE"</td>
@@ -2950,6 +3303,54 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"03"</td>
 <td>"Banco Central"</td>
 <td>"Títulos de deu…</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Banco Central"</td>
+<td>"Asignación de …</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Banco Central"</td>
+<td>"Préstamos"</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Banco Central"</td>
+<td>"Otros pasivos …</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Banco Central"</td>
+<td>"Títulos de deu…</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"03"</td>
+<td>"Banco Central"</td>
+<td>"Moneda y depós…</td>
 <td>8</td>
 </tr>
 </tbody>
@@ -2973,8 +3374,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <li>Saldo bruto de la deuda externa</li>
 <li>Saldo bruto de la deuda externa</li>
 </ul>
-<div class="cell" data-execution_count="35">
-<div class="cell-output cell-output-display" data-execution_count="143">
+<div class="cell" data-execution_count="39">
+<div class="cell-output cell-output-display" data-execution_count="39">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3005,7 +3406,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"03"</td>
-<td>"Préstamos "</td>
+<td>"Créditos y ant…</td>
 <td>80</td>
 </tr>
 <tr class="even">
@@ -3019,21 +3420,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"03"</td>
-<td>"Moneda y depós…</td>
+<td>"Otros pasivos …</td>
 <td>80</td>
 </tr>
 <tr class="even">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"03"</td>
-<td>"Otros pasivos …</td>
+<td>"Préstamos "</td>
 <td>80</td>
 </tr>
 <tr class="odd">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"03"</td>
-<td>"Créditos y ant…</td>
+<td>"Moneda y depós…</td>
 <td>80</td>
 </tr>
 <tr class="even">
@@ -3084,8 +3485,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables (Nota: el nivel de descripción sigue):</p>
-<div class="cell" data-execution_count="36">
-<div class="cell-output cell-output-display" data-execution_count="144">
+<div class="cell" data-execution_count="40">
+<div class="cell-output cell-output-display" data-execution_count="40">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3403,8 +3804,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </section>
-<section id="acreedor-2" class="level6">
-<h6 class="anchored" data-anchor-id="acreedor-2">04 - Acreedor</h6>
+<section id="acreedor-2" class="level5">
+<h5 class="anchored" data-anchor-id="acreedor-2">04 - Acreedor</h5>
 <ul>
 <li>Gobierno general</li>
 <li>Banco Central</li>
@@ -3413,8 +3814,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <li>Sociedades no financieras</li>
 <li>Deuda externa total a corto plazo</li>
 </ul>
-<div class="cell" data-execution_count="37">
-<div class="cell-output cell-output-display" data-execution_count="145">
+<div class="cell" data-execution_count="41">
+<div class="cell-output cell-output-display" data-execution_count="41">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3466,14 +3867,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"Sociedades no …</td>
+<td>"Otras sociedad…</td>
 <td>10</td>
 </tr>
 <tr class="odd">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"Otras sociedad…</td>
+<td>"Sociedades no …</td>
 <td>10</td>
 </tr>
 <tr class="even">
@@ -3493,8 +3894,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <li>A largo plazo exigible dentro de un año o antes</li>
 <li>Deuda externa total a corto plazo</li>
 </ul>
-<div class="cell" data-execution_count="38">
-<div class="cell-output cell-output-display" data-execution_count="146">
+<div class="cell" data-execution_count="42">
+<div class="cell-output cell-output-display" data-execution_count="42">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3556,8 +3957,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <li>Otros pasivos de deuda</li>
 <li>Deuda externa total a corto plazo (según el vencimiento residual)</li>
 </ul>
-<div class="cell" data-execution_count="39">
-<div class="cell-output cell-output-display" data-execution_count="147">
+<div class="cell" data-execution_count="43">
+<div class="cell-output cell-output-display" data-execution_count="43">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3588,21 +3989,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"Créditos y ant…</td>
-<td>10</td>
-</tr>
-<tr class="even">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"04"</td>
-<td>"Otros pasivos …</td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"04"</td>
-<td>"Moneda y depós…</td>
+<td>"Títulos de deu…</td>
 <td>10</td>
 </tr>
 <tr class="even">
@@ -3616,7 +4003,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"Títulos de deu…</td>
+<td>"Moneda y depós…</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"04"</td>
+<td>"Otros pasivos …</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"04"</td>
+<td>"Créditos y ant…</td>
 <td>10</td>
 </tr>
 <tr class="even">
@@ -3639,8 +4040,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="40">
-<div class="cell-output cell-output-display" data-execution_count="148">
+<div class="cell" data-execution_count="44">
+<div class="cell-output cell-output-display" data-execution_count="44">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3677,83 +4078,73 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"ESE-DE-04-13"</td>
+<td>"ESE-DE-04-18"</td>
 <td>"Banco Central"</td>
 <td>"A corto plazo …</td>
-<td>"Asignación de …</td>
+<td>"Otros pasivos …</td>
 <td>1</td>
 </tr>
 <tr class="even">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"ESE-DE-04-33"</td>
-<td>"Otros Sectores…</td>
+<td>"ESE-DE-04-24"</td>
+<td>"Banco Central"</td>
 <td>"A largo plazo …</td>
-<td>"Créditos y ant…</td>
+<td>"Otros pasivos …</td>
 <td>1</td>
 </tr>
 <tr class="odd">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"ESE-DE-04-36"</td>
+<td>"ESE-DE-04-38"</td>
 <td>"Otras sociedad…</td>
+<td>"A corto plazo …</td>
+<td>"Créditos y ant…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"04"</td>
+<td>"ESE-DE-04-47"</td>
+<td>"Sociedades no …</td>
+<td>"A corto plazo …</td>
+<td>"Préstamos"</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"04"</td>
+<td>"ESE-DE-04-46"</td>
+<td>"Sociedades no …</td>
 <td>"A corto plazo …</td>
 <td>"Títulos de deu…</td>
 <td>1</td>
 </tr>
 <tr class="even">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"04"</td>
-<td>"ESE-DE-04-43"</td>
-<td>"Otras sociedad…</td>
-<td>"A largo plazo …</td>
-<td>"Créditos y ant…</td>
-<td>1</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
 </tr>
 <tr class="odd">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"ESE-DE-04-8"</td>
-<td>"Gobierno gener…</td>
-<td>"A largo plazo …</td>
+<td>"ESE-DE-04-25"</td>
+<td>"Otros Sectores…</td>
+<td>"A corto plazo …</td>
 <td>"Moneda y depós…</td>
 <td>1</td>
 </tr>
 <tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="odd">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"04"</td>
-<td>"ESE-DE-04-9"</td>
-<td>"Gobierno gener…</td>
-<td>"A largo plazo …</td>
-<td>"Títulos de deu…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"ESE"</td>
-<td>"DE"</td>
-<td>"04"</td>
-<td>"ESE-DE-04-21"</td>
-<td>"Banco Central"</td>
-<td>"A largo plazo …</td>
-<td>"Títulos de deu…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
@@ -3761,6 +4152,16 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"Otros Sectores…</td>
 <td>"A largo plazo …</td>
 <td>"Títulos de deu…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"DE"</td>
+<td>"04"</td>
+<td>"ESE-DE-04-32"</td>
+<td>"Otros Sectores…</td>
+<td>"A largo plazo …</td>
+<td>"Préstamos"</td>
 <td>1</td>
 </tr>
 <tr class="even">
@@ -3777,10 +4178,10 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESE"</td>
 <td>"DE"</td>
 <td>"04"</td>
-<td>"ESE-DE-04-46"</td>
+<td>"ESE-DE-04-48"</td>
 <td>"Sociedades no …</td>
 <td>"A corto plazo …</td>
-<td>"Títulos de deu…</td>
+<td>"Créditos y ant…</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -3790,16 +4191,254 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </section>
 </section>
+<section id="ceb-comercio-exterior-de-bienes" class="level4">
+<h4 class="anchored" data-anchor-id="ceb-comercio-exterior-de-bienes">CEB = Comercio Exterior de Bienes</h4>
+<div class="cell" data-execution_count="45">
+<div class="cell-output cell-output-stdout">
+<pre><code>4 subgrupos
+339 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="45">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (4, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_3</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"CEB"</td>
+<td>"04"</td>
+<td>159</td>
+</tr>
+<tr class="even">
+<td>"ESE"</td>
+<td>"CEB"</td>
+<td>"03"</td>
+<td>93</td>
+</tr>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"CEB"</td>
+<td>"01"</td>
+<td>66</td>
+</tr>
+<tr class="even">
+<td>"ESE"</td>
+<td>"CEB"</td>
+<td>"02"</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="bp-balanza-de-pagos" class="level4">
+<h4 class="anchored" data-anchor-id="bp-balanza-de-pagos">BP = Balanza de Pagos</h4>
+<div class="cell" data-execution_count="46">
+<div class="cell-output cell-output-stdout">
+<pre><code>1 subgrupos
+182 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="46">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (1, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_3</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"BP"</td>
+<td>"01"</td>
+<td>182</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="ies---ingresos-y-egresos-de-servicios" class="level4">
+<h4 class="anchored" data-anchor-id="ies---ingresos-y-egresos-de-servicios">IES - Ingresos y Egresos de Servicios</h4>
+<div class="cell" data-execution_count="47">
+<div class="cell-output cell-output-stdout">
+<pre><code>1 subgrupos
+28 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="47">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (1, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_3</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"IES"</td>
+<td>"01"</td>
+<td>28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="pii-posición-de-inversión-inernacional" class="level4">
+<h4 class="anchored" data-anchor-id="pii-posición-de-inversión-inernacional">PII = Posición de Inversión Inernacional</h4>
+<div class="cell" data-execution_count="48">
+<div class="cell-output cell-output-stdout">
+<pre><code>1 subgrupos
+17 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="48">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (1, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_3</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"PII"</td>
+<td>"01"</td>
+<td>17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="ied-inversión-extranjera-directa" class="level4">
+<h4 class="anchored" data-anchor-id="ied-inversión-extranjera-directa">IED = Inversión Extranjera Directa</h4>
+<div class="cell" data-execution_count="49">
+<div class="cell-output cell-output-stdout">
+<pre><code>1 subgrupos
+10 variables</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="49">
+<div><style>
+.dataframe > thead > tr,
+.dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+</style>
+<small>shape: (1, 4)</small>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Niv_Gr_1</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_2</th>
+<th data-quarto-table-cell-role="th">Niv_Gr_3</th>
+<th data-quarto-table-cell-role="th">N_Variables</th>
+</tr>
+<tr class="odd">
+<th>str</th>
+<th>str</th>
+<th>str</th>
+<th>u32</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>"ESE"</td>
+<td>"IED"</td>
+<td>"01"</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="emf-estadísiticas-monetarias-y-financieras" class="level3">
 <h3 class="anchored" data-anchor-id="emf-estadísiticas-monetarias-y-financieras">EMF = Estadísiticas Monetarias y Financieras</h3>
-<div class="cell" data-execution_count="41">
+<div class="cell" data-execution_count="50">
 <div class="cell-output cell-output-stdout">
 <pre><code>158 variables
 4 grupos
 12 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="149">
+<div class="cell-output cell-output-display" data-execution_count="50">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3855,12 +4494,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="amcc-agregados-monetarios-crédito-y-captación" class="level4">
 <h4 class="anchored" data-anchor-id="amcc-agregados-monetarios-crédito-y-captación">AMCC = Agregados Monetarios, Crédito y Captación</h4>
-<div class="cell" data-execution_count="42">
+<div class="cell" data-execution_count="51">
 <div class="cell-output cell-output-stdout">
 <pre><code>6 subgrupos
 102 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="150">
+<div class="cell-output cell-output-display" data-execution_count="51">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3928,8 +4567,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="section" class="level5">
 <h5 class="anchored" data-anchor-id="section">01</h5>
-<div class="cell" data-execution_count="43">
-<div class="cell-output cell-output-display" data-execution_count="151">
+<div class="cell" data-execution_count="52">
+<div class="cell-output cell-output-display" data-execution_count="52">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -3974,20 +4613,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" Crédito Otras…</td>
-<td>6</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"01"</td>
-<td>" Crédito Secto…</td>
-<td>6</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"01"</td>
 <td>" Crédito de lo…</td>
 <td>6</td>
 </tr>
@@ -3995,14 +4620,28 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" Agregados Mon…</td>
+<td>" Crédito Otras…</td>
 <td>6</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
+<td>" Agregados Mon…</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"01"</td>
 <td>" Crédito Otras…</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"01"</td>
+<td>" Crédito Secto…</td>
 <td>6</td>
 </tr>
 </tbody>
@@ -4010,8 +4649,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="44">
-<div class="cell-output cell-output-display" data-execution_count="152">
+<div class="cell" data-execution_count="53">
+<div class="cell-output cell-output-display" data-execution_count="53">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4042,21 +4681,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" Empresas Priv…</td>
+<td>" Hogares"</td>
 <td>12</td>
 </tr>
 <tr class="even">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" Hogares"</td>
+<td>" Total"</td>
 <td>12</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" Total"</td>
+<td>" Empresas Priv…</td>
 <td>12</td>
 </tr>
 <tr class="even">
@@ -4070,21 +4709,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" M3"</td>
+<td>" M1"</td>
 <td>2</td>
 </tr>
 <tr class="even">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" M2"</td>
+<td>" M3"</td>
 <td>2</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"01"</td>
-<td>" M1"</td>
+<td>" M2"</td>
 <td>2</td>
 </tr>
 </tbody>
@@ -4093,8 +4732,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="45">
-<div class="cell-output cell-output-display" data-execution_count="153">
+<div class="cell" data-execution_count="54">
+<div class="cell-output cell-output-display" data-execution_count="54">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4245,8 +4884,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="section-1" class="level5">
 <h5 class="anchored" data-anchor-id="section-1">02</h5>
-<div class="cell" data-execution_count="46">
-<div class="cell-output cell-output-display" data-execution_count="154">
+<div class="cell" data-execution_count="55">
+<div class="cell-output cell-output-display" data-execution_count="55">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4292,8 +4931,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="47">
-<div class="cell-output cell-output-display" data-execution_count="155">
+<div class="cell" data-execution_count="56">
+<div class="cell-output cell-output-display" data-execution_count="56">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4324,6 +4963,62 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"02"</td>
+<td>"Captacióndelos…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"02"</td>
+<td>"CaptaciónBCOtr…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"02"</td>
+<td>"Captacióndelas…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"02"</td>
+<td>"VariaciónCapta…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"02"</td>
+<td>"VariaciónCapta…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"02"</td>
+<td>"VariaciónCapta…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"02"</td>
+<td>"VariaciónCapta…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"02"</td>
 <td>"CaptaciónBCHog…</td>
 <td>1</td>
 </tr>
@@ -4341,69 +5036,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"VariaciónCapta…</td>
 <td>1</td>
 </tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"02"</td>
-<td>"VariaciónCapta…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"02"</td>
-<td>"VariaciónCapta…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"02"</td>
-<td>"CaptaciónBCOtr…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"02"</td>
-<td>"Captacióndelos…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"02"</td>
-<td>"VariaciónCapta…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"02"</td>
-<td>"CaptaciónBCOtr…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"02"</td>
-<td>"CaptaciónOSDOt…</td>
-<td>1</td>
-</tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="48">
-<div class="cell-output cell-output-display" data-execution_count="156">
+<div class="cell" data-execution_count="57">
+<div class="cell-output cell-output-display" data-execution_count="57">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4441,14 +5080,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"02"</td>
-<td>"Hogares"</td>
+<td>"Empresas Priva…</td>
 <td>4</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"02"</td>
-<td>"Empresas Priva…</td>
+<td>"Hogares"</td>
 <td>4</td>
 </tr>
 <tr class="even">
@@ -4464,8 +5103,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="49">
-<div class="cell-output cell-output-display" data-execution_count="157">
+<div class="cell" data-execution_count="58">
+<div class="cell-output cell-output-display" data-execution_count="58">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4616,8 +5255,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="crédito-de-los-bancos-comerciales" class="level5">
 <h5 class="anchored" data-anchor-id="crédito-de-los-bancos-comerciales">03 Crédito de los Bancos Comerciales</h5>
-<div class="cell" data-execution_count="50">
-<div class="cell-output cell-output-display" data-execution_count="158">
+<div class="cell" data-execution_count="59">
+<div class="cell-output cell-output-display" data-execution_count="59">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4656,8 +5295,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="51">
-<div class="cell-output cell-output-display" data-execution_count="159">
+<div class="cell" data-execution_count="60">
+<div class="cell-output cell-output-display" data-execution_count="60">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4690,11 +5329,19 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"03"</td>
-<td>"CréditodelosBa…</td>
-<td>"Saldo"</td>
+<td>"VariaciónCrédi…</td>
+<td>"Variación"</td>
 <td>1</td>
 </tr>
 <tr class="even">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"03"</td>
+<td>"VariaciónCrédi…</td>
+<td>"Variación"</td>
+<td>1</td>
+</tr>
+<tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"03"</td>
@@ -4702,19 +5349,11 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"Saldo"</td>
 <td>1</td>
 </tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"03"</td>
-<td>"VariaciónCrédi…</td>
-<td>"Variación"</td>
-<td>1</td>
-</tr>
 <tr class="even">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"03"</td>
-<td>"CréditoBCHogar…</td>
+<td>"CréditodelosBa…</td>
 <td>"Saldo"</td>
 <td>1</td>
 </tr>
@@ -4722,8 +5361,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"03"</td>
-<td>"VariaciónCrédi…</td>
-<td>"Variación"</td>
+<td>"CréditoBCHogar…</td>
+<td>"Saldo"</td>
 <td>1</td>
 </tr>
 <tr class="even">
@@ -4740,8 +5379,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="52">
-<div class="cell-output cell-output-display" data-execution_count="160">
+<div class="cell" data-execution_count="61">
+<div class="cell-output cell-output-display" data-execution_count="61">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4842,8 +5481,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="crédito-de-los-bancos-comerciales-1" class="level5">
 <h5 class="anchored" data-anchor-id="crédito-de-los-bancos-comerciales-1">04 Crédito de los Bancos Comerciales</h5>
-<div class="cell" data-execution_count="53">
-<div class="cell-output cell-output-display" data-execution_count="161">
+<div class="cell" data-execution_count="62">
+<div class="cell-output cell-output-display" data-execution_count="62">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4882,8 +5521,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="54">
-<div class="cell-output cell-output-display" data-execution_count="162">
+<div class="cell" data-execution_count="63">
+<div class="cell-output cell-output-display" data-execution_count="63">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -4940,16 +5579,16 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"04"</td>
-<td>"VariaciónCrédi…</td>
-<td>"Variación"</td>
+<td>"CréditodelasOS…</td>
+<td>"Saldo"</td>
 <td>1</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"04"</td>
-<td>"CréditodelasOS…</td>
-<td>"Saldo"</td>
+<td>"VariaciónCrédi…</td>
+<td>"Variación"</td>
 <td>1</td>
 </tr>
 <tr class="even">
@@ -4966,8 +5605,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="55">
-<div class="cell-output cell-output-display" data-execution_count="163">
+<div class="cell" data-execution_count="64">
+<div class="cell-output cell-output-display" data-execution_count="64">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5068,8 +5707,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="saldo-de-préstamos-millones-de-lempiras" class="level5">
 <h5 class="anchored" data-anchor-id="saldo-de-préstamos-millones-de-lempiras">05 Saldo de Préstamos (Millones de Lempiras)</h5>
-<div class="cell" data-execution_count="56">
-<div class="cell-output cell-output-display" data-execution_count="164">
+<div class="cell" data-execution_count="65">
+<div class="cell-output cell-output-display" data-execution_count="65">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5108,8 +5747,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="57">
-<div class="cell-output cell-output-display" data-execution_count="165">
+<div class="cell" data-execution_count="66">
+<div class="cell-output cell-output-display" data-execution_count="66">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5160,8 +5799,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="58">
-<div class="cell-output cell-output-display" data-execution_count="166">
+<div class="cell" data-execution_count="67">
+<div class="cell-output cell-output-display" data-execution_count="67">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5208,9 +5847,29 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"05"</td>
-<td>"EMF-AMCC-05-2"</td>
+<td>"EMF-AMCC-05-4"</td>
 <td>"Saldo de prést…</td>
-<td>"Comercio"</td>
+<td>"Industria"</td>
+<td>"Saldo"</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"05"</td>
+<td>"EMF-AMCC-05-7"</td>
+<td>"Saldo de prést…</td>
+<td>"Total"</td>
+<td>"Saldo"</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"05"</td>
+<td>"EMF-AMCC-05-3"</td>
+<td>"Saldo de prést…</td>
+<td>"Consumo"</td>
 <td>"Saldo"</td>
 <td>1</td>
 </tr>
@@ -5225,26 +5884,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>1</td>
 </tr>
 <tr class="even">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"05"</td>
-<td>"EMF-AMCC-05-7"</td>
-<td>"Saldo de prést…</td>
-<td>"Total"</td>
-<td>"Saldo"</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"05"</td>
-<td>"EMF-AMCC-05-6"</td>
-<td>"Saldo de prést…</td>
-<td>"Servicios"</td>
-<td>"Saldo"</td>
-<td>1</td>
-</tr>
-<tr class="even">
 <td>…</td>
 <td>…</td>
 <td>…</td>
@@ -5258,23 +5897,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"05"</td>
-<td>"EMF-AMCC-05-14…</td>
+<td>"EMF-AMCC-05-12…</td>
 <td>"Saldo de prést…</td>
-<td>"VariaciónTotal…</td>
+<td>"VariaciónPropi…</td>
 <td>"Variación"</td>
 <td>1</td>
 </tr>
 <tr class="even">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"05"</td>
-<td>"EMF-AMCC-05-13…</td>
-<td>"Saldo de prést…</td>
-<td>"VariaciónServi…</td>
-<td>"Variación"</td>
-<td>1</td>
-</tr>
-<tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"05"</td>
@@ -5284,13 +5913,23 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"Variación"</td>
 <td>1</td>
 </tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"05"</td>
+<td>"EMF-AMCC-05-11…</td>
+<td>"Saldo de prést…</td>
+<td>"VariaciónIndus…</td>
+<td>"Variación"</td>
+<td>1</td>
+</tr>
 <tr class="even">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"05"</td>
-<td>"EMF-AMCC-05-9"</td>
+<td>"EMF-AMCC-05-14…</td>
 <td>"Saldo de prést…</td>
-<td>"VariaciónComer…</td>
+<td>"VariaciónTotal…</td>
 <td>"Variación"</td>
 <td>1</td>
 </tr>
@@ -5298,9 +5937,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"05"</td>
-<td>"EMF-AMCC-05-10…</td>
+<td>"EMF-AMCC-05-9"</td>
 <td>"Saldo de prést…</td>
-<td>"VariaciónConsu…</td>
+<td>"VariaciónComer…</td>
 <td>"Variación"</td>
 <td>1</td>
 </tr>
@@ -5312,8 +5951,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="préstamos-nuevos-flujos-acumulados-en-millones-de-lempiras" class="level5">
 <h5 class="anchored" data-anchor-id="préstamos-nuevos-flujos-acumulados-en-millones-de-lempiras">06 Préstamos Nuevos (Flujos acumulados en millones de lempiras)</h5>
-<div class="cell" data-execution_count="59">
-<div class="cell-output cell-output-display" data-execution_count="167">
+<div class="cell" data-execution_count="68">
+<div class="cell-output cell-output-display" data-execution_count="68">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5352,8 +5991,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="60">
-<div class="cell-output cell-output-display" data-execution_count="168">
+<div class="cell" data-execution_count="69">
+<div class="cell-output cell-output-display" data-execution_count="69">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5404,8 +6043,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="61">
-<div class="cell-output cell-output-display" data-execution_count="169">
+<div class="cell" data-execution_count="70">
+<div class="cell-output cell-output-display" data-execution_count="70">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5442,9 +6081,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"06"</td>
-<td>"EMF-AMCC-06-4"</td>
+<td>"EMF-AMCC-06-7"</td>
 <td>"Préstamos nuev…</td>
-<td>"Industria"</td>
+<td>"Total"</td>
 <td>"Saldo"</td>
 <td>1</td>
 </tr>
@@ -5462,13 +6101,23 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"06"</td>
-<td>"EMF-AMCC-06-6"</td>
+<td>"EMF-AMCC-06-1"</td>
 <td>"Préstamos nuev…</td>
-<td>"Servicios"</td>
+<td>"Agropecuaria"</td>
 <td>"Saldo"</td>
 <td>1</td>
 </tr>
 <tr class="even">
+<td>"EMF"</td>
+<td>"AMCC"</td>
+<td>"06"</td>
+<td>"EMF-AMCC-06-4"</td>
+<td>"Préstamos nuev…</td>
+<td>"Industria"</td>
+<td>"Saldo"</td>
+<td>1</td>
+</tr>
+<tr class="odd">
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"06"</td>
@@ -5478,16 +6127,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"Saldo"</td>
 <td>1</td>
 </tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"AMCC"</td>
-<td>"06"</td>
-<td>"EMF-AMCC-06-5"</td>
-<td>"Préstamos nuev…</td>
-<td>"PropiedadRaíz"</td>
-<td>"Saldo"</td>
-<td>1</td>
-</tr>
 <tr class="even">
 <td>…</td>
 <td>…</td>
@@ -5502,9 +6141,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"06"</td>
-<td>"EMF-AMCC-06-9"</td>
+<td>"EMF-AMCC-06-10…</td>
 <td>"Préstamos nuev…</td>
-<td>"VariaciónComer…</td>
+<td>"VariaciónConsu…</td>
 <td>"Variación"</td>
 <td>1</td>
 </tr>
@@ -5512,9 +6151,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"06"</td>
-<td>"EMF-AMCC-06-8"</td>
+<td>"EMF-AMCC-06-9"</td>
 <td>"Préstamos nuev…</td>
-<td>"VariaciónAgrop…</td>
+<td>"VariaciónComer…</td>
 <td>"Variación"</td>
 <td>1</td>
 </tr>
@@ -5532,9 +6171,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"06"</td>
-<td>"EMF-AMCC-06-12…</td>
+<td>"EMF-AMCC-06-13…</td>
 <td>"Préstamos nuev…</td>
-<td>"VariaciónPropi…</td>
+<td>"VariaciónServi…</td>
 <td>"Variación"</td>
 <td>1</td>
 </tr>
@@ -5542,9 +6181,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"AMCC"</td>
 <td>"06"</td>
-<td>"EMF-AMCC-06-10…</td>
+<td>"EMF-AMCC-06-12…</td>
 <td>"Préstamos nuev…</td>
-<td>"VariaciónConsu…</td>
+<td>"VariaciónPropi…</td>
 <td>"Variación"</td>
 <td>1</td>
 </tr>
@@ -5557,12 +6196,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="ti-tasas-de-interés" class="level4">
 <h4 class="anchored" data-anchor-id="ti-tasas-de-interés">TI = Tasas de Interés</h4>
-<div class="cell" data-execution_count="62">
+<div class="cell" data-execution_count="71">
 <div class="cell-output cell-output-stdout">
 <pre><code>3 subgrupos
 38 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="170">
+<div class="cell-output cell-output-display" data-execution_count="71">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5612,8 +6251,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="section-2" class="level5">
 <h5 class="anchored" data-anchor-id="section-2">01</h5>
-<div class="cell" data-execution_count="63">
-<div class="cell-output cell-output-display" data-execution_count="171">
+<div class="cell" data-execution_count="72">
+<div class="cell-output cell-output-display" data-execution_count="72">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5652,8 +6291,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="64">
-<div class="cell-output cell-output-display" data-execution_count="172">
+<div class="cell" data-execution_count="73">
+<div class="cell-output cell-output-display" data-execution_count="73">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5687,7 +6326,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"TI"</td>
 <td>"01"</td>
 <td>"EMF"</td>
-<td>" ActivaMonedaE…</td>
+<td>" PasivadeChequ…</td>
 <td>1</td>
 </tr>
 <tr class="even">
@@ -5711,22 +6350,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"TI"</td>
 <td>"01"</td>
 <td>"EMF"</td>
-<td>" PasivadeAhorr…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"01"</td>
-<td>"EMF"</td>
-<td>" PasivadeAhorr…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"01"</td>
-<td>"EMF"</td>
 <td>" PasivaaPlazoM…</td>
 <td>1</td>
 </tr>
@@ -5735,6 +6358,22 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"TI"</td>
 <td>"01"</td>
 <td>"EMF"</td>
+<td>" ActivaMonedaE…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"01"</td>
+<td>"EMF"</td>
+<td>" PasivadeAhorr…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"01"</td>
+<td>"EMF"</td>
 <td>" PasivadeChequ…</td>
 <td>1</td>
 </tr>
@@ -5743,7 +6382,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"TI"</td>
 <td>"01"</td>
 <td>"EMF"</td>
-<td>" PasivadeChequ…</td>
+<td>" PasivadeAhorr…</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -5752,8 +6391,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="65">
-<div class="cell-output cell-output-display" data-execution_count="173">
+<div class="cell" data-execution_count="74">
+<div class="cell-output cell-output-display" data-execution_count="74">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5874,8 +6513,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="section-3" class="level5">
 <h5 class="anchored" data-anchor-id="section-3">02</h5>
-<div class="cell" data-execution_count="66">
-<div class="cell-output cell-output-display" data-execution_count="174">
+<div class="cell" data-execution_count="75">
+<div class="cell-output cell-output-display" data-execution_count="75">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5914,8 +6553,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="67">
-<div class="cell-output cell-output-display" data-execution_count="175">
+<div class="cell" data-execution_count="76">
+<div class="cell-output cell-output-display" data-execution_count="76">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -5966,8 +6605,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="68">
-<div class="cell-output cell-output-display" data-execution_count="176">
+<div class="cell" data-execution_count="77">
+<div class="cell-output cell-output-display" data-execution_count="77">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6011,9 +6650,27 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"TI"</td>
 <td>"02"</td>
-<td>"EMF-TI-02-6"</td>
+<td>"EMF-TI-02-10"</td>
 <td>" Extranjera "</td>
-<td>" Construcción"</td>
+<td>" Actividades A…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"02"</td>
+<td>"EMF-TI-02-11"</td>
+<td>" Extranjera "</td>
+<td>" Vivienda"</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"02"</td>
+<td>"EMF-TI-02-5"</td>
+<td>" Extranjera "</td>
+<td>" Industrias Ma…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
@@ -6026,24 +6683,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>1</td>
 </tr>
 <tr class="even">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"02"</td>
-<td>"EMF-TI-02-10"</td>
-<td>" Extranjera "</td>
-<td>" Actividades A…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"02"</td>
-<td>"EMF-TI-02-7"</td>
-<td>" Extranjera "</td>
-<td>" Consumo"</td>
-<td>1</td>
-</tr>
-<tr class="even">
 <td>…</td>
 <td>…</td>
 <td>…</td>
@@ -6051,42 +6690,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>…</td>
 <td>…</td>
 <td>…</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"02"</td>
-<td>"EMF-TI-02-16"</td>
-<td>" Nacional "</td>
-<td>" Consumo"</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"02"</td>
-<td>"EMF-TI-02-20"</td>
-<td>" Nacional "</td>
-<td>" Vivienda"</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"02"</td>
-<td>"EMF-TI-02-1"</td>
-<td>" Nacional "</td>
-<td>" Agricultura, …</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"02"</td>
-<td>"EMF-TI-02-18"</td>
-<td>" Nacional "</td>
-<td>" Transporte, A…</td>
-<td>1</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
@@ -6097,6 +6700,42 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>" Comercio"</td>
 <td>1</td>
 </tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"02"</td>
+<td>"EMF-TI-02-16"</td>
+<td>" Nacional "</td>
+<td>" Consumo"</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"02"</td>
+<td>"EMF-TI-02-20"</td>
+<td>" Nacional "</td>
+<td>" Vivienda"</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"02"</td>
+<td>"EMF-TI-02-1"</td>
+<td>" Nacional "</td>
+<td>" Agricultura, …</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"02"</td>
+<td>"EMF-TI-02-15"</td>
+<td>" Nacional "</td>
+<td>" Construcción"</td>
+<td>1</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -6105,8 +6744,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="tasas-de-interés-anuales" class="level5">
 <h5 class="anchored" data-anchor-id="tasas-de-interés-anuales">03 Tasas de Interés Anuales</h5>
-<div class="cell" data-execution_count="69">
-<div class="cell-output cell-output-display" data-execution_count="177">
+<div class="cell" data-execution_count="78">
+<div class="cell-output cell-output-display" data-execution_count="78">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6145,8 +6784,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="70">
-<div class="cell-output cell-output-display" data-execution_count="178">
+<div class="cell" data-execution_count="79">
+<div class="cell-output cell-output-display" data-execution_count="79">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6197,8 +6836,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="71">
-<div class="cell-output cell-output-display" data-execution_count="179">
+<div class="cell" data-execution_count="80">
+<div class="cell-output cell-output-display" data-execution_count="80">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6233,42 +6872,6 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"TI"</td>
 <td>"03"</td>
-<td>"EMF-TI-03-3"</td>
-<td>" Tasas de Inte…</td>
-<td>"Pasiva Mínima …</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"03"</td>
-<td>"EMF-TI-03-6"</td>
-<td>" Tasas de Inte…</td>
-<td>"Activa Máxima …</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"03"</td>
-<td>"EMF-TI-03-4"</td>
-<td>" Tasas de Inte…</td>
-<td>"Pasiva Máxima …</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"03"</td>
-<td>"EMF-TI-03-2"</td>
-<td>" Tasas de Inte…</td>
-<td>"Activa Máxima …</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"TI"</td>
-<td>"03"</td>
 <td>"EMF-TI-03-7"</td>
 <td>" Tasas de Inte…</td>
 <td>"Pasiva Mínima …</td>
@@ -6278,16 +6881,16 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"TI"</td>
 <td>"03"</td>
-<td>"EMF-TI-03-1"</td>
+<td>"EMF-TI-03-3"</td>
 <td>" Tasas de Inte…</td>
-<td>"Activa Mínima …</td>
+<td>"Pasiva Mínima …</td>
 <td>1</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"TI"</td>
 <td>"03"</td>
-<td>"EMF-TI-03-8"</td>
+<td>"EMF-TI-03-4"</td>
 <td>" Tasas de Inte…</td>
 <td>"Pasiva Máxima …</td>
 <td>1</td>
@@ -6305,7 +6908,43 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"TI"</td>
 <td>"03"</td>
-<td>"EMF-TI-03-9"</td>
+<td>"EMF-TI-03-8"</td>
+<td>" Tasas de Inte…</td>
+<td>"Pasiva Máxima …</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"03"</td>
+<td>"EMF-TI-03-2"</td>
+<td>" Tasas de Inte…</td>
+<td>"Activa Máxima …</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"03"</td>
+<td>"EMF-TI-03-6"</td>
+<td>" Tasas de Inte…</td>
+<td>"Activa Máxima …</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"03"</td>
+<td>"EMF-TI-03-1"</td>
+<td>" Tasas de Inte…</td>
+<td>"Activa Mínima …</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"TI"</td>
+<td>"03"</td>
+<td>"EMF-TI-03-10"</td>
 <td>" Tasas de Inte…</td>
 <td>"Activa Promedi…</td>
 <td>1</td>
@@ -6314,7 +6953,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"TI"</td>
 <td>"03"</td>
-<td>"EMF-TI-03-10"</td>
+<td>"EMF-TI-03-9"</td>
 <td>" Tasas de Inte…</td>
 <td>"Activa Promedi…</td>
 <td>1</td>
@@ -6328,12 +6967,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="pfs-panorama-de-las-sociedades-financieras" class="level4">
 <h4 class="anchored" data-anchor-id="pfs-panorama-de-las-sociedades-financieras">PFS = Panorama de las Sociedades Financieras</h4>
-<div class="cell" data-execution_count="72">
+<div class="cell" data-execution_count="81">
 <div class="cell-output cell-output-stdout">
 <pre><code>2 subgrupos
 12 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="180">
+<div class="cell-output cell-output-display" data-execution_count="81">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6377,8 +7016,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="bancos-comerciales" class="level5">
 <h5 class="anchored" data-anchor-id="bancos-comerciales">01 Bancos Comerciales</h5>
-<div class="cell" data-execution_count="73">
-<div class="cell-output cell-output-display" data-execution_count="181">
+<div class="cell" data-execution_count="82">
+<div class="cell-output cell-output-display" data-execution_count="82">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6416,14 +7055,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"01"</td>
-<td>"Pasivos Extern…</td>
+<td>"Activos Extern…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"01"</td>
-<td>"Activos Extern…</td>
+<td>"Pasivos Extern…</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -6431,8 +7070,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="74">
-<div class="cell-output cell-output-display" data-execution_count="182">
+<div class="cell" data-execution_count="83">
+<div class="cell-output cell-output-display" data-execution_count="83">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6491,8 +7130,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="75">
-<div class="cell-output cell-output-display" data-execution_count="183">
+<div class="cell" data-execution_count="84">
+<div class="cell-output cell-output-display" data-execution_count="84">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6558,8 +7197,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="activos-y-pasivos-externos" class="level5">
 <h5 class="anchored" data-anchor-id="activos-y-pasivos-externos">02 Activos y Pasivos Externos</h5>
-<div class="cell" data-execution_count="76">
-<div class="cell-output cell-output-display" data-execution_count="184">
+<div class="cell" data-execution_count="85">
+<div class="cell-output cell-output-display" data-execution_count="85">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6590,14 +7229,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"Activos Extern…</td>
+<td>"Pasivos Extern…</td>
 <td>3</td>
 </tr>
 <tr class="even">
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"Pasivos Extern…</td>
+<td>"Activos Extern…</td>
 <td>3</td>
 </tr>
 <tr class="odd">
@@ -6612,8 +7251,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="77">
-<div class="cell-output cell-output-display" data-execution_count="185">
+<div class="cell" data-execution_count="86">
+<div class="cell-output cell-output-display" data-execution_count="86">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6644,21 +7283,21 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"Banco Central …</td>
+<td>"Sociedades de …</td>
 <td>3</td>
 </tr>
 <tr class="even">
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"Otras Sociedad…</td>
+<td>"Banco Central …</td>
 <td>3</td>
 </tr>
 <tr class="odd">
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"Sociedades de …</td>
+<td>"Otras Sociedad…</td>
 <td>3</td>
 </tr>
 </tbody>
@@ -6667,8 +7306,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="78">
-<div class="cell-output cell-output-display" data-execution_count="186">
+<div class="cell" data-execution_count="87">
+<div class="cell-output cell-output-display" data-execution_count="87">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6703,8 +7342,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"EMF-PFS-02-7"</td>
-<td>"Pasivos Extern…</td>
+<td>"EMF-PFS-02-4"</td>
+<td>"Activos Extern…</td>
 <td>"Banco Central …</td>
 <td>1</td>
 </tr>
@@ -6712,8 +7351,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"EMF-PFS-02-4"</td>
-<td>"Activos Extern…</td>
+<td>"EMF-PFS-02-7"</td>
+<td>"Pasivos Extern…</td>
 <td>"Banco Central …</td>
 <td>1</td>
 </tr>
@@ -6757,7 +7396,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"EMF-PFS-02-3"</td>
+<td>"EMF-PFS-02-6"</td>
 <td>"Activos Extern…</td>
 <td>"Sociedades de …</td>
 <td>1</td>
@@ -6766,8 +7405,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"EMF-PFS-02-6"</td>
-<td>"Activos Extern…</td>
+<td>"EMF-PFS-02-9"</td>
+<td>"Pasivos Extern…</td>
 <td>"Sociedades de …</td>
 <td>1</td>
 </tr>
@@ -6775,8 +7414,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"PFS"</td>
 <td>"02"</td>
-<td>"EMF-PFS-02-9"</td>
-<td>"Pasivos Extern…</td>
+<td>"EMF-PFS-02-3"</td>
+<td>"Activos Extern…</td>
 <td>"Sociedades de …</td>
 <td>1</td>
 </tr>
@@ -6789,12 +7428,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="ebm-emisión-y-base-monetaria" class="level4">
 <h4 class="anchored" data-anchor-id="ebm-emisión-y-base-monetaria">EBM = Emisión y Base Monetaria</h4>
-<div class="cell" data-execution_count="79">
+<div class="cell" data-execution_count="88">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 6 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="187">
+<div class="cell-output cell-output-display" data-execution_count="88">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6830,8 +7469,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="80">
-<div class="cell-output cell-output-display" data-execution_count="188">
+<div class="cell" data-execution_count="89">
+<div class="cell-output cell-output-display" data-execution_count="89">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6862,7 +7501,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"EBM"</td>
 <td>"01"</td>
-<td>"Base Monetaria…</td>
+<td>"Emision Moneta…</td>
 <td>2</td>
 </tr>
 <tr class="even">
@@ -6876,7 +7515,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"EBM"</td>
 <td>"01"</td>
-<td>"Emision Moneta…</td>
+<td>"Base Monetaria…</td>
 <td>2</td>
 </tr>
 </tbody>
@@ -6884,8 +7523,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="81">
-<div class="cell-output cell-output-display" data-execution_count="189">
+<div class="cell" data-execution_count="90">
+<div class="cell-output cell-output-display" data-execution_count="90">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -6918,8 +7557,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"EBM"</td>
 <td>"01"</td>
-<td>"Emision Moneta…</td>
-<td>"Variación"</td>
+<td>"Base Monetaria…</td>
+<td>"Saldo"</td>
 <td>1</td>
 </tr>
 <tr class="even">
@@ -6934,23 +7573,7 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EMF"</td>
 <td>"EBM"</td>
 <td>"01"</td>
-<td>"Base Monetaria…</td>
-<td>"Saldo"</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EMF"</td>
-<td>"EBM"</td>
-<td>"01"</td>
 <td>"Emision Moneta…</td>
-<td>"Saldo"</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EMF"</td>
-<td>"EBM"</td>
-<td>"01"</td>
-<td>"Base Monetaria…</td>
 <td>"Saldo"</td>
 <td>1</td>
 </tr>
@@ -6960,6 +7583,22 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"01"</td>
 <td>"Base Monetaria…</td>
 <td>"Variación"</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EMF"</td>
+<td>"EBM"</td>
+<td>"01"</td>
+<td>"Emision Moneta…</td>
+<td>"Variación"</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EMF"</td>
+<td>"EBM"</td>
+<td>"01"</td>
+<td>"Base Monetaria…</td>
+<td>"Saldo"</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -6968,8 +7607,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="82">
-<div class="cell-output cell-output-display" data-execution_count="190">
+<div class="cell" data-execution_count="91">
+<div class="cell-output cell-output-display" data-execution_count="91">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7063,13 +7702,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="esp-estadísticas-de-sistema-de-pagos" class="level3">
 <h3 class="anchored" data-anchor-id="esp-estadísticas-de-sistema-de-pagos">ESP = Estadísticas de Sistema de Pagos</h3>
-<div class="cell" data-execution_count="83">
+<div class="cell" data-execution_count="92">
 <div class="cell-output cell-output-stdout">
 <pre><code>8 variables
 2 grupos
 2 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="191">
+<div class="cell-output cell-output-display" data-execution_count="92">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7096,13 +7735,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <tbody>
 <tr class="odd">
 <td>"ESP"</td>
-<td>"ACH"</td>
+<td>"CCECH"</td>
 <td>4</td>
 <td>1</td>
 </tr>
 <tr class="even">
 <td>"ESP"</td>
-<td>"CCECH"</td>
+<td>"ACH"</td>
 <td>4</td>
 <td>1</td>
 </tr>
@@ -7113,12 +7752,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="ach-operaciones-de-crédito-compensadas-en-ceproban-y-liquidadas-en-bch" class="level4">
 <h4 class="anchored" data-anchor-id="ach-operaciones-de-crédito-compensadas-en-ceproban-y-liquidadas-en-bch">ACH = Operaciones de Crédito Compensadas en Ceproban y Liquidadas en BCH</h4>
-<div class="cell" data-execution_count="84">
+<div class="cell" data-execution_count="93">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 4 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="192">
+<div class="cell-output cell-output-display" data-execution_count="93">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7154,8 +7793,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="85">
-<div class="cell-output cell-output-display" data-execution_count="193">
+<div class="cell" data-execution_count="94">
+<div class="cell-output cell-output-display" data-execution_count="94">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7201,8 +7840,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="86">
-<div class="cell-output cell-output-display" data-execution_count="194">
+<div class="cell" data-execution_count="95">
+<div class="cell-output cell-output-display" data-execution_count="95">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7233,14 +7872,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"ESP"</td>
 <td>"ACH"</td>
 <td>"01"</td>
-<td>"Dólares"</td>
+<td>"Lempiras"</td>
 <td>2</td>
 </tr>
 <tr class="even">
 <td>"ESP"</td>
 <td>"ACH"</td>
 <td>"01"</td>
-<td>"Lempiras"</td>
+<td>"Dólares"</td>
 <td>2</td>
 </tr>
 </tbody>
@@ -7249,8 +7888,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="87">
-<div class="cell-output cell-output-display" data-execution_count="195">
+<div class="cell" data-execution_count="96">
+<div class="cell-output cell-output-display" data-execution_count="96">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7325,12 +7964,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="ccech-cheques-compensados-en-ceproban-y-liquidados-en-bch" class="level4">
 <h4 class="anchored" data-anchor-id="ccech-cheques-compensados-en-ceproban-y-liquidados-en-bch">CCECH = Cheques Compensados en Ceproban y Liquidados en BCH</h4>
-<div class="cell" data-execution_count="88">
+<div class="cell" data-execution_count="97">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 4 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="196">
+<div class="cell-output cell-output-display" data-execution_count="97">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7366,8 +8005,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="89">
-<div class="cell-output cell-output-display" data-execution_count="197">
+<div class="cell" data-execution_count="98">
+<div class="cell-output cell-output-display" data-execution_count="98">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7413,8 +8052,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="90">
-<div class="cell-output cell-output-display" data-execution_count="198">
+<div class="cell" data-execution_count="99">
+<div class="cell-output cell-output-display" data-execution_count="99">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7461,8 +8100,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="91">
-<div class="cell-output cell-output-display" data-execution_count="199">
+<div class="cell" data-execution_count="100">
+<div class="cell-output cell-output-display" data-execution_count="100">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7538,13 +8177,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="em-estadísticas-monetarias-tpm-y-rin" class="level3">
 <h3 class="anchored" data-anchor-id="em-estadísticas-monetarias-tpm-y-rin">EM = Estadísticas Monetarias (TPM y RIN)</h3>
-<div class="cell" data-execution_count="92">
+<div class="cell" data-execution_count="101">
 <div class="cell-output cell-output-stdout">
 <pre><code>12 variables
 2 grupos
 2 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="200">
+<div class="cell-output cell-output-display" data-execution_count="101">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7588,12 +8227,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="rin-reservas-internacionales-netas" class="level4">
 <h4 class="anchored" data-anchor-id="rin-reservas-internacionales-netas">RIN = Reservas Internacionales Netas</h4>
-<div class="cell" data-execution_count="93">
+<div class="cell" data-execution_count="102">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 10 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="201">
+<div class="cell-output cell-output-display" data-execution_count="102">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7629,8 +8268,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="94">
-<div class="cell-output cell-output-display" data-execution_count="202">
+<div class="cell" data-execution_count="103">
+<div class="cell-output cell-output-display" data-execution_count="103">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7661,14 +8300,14 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EM"</td>
 <td>"RIN"</td>
 <td>"01"</td>
-<td>" Activos de Re…</td>
+<td>" Reservas Inte…</td>
 <td>5</td>
 </tr>
 <tr class="even">
 <td>"EM"</td>
 <td>"RIN"</td>
 <td>"01"</td>
-<td>" Reservas Inte…</td>
+<td>" Activos de Re…</td>
 <td>5</td>
 </tr>
 </tbody>
@@ -7677,8 +8316,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="95">
-<div class="cell-output cell-output-display" data-execution_count="203">
+<div class="cell" data-execution_count="104">
+<div class="cell-output cell-output-display" data-execution_count="104">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7713,6 +8352,42 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EM"</td>
 <td>"RIN"</td>
 <td>"01"</td>
+<td>"EM-RIN-01-8"</td>
+<td>" Activos de Re…</td>
+<td>" Variación Abs…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EM"</td>
+<td>"RIN"</td>
+<td>"01"</td>
+<td>"EM-RIN-01-9"</td>
+<td>" Activos de Re…</td>
+<td>" Variación Abs…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EM"</td>
+<td>"RIN"</td>
+<td>"01"</td>
+<td>"EM-RIN-01-10"</td>
+<td>" Activos de Re…</td>
+<td>" Variación Abs…</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>"EM"</td>
+<td>"RIN"</td>
+<td>"01"</td>
+<td>"EM-RIN-01-2"</td>
+<td>" Activos de Re…</td>
+<td>" Variación Int…</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>"EM"</td>
+<td>"RIN"</td>
+<td>"01"</td>
 <td>"EM-RIN-01-7"</td>
 <td>" Activos de Re…</td>
 <td>" Saldo"</td>
@@ -7722,45 +8397,9 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EM"</td>
 <td>"RIN"</td>
 <td>"01"</td>
-<td>"EM-RIN-01-8"</td>
-<td>" Activos de Re…</td>
-<td>" Variación Abs…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EM"</td>
-<td>"RIN"</td>
-<td>"01"</td>
-<td>"EM-RIN-01-9"</td>
-<td>" Activos de Re…</td>
-<td>" Variación Abs…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EM"</td>
-<td>"RIN"</td>
-<td>"01"</td>
-<td>"EM-RIN-01-10"</td>
-<td>" Activos de Re…</td>
-<td>" Variación Abs…</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>"EM"</td>
-<td>"RIN"</td>
-<td>"01"</td>
-<td>"EM-RIN-01-2"</td>
-<td>" Activos de Re…</td>
-<td>" Variación Int…</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>"EM"</td>
-<td>"RIN"</td>
-<td>"01"</td>
-<td>"EM-RIN-01-5"</td>
+<td>"EM-RIN-01-6"</td>
 <td>" Reservas Inte…</td>
-<td>" Variación Abs…</td>
+<td>" Variación Int…</td>
 <td>1</td>
 </tr>
 <tr class="odd">
@@ -7785,16 +8424,16 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <td>"EM"</td>
 <td>"RIN"</td>
 <td>"01"</td>
-<td>"EM-RIN-01-6"</td>
+<td>"EM-RIN-01-3"</td>
 <td>" Reservas Inte…</td>
-<td>" Variación Int…</td>
+<td>" Variación Abs…</td>
 <td>1</td>
 </tr>
 <tr class="even">
 <td>"EM"</td>
 <td>"RIN"</td>
 <td>"01"</td>
-<td>"EM-RIN-01-3"</td>
+<td>"EM-RIN-01-5"</td>
 <td>" Reservas Inte…</td>
 <td>" Variación Abs…</td>
 <td>1</td>
@@ -7807,12 +8446,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="tpm-tasa-de-política-monetaria" class="level4">
 <h4 class="anchored" data-anchor-id="tpm-tasa-de-política-monetaria">TPM = Tasa de Política Monetaria</h4>
-<div class="cell" data-execution_count="96">
+<div class="cell" data-execution_count="105">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 2 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="204">
+<div class="cell-output cell-output-display" data-execution_count="105">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7849,8 +8488,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="97">
-<div class="cell-output cell-output-display" data-execution_count="205">
+<div class="cell" data-execution_count="106">
+<div class="cell-output cell-output-display" data-execution_count="106">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7908,13 +8547,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="ec-estadísticas-cambiarias" class="level3">
 <h3 class="anchored" data-anchor-id="ec-estadísticas-cambiarias">EC = Estadísticas Cambiarias</h3>
-<div class="cell" data-execution_count="98">
+<div class="cell" data-execution_count="107">
 <div class="cell-output cell-output-stdout">
 <pre><code>3 variables
 2 grupos
 2 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="206">
+<div class="cell-output cell-output-display" data-execution_count="107">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -7958,12 +8597,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="tcr-tipo-de-cambio-de-referencia" class="level4">
 <h4 class="anchored" data-anchor-id="tcr-tipo-de-cambio-de-referencia">TCR = Tipo de Cambio de Referencia</h4>
-<div class="cell" data-execution_count="99">
+<div class="cell" data-execution_count="108">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 1 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="207">
+<div class="cell-output cell-output-display" data-execution_count="108">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8000,8 +8639,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="100">
-<div class="cell-output cell-output-display" data-execution_count="208">
+<div class="cell" data-execution_count="109">
+<div class="cell-output cell-output-display" data-execution_count="109">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8091,12 +8730,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="tcn-tipo-de-cambio-nominal" class="level4">
 <h4 class="anchored" data-anchor-id="tcn-tipo-de-cambio-nominal">TCN = Tipo de Cambio Nominal</h4>
-<div class="cell" data-execution_count="101">
+<div class="cell" data-execution_count="110">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 2 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="209">
+<div class="cell-output cell-output-display" data-execution_count="110">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8133,8 +8772,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="102">
-<div class="cell-output cell-output-display" data-execution_count="210">
+<div class="cell" data-execution_count="111">
+<div class="cell-output cell-output-display" data-execution_count="111">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8192,13 +8831,13 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="ep-estadísticas-de-precios" class="level3">
 <h3 class="anchored" data-anchor-id="ep-estadísticas-de-precios">EP = EStadísticas de Precios</h3>
-<div class="cell" data-execution_count="103">
+<div class="cell" data-execution_count="112">
 <div class="cell-output cell-output-stdout">
 <pre><code>3 variables
 1 grupos
 1 subgrupos</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="211">
+<div class="cell-output cell-output-display" data-execution_count="112">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8236,12 +8875,12 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 <section id="ipc-índice-de-precios-al-consumidor" class="level4">
 <h4 class="anchored" data-anchor-id="ipc-índice-de-precios-al-consumidor">IPC Índice de Precios al Consumidor</h4>
-<div class="cell" data-execution_count="104">
+<div class="cell" data-execution_count="113">
 <div class="cell-output cell-output-stdout">
 <pre><code>1 subgrupos
 3 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="212">
+<div class="cell-output cell-output-display" data-execution_count="113">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8278,8 +8917,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </div>
 </div>
 <p>Para ver todas las variables:</p>
-<div class="cell" data-execution_count="105">
-<div class="cell-output cell-output-display" data-execution_count="213">
+<div class="cell" data-execution_count="114">
+<div class="cell-output cell-output-display" data-execution_count="114">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8348,8 +8987,8 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 <section id="nombre" class="level2">
 <h2 class="anchored" data-anchor-id="nombre">Nombre</h2>
 <p>El campo “Nombre” es un código que contiene hasta 8 niveles de agrupación (tomando en cuenta una separación por “-”), siendo los primeros 7 iguales a las definiciones del campo “Grupo”.</p>
-<div class="cell" data-execution_count="106">
-<div class="cell-output cell-output-display" data-execution_count="214">
+<div class="cell" data-execution_count="115">
+<div class="cell-output cell-output-display" data-execution_count="115">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8539,11 +9178,11 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="periodicidad" class="level2">
 <h2 class="anchored" data-anchor-id="periodicidad">Periodicidad</h2>
-<div class="cell" data-execution_count="107">
+<div class="cell" data-execution_count="116">
 <div class="cell-output cell-output-stdout">
 <pre><code>11519 variables</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="215">
+<div class="cell-output cell-output-display" data-execution_count="116">
 <div><style>
 .dataframe > thead > tr,
 .dataframe > tbody > tr {
@@ -8592,18 +9231,18 @@ Passing literal json to 'read_json' is deprecated and will be removed in a futur
 </section>
 <section id="graficar-una-variable-por-id" class="level1">
 <h1>Graficar una Variable por Id</h1>
-<div class="cell" data-execution_count="108">
+<div class="cell" data-execution_count="117">
 <div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\ec109004\AppData\Local\Temp\ipykernel_11680\234590326.py:23: FutureWarning:
+<pre><code>C:\Users\ec109004\AppData\Local\Temp\ipykernel_24212\234590326.py:23: FutureWarning:
 
 Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
 </code></pre>
 </div>
 <div class="cell-output cell-output-display">
 
-<div>                            <div id="6b83fec8-9e98-4671-aa93-8fc4a1c3e1c1" class="plotly-graph-div" style="height:500px; width:800px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6b83fec8-9e98-4671-aa93-8fc4a1c3e1c1")) {                    Plotly.newPlot(                        "6b83fec8-9e98-4671-aa93-8fc4a1c3e1c1",                        [{"hovertemplate":"variable=0\u003cbr\u003eFecha=%{x}\u003cbr\u003evalue=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"0","line":{"color":"#636efa","dash":"solid"},"marker":{"symbol":"circle"},"mode":"lines","name":"0","orientation":"v","showlegend":true,"x":["2023-01-01T00:00:00","2022-01-01T00:00:00","2021-01-01T00:00:00","2020-01-01T00:00:00","2019-01-01T00:00:00","2018-01-01T00:00:00","2017-01-01T00:00:00","2016-01-01T00:00:00","2015-01-01T00:00:00","2014-01-01T00:00:00","2013-01-01T00:00:00","2012-01-01T00:00:00","2011-01-01T00:00:00","2010-01-01T00:00:00","2009-01-01T00:00:00","2008-01-01T00:00:00","2007-01-01T00:00:00","2006-01-01T00:00:00","2005-01-01T00:00:00","2004-01-01T00:00:00","2003-01-01T00:00:00","2002-01-01T00:00:00","2001-01-01T00:00:00"],"xaxis":"x","y":[10.7,12.4,13.4,1.8,7.0,4.0,3.9,4.5,10.6,9.0,4.4,7.2,11.7,7.1,2.6,7.6,30.6,29.3,22.5,16.6,13.3,19.4,10.7],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{}},"legend":{"title":{"text":"variable"},"tracegroupgap":0},"title":{"text":"OFERTA GLOBAL-VALOR AGREGADO BRUTO-MENOS: SERVICIOS DE INTERMEDIACI\u00d3N FINANCIERA MEDIDOS INDIRECTAMENTE (A PRECIOS B\u00c1SICOS)-VARIACIONES RELATIVAS CONSTANTE"},"autosize":false,"width":800,"height":500,"showlegend":false},                        {"responsive": true}                    ).then(function(){
+<div>                            <div id="92dac91c-f488-4e82-9b0d-9e5ef343a3f8" class="plotly-graph-div" style="height:500px; width:800px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("92dac91c-f488-4e82-9b0d-9e5ef343a3f8")) {                    Plotly.newPlot(                        "92dac91c-f488-4e82-9b0d-9e5ef343a3f8",                        [{"hovertemplate":"variable=0\u003cbr\u003eFecha=%{x}\u003cbr\u003evalue=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"0","line":{"color":"#636efa","dash":"solid"},"marker":{"symbol":"circle"},"mode":"lines","name":"0","orientation":"v","showlegend":true,"x":["2023-01-01T00:00:00","2022-01-01T00:00:00","2021-01-01T00:00:00","2020-01-01T00:00:00","2019-01-01T00:00:00","2018-01-01T00:00:00","2017-01-01T00:00:00","2016-01-01T00:00:00","2015-01-01T00:00:00","2014-01-01T00:00:00","2013-01-01T00:00:00","2012-01-01T00:00:00","2011-01-01T00:00:00","2010-01-01T00:00:00","2009-01-01T00:00:00","2008-01-01T00:00:00","2007-01-01T00:00:00","2006-01-01T00:00:00","2005-01-01T00:00:00","2004-01-01T00:00:00","2003-01-01T00:00:00","2002-01-01T00:00:00","2001-01-01T00:00:00"],"xaxis":"x","y":[10.7,12.4,13.4,1.8,7.0,4.0,3.9,4.5,10.6,9.0,4.4,7.2,11.7,7.1,2.6,7.6,30.6,29.3,22.5,16.6,13.3,19.4,10.7],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{}},"legend":{"title":{"text":"variable"},"tracegroupgap":0},"title":{"text":"OFERTA GLOBAL-VALOR AGREGADO BRUTO-MENOS: SERVICIOS DE INTERMEDIACI\u00d3N FINANCIERA MEDIDOS INDIRECTAMENTE (A PRECIOS B\u00c1SICOS)-VARIACIONES RELATIVAS CONSTANTE"},"autosize":false,"width":800,"height":500,"showlegend":false},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('6b83fec8-9e98-4671-aa93-8fc4a1c3e1c1');
+var gd = document.getElementById('92dac91c-f488-4e82-9b0d-9e5ef343a3f8');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
