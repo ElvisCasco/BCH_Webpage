@@ -26,3 +26,6 @@ Las funciones utilizadas se encuentran en la carpeta "functions", archivos "fn_p
 Los datos actualizados se guardan en la carpeta "data", archivo "database.csv".
 
 Los datos del archivo "database.csv" cargados en Power BI (tablas y gráficos) pueden verse en la página web del [BCH](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/series-estadisticas-consolidadas).
+
+El BCH también tiene disponible el acceso a los datos de los archivos dinámicos mediante una API; para explorar el contenido de la misma, puede consultarse el archivo "BCH_API.ipynb".
+
