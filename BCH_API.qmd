@@ -37,6 +37,7 @@ En este proceso se explica la forma en que pueden descargarse los datos disponib
 # Funciones
 
 ```{python}
+# Elaborado por Gabriela López
 import urllib.request, json
 import pandas as pd
 import polars as pl
@@ -84,7 +85,18 @@ class bchapi():
         fig.update_xaxes(title=None)
         fig.update_yaxes(title=None)
         fig.show()
+        return df
+```
 
+
+```{python}
+dwld = bchapi()
+# dfmeta = dwld.get_info(url, hdr)
+idx = 701
+dwld.graph(idx)
+```
+
+```{python}
 def res_nivel_1():
     df = pl.DataFrame(df_all)
     variable_0 = "Niv_Gr_1"
@@ -168,9 +180,7 @@ def res_nivel_5(
             pl.col(variable_4).len().alias("N_Variables"),
         ).sort("N_Variables",descending=True)
     return df
-```
 
-```{python}
 def res_nivel_6(
     nivel_1,nivel_2,
     variable_2,def_variable_2,
@@ -213,9 +223,18 @@ def res_nivel_7(
 
 ```
 
+
+```{python}
+# dwld = bchapi()
+# dfmeta = dwld.get_info(url, hdr)
+idx = 701
+graph(idx)
+```
+
+
 # Acceso a los Datos
 
-Una vez que se crea el registro de usuario, se necesita obtener una clave (key), ejecutando una consulta al catálogo de indicadores. Favor sustituir en el código la clave actual por su clave asignada.
+Una vez que se crea el registro de usuario (usar el botón "Suscribirse" en el [sitio web](https://bchapi-am.developer.azure-api.net/), puede verse el procedimiento de registro e inicio de sesión en [YouTube](https://www.youtube.com/watch?v=8ZBllMSsKw4)), se necesita obtener una clave (ver explicación en [YouTube](https://www.youtube.com/watch?v=mV90s74OCfc)), ejecutando una consulta al catálogo de indicadores. Favor sustituir en el código la clave actual por su clave asignada.
 
 Para conocer los datos disponibles, se debe ejecutar una consulta al catálogo de indicadores, que contiene información sobre las series disponibles:
 
@@ -242,7 +261,7 @@ dfmeta.head()
 
 ## Grupos
 
-Las variables están categorizadas en 54 grupos. La nomenclatura utilizada permite dividir estos en cinco niveles, tomando en cuenta el separador (-). Se explicarán los mismos a continuacion, ordenando de acuerdo al número de niveles.
+Las variables están categorizadas en 8 grupos principales y 54 subgrupos. La nomenclatura utilizada permite dividir estos en un máximo de cinco niveles, tomando en cuenta el separador (-). Se explicarán los mismos a continuacion, ordenando de acuerdo al número de niveles.
 
 ```{python}
 # Agregar niveles de Descripción y Grupo
@@ -284,21 +303,23 @@ res_grupo
 
 Esta agrupación permite consolidar los archivos de acuerdo con el origen de los datos en la página web del BCH, que en su mayoría pueden consultarse en los [reportes dinámicos](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos).
 
-- EOM = [Estadísticas de Operaciones Monetarias](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/operaciones-de-mercado-abierto)
-- ESR = [Estadísticas del Sector Real](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-real)
-- ESE = [Estadísticas del Sector Externo](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-externo)
-- EMF = [Estadísiticas Monetarias y Financieras (Sector Fiscal)](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-fiscal)
-- EM = [Estadísticas Monetarias (TPM y RIN)](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-monetario)
-- ESP = [Estadísticas de Sistema de Pagos](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sistema-de-pagos)
-- EC = [Estadísticas de Tipo de Cambio](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/tipo-de-cambio)
-- EP = [Estadísticas de Precios](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/precios)
+1. EOM = [Estadísticas de Operaciones Monetarias](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/operaciones-de-mercado-abierto)
+2. ESR = [Estadísticas del Sector Real](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-real)
+3. ESE = [Estadísticas del Sector Externo](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-externo)
+4. EMF = [Estadísiticas Monetarias y Financieras (Sector Fiscal)](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-fiscal)
+5. EM = [Estadísticas Monetarias (TPM y RIN)](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-monetario)
+6. ESP = [Estadísticas de Sistema de Pagos](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sistema-de-pagos)
+7. EC = [Estadísticas de Tipo de Cambio](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/tipo-de-cambio)
+8. EP = [Estadísticas de Precios](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/precios)
+
+Los grupos se subdividen en 25 subgrupos:
 
 ```{python}
 res = res_nivel_1()
 res
 ```
 
-A continuación se presentan los detalles del primer niivel de agregación, ordenados de acuerdo al número de variables que contienen.
+A continuación se presentan los detalles de los grupos por nivel de agregación, ordenados de acuerdo al número de variables que contienen.
 
 ### EOM = Estadísticas de Operaciones Monetarias
 
@@ -306,15 +327,28 @@ A continuación se presentan los detalles del primer niivel de agregación, orde
 res_nivel_2("EOM")
 ```
 
+Contiene solamente un subgrupo:
+
 - OMA = Operaciones de Mercado Abierto
 
 #### OMA = Operaciones de Mercado Abierto
 
+Cuatro niveles de agregación:
+
+- 01 = Tasas de Rendimiento Diario de Valores Gubernamentales
+- 02 = Créditos (Niv_Descr_4 = 1-3) e Inversiones (Niv_Descr_4 = 4-6): Monto, Número de Solicitudes y Tasa
+- 03 = Monto, Número de Operaciones y Tasa
+- 04 = Monto, Número de Operaciones y Tasa (Dólares - Lempiras)
+
+En cada una de las tablas subsiguientes, la columna N_Variables corresponde al número de variables que contiene cada nivel.
+
 ```{python}
-res_nivel_3("EOM","OMA","Niv_Gr_3")
+res_nivel_3("EOM","OMA","Niv_Gr_3").sort("Niv_Gr_3")
 ```
 
 ###### 01 = Tasas de Rendimiento Diario de Valores Gubernamentales 
+
+Este es el nivel que contiene más variables, todas corresponden a las "Tasas de Rendimiento Diario de Valores Gubernamentales":
 
 ```{python}
 res_nivel_4(
@@ -326,11 +360,20 @@ res_nivel_4(
 Para ver todas las variables:
 
 ```{python}
-res_nivel_5(
+res_nivel_6(
     "EOM","OMA",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_1").sort("Nombre")
+    "Id","Nombre","Niv_Descr_1").sort("Nombre")
 ```
+
+La consulta para una serie individual puede realizarse solamente mediante el uso de la "Id" correspondiente; por e
+
+
+
+
+
+
+
 
 ###### 02 = Créditos (Niv_Descr_4 = 1-3) e Inversiones (Niv_Descr_4 = 4-6): Monto, Número de Solicitudes y Tasa
 
