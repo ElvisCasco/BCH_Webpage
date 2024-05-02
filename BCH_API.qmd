@@ -37,64 +37,111 @@ En este proceso se explica la forma en que pueden descargarse los datos disponib
 # Funciones
 
 ```{python}
-# Elaborado por Gabriela López
 import urllib.request, json
 import pandas as pd
+import plotly.express as px
 import polars as pl
 
 from IPython.display import Markdown
 from tabulate import tabulate
-
-class bchapi():
-    def __init__(self):
-        self.idslist = None
-        self.header = None
-
-    #get_info descarga toda la información de las series disponibles en base a la estructura del url ingresado
-    def get_info(self, url, hdr):
-        self.header = hdr
-        req = urllib.request.Request(url, headers=self.header)
-        req.get_method = lambda: 'GET'
-        response = urllib.request.urlopen(req)
-        jsondata = response.read()
-        bytes_data = jsondata
-        data_str = bytes_data.decode('utf-8')
-        data = json.loads(data_str)
-        df = pd.read_json(json.dumps(data))
-        self.idslist = df['Id'].unique()
-        return df
-
-    #graph descarga los valores en formato dataframe de la serie seleccionada en base al id
-    def graph(self, id):
-        import plotly.express as px
-        id = self.idslist[idx]
-        url = f'https://bchapi-am.azure-api.net/api/v1/indicadores/{id}/cifras'
-        df = self.get_info(url, self.header)
-        ts = pd.DataFrame(
-            data = df['Valor'].values, 
-            index = pd.DatetimeIndex(df['Fecha']))
-        fig = px.line(
-            ts, 
-            title = df['Descripcion'].unique()[0],)
-        fig.update_layout(
-            autosize=False,
-            width=800,
-            height=500,
-            template = 'plotly_white',
-            showlegend=False)
-        fig.update_xaxes(title=None)
-        fig.update_yaxes(title=None)
-        fig.show()
-        return df
 ```
-
 
 ```{python}
-dwld = bchapi()
-# dfmeta = dwld.get_info(url, hdr)
-idx = 701
-dwld.graph(idx)
+# class bchapi():
+#     def __init__(self):
+#         self.idslist = None
+#         self.header = None
+
+#     #get_info descarga toda la información de las series disponibles en base a la estructura del url ingresado
+#     def get_info(self, url, hdr):
+#         self.header = hdr
+#         req = urllib.request.Request(url, headers=self.header)
+#         req.get_method = lambda: 'GET'
+#         response = urllib.request.urlopen(req)
+#         jsondata = response.read()
+#         bytes_data = jsondata
+#         data_str = bytes_data.decode('utf-8')
+#         data = json.loads(data_str)
+#         df = pd.read_json(json.dumps(data))
+#         self.idslist = df['Id'].unique()
+#         return df
+
+#     #graph descarga los valores en formato dataframe de la serie seleccionada en base al id
+#     def graph(self, id):
+#         id = self.idslist[idx] - 1
+#         url = f'https://bchapi-am.azure-api.net/api/v1/indicadores/{id}/cifras'
+#         df = self.get_info(url, self.header)
+#         ts = pd.DataFrame(
+#             data = df['Valor'].values, 
+#             index = pd.DatetimeIndex(df['Fecha']))
+#         fig = px.line(
+#             ts, 
+#             title = df['Descripcion'].unique()[0],)
+#         fig.update_layout(
+#             autosize=False,
+#             width=800,
+#             height=500,
+#             template = 'plotly_white',
+#             showlegend=False)
+#         fig.update_xaxes(title=None)
+#         fig.update_yaxes(title=None)
+#         fig.show()
 ```
+
+```{python}
+# A partir de código elaborado por Gabriela López:
+# https://colab.research.google.com/drive/1R3zpo3L27ypjD7v_FO7GeFPQ_2GeEFKd?usp=sharing
+def get_info(url, hdr):
+    header = hdr
+    req = urllib.request.Request(url, headers=header)
+    req.get_method = lambda: 'GET'
+    response = urllib.request.urlopen(req)
+    jsondata = response.read()
+    bytes_data = jsondata
+    data_str = bytes_data.decode('utf-8')
+    data = json.loads(data_str)
+    df = pd.read_json(json.dumps(data))
+    idslist = df['Id'].unique()
+    return df
+
+def get_df(id):
+    url_0 = "https://bchapi-am.azure-api.net/api/v1/indicadores?formato=Json"
+    url = f'https://bchapi-am.azure-api.net/api/v1/indicadores/{id}/cifras'
+    all_variables = get_info(url_0, hdr)
+    data = get_info(url, hdr)
+    df = pd.DataFrame(
+        data = data['Valor'].values, 
+        index = pd.DatetimeIndex(data['Fecha']))
+    df.columns = [all_variables["Descripcion"][id-1]]
+    df = pl.from_pandas(df,include_index=True
+        ).with_columns(
+            pl.col("Fecha").cast(pl.Date))
+    return df
+
+def get_plot(id):
+    url_0 = "https://bchapi-am.azure-api.net/api/v1/indicadores?formato=Json"
+    url = f'https://bchapi-am.azure-api.net/api/v1/indicadores/{id}/cifras'
+    all_variables = get_info(url_0, hdr)
+    data = get_info(url, hdr)
+    df = pd.DataFrame(
+        data = data['Valor'].values, 
+        index = pd.DatetimeIndex(data['Fecha']))
+    fig = px.line(
+        df, 
+        # title = all_variables['Descripcion'].unique()[0],
+        title = [all_variables["Descripcion"][id-1]]
+        )
+    fig.update_layout(
+        autosize=False,
+        width=800,
+        height=500,
+        template = 'plotly_white',
+        showlegend=False)
+    fig.update_xaxes(title=None)
+    fig.update_yaxes(title=None)
+    fig.show()
+```
+
 
 ```{python}
 def res_nivel_1():
@@ -220,17 +267,16 @@ def res_nivel_7(
             pl.col(variable_5).len().alias("N_Variables"),
         ).sort("N_Variables",descending=True)
     return df
-
 ```
-
 
 ```{python}
-# dwld = bchapi()
-# dfmeta = dwld.get_info(url, hdr)
-idx = 701
-graph(idx)
+# clave_asignada = "ff34cff7b0024ea39eb565fccb9f03b6"
+# url = "https://bchapi-am.azure-api.net/api/v1/indicadores?formato=Json"
+# hdr ={'Cache-Control': 'no-cache',
+#       'clave': clave_asignada,}
+# dfmeta = get_info(url, hdr)
+# dfmeta
 ```
-
 
 # Acceso a los Datos
 
@@ -247,13 +293,11 @@ Para conocer los datos disponibles, se debe ejecutar una consulta al catálogo d
 Como ejemplo de la consulta que contiene todas las variables, se muestran los primeros cinco elementos:
 
 ```{python}
-clave_asignada = "ff34cff7b0024ea39eb565fccb9f03b6" # Su clave asignada 
+clave_asignada = "ff34cff7b0024ea39eb565fccb9f03b6"
 url = "https://bchapi-am.azure-api.net/api/v1/indicadores?formato=Json"
 hdr ={'Cache-Control': 'no-cache',
       'clave': clave_asignada,}
-
-dwld = bchapi()
-dfmeta = dwld.get_info(url, hdr)
+dfmeta = get_info(url, hdr)
 dfmeta.head()
 ```
 
@@ -301,7 +345,7 @@ res_grupo.write_csv(
 res_grupo
 ```
 
-Esta agrupación permite consolidar los archivos de acuerdo con el origen de los datos en la página web del BCH, que en su mayoría pueden consultarse en los [reportes dinámicos](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos).
+Los 8 grupos mencionados permite consolidar los archivos de acuerdo con el origen de los datos en la página web del BCH, que en su mayoría pueden consultarse en los [reportes dinámicos](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos).
 
 1. EOM = [Estadísticas de Operaciones Monetarias](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/operaciones-de-mercado-abierto)
 2. ESR = [Estadísticas del Sector Real](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-real)
@@ -366,7 +410,14 @@ res_nivel_6(
     "Id","Nombre","Niv_Descr_1").sort("Nombre")
 ```
 
-La consulta para una serie individual puede realizarse solamente mediante el uso de la "Id" correspondiente; por e
+La consulta para una serie individual puede realizarse solamente mediante el uso de la "Id" correspondiente; por ejemplo, el Id 701 da como resultado:
+
+```{python}
+Id = 701
+df = get_df(Id)
+get_plot(Id)
+df
+```
 
 
 
@@ -1287,6 +1338,8 @@ res
 # Graficar una Variable por Id
 
 ```{python}
-idx = 11517
-dwld.graph(idx)
+Id = 11519
+df = get_df(Id)
+get_plot(Id)
+df.columns
 ```
