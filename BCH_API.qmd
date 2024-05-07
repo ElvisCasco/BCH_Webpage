@@ -129,7 +129,7 @@ def get_plot(id):
     fig = px.line(
         df, 
         # title = all_variables['Descripcion'].unique()[0],
-        title = [all_variables["Descripcion"][id-1]]
+        title = all_variables["Descripcion"][id-1]
         )
     fig.update_layout(
         autosize=False,
@@ -141,7 +141,6 @@ def get_plot(id):
     fig.update_yaxes(title=None)
     fig.show()
 ```
-
 
 ```{python}
 def res_nivel_1():
@@ -284,16 +283,16 @@ Una vez que se crea el registro de usuario (usar el botón "Suscribirse" en el [
 
 Para conocer los datos disponibles, se debe ejecutar una consulta al catálogo de indicadores, que contiene información sobre las series disponibles:
 
-- Nombre (código)
-- Descripción
-- Periodicidad
-- Grupo
-- Correlativo del Grupo
+* Nombre (código)
+* Descripción
+* Periodicidad
+* Grupo
+* Correlativo del Grupo
 
 Como ejemplo de la consulta que contiene todas las variables, se muestran los primeros cinco elementos:
 
 ```{python}
-clave_asignada = "ff34cff7b0024ea39eb565fccb9f03b6"
+clave_asignada = "ff34cff7b0024ea39eb565fccb9f03b6" #Favor ingresar la clave proporcionada.
 url = "https://bchapi-am.azure-api.net/api/v1/indicadores?formato=Json"
 hdr ={'Cache-Control': 'no-cache',
       'clave': clave_asignada,}
@@ -305,7 +304,7 @@ dfmeta.head()
 
 ## Grupos
 
-Las variables están categorizadas en 8 grupos principales y 54 subgrupos. La nomenclatura utilizada permite dividir estos en un máximo de cinco niveles, tomando en cuenta el separador (-). Se explicarán los mismos a continuacion, ordenando de acuerdo al número de niveles.
+Las variables están categorizadas en 8 grupos principales y 54 subgrupos. La nomenclatura utilizada permite dividir estos en un máximo de cinco niveles, tomando en cuenta el separador (-). Se explicarán los mismos a continuacion, ordenando de acuerdo al número de niveles (número de subgrupos).
 
 ```{python}
 # Agregar niveles de Descripción y Grupo
@@ -345,7 +344,7 @@ res_grupo.write_csv(
 res_grupo
 ```
 
-Los 8 grupos mencionados permite consolidar los archivos de acuerdo con el origen de los datos en la página web del BCH, que en su mayoría pueden consultarse en los [reportes dinámicos](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos).
+Los 8 grupos mencionados permiten consolidar los archivos de acuerdo con el origen de los datos en la página web del BCH, que en su mayoría pueden consultarse en los [reportes dinámicos](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos).
 
 1. EOM = [Estadísticas de Operaciones Monetarias](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/operaciones-de-mercado-abierto)
 2. ESR = [Estadísticas del Sector Real](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-real)
@@ -367,6 +366,8 @@ A continuación se presentan los detalles de los grupos por nivel de agregación
 
 ### EOM = Estadísticas de Operaciones Monetarias
 
+Los datos están disponibles en la [página web del BCH](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/operaciones-de-mercado-abierto).
+
 ```{python}
 res_nivel_2("EOM")
 ```
@@ -379,10 +380,10 @@ Contiene solamente un subgrupo:
 
 Cuatro niveles de agregación:
 
-- 01 = Tasas de Rendimiento Diario de Valores Gubernamentales
-- 02 = Créditos (Niv_Descr_4 = 1-3) e Inversiones (Niv_Descr_4 = 4-6): Monto, Número de Solicitudes y Tasa
-- 03 = Monto, Número de Operaciones y Tasa
-- 04 = Monto, Número de Operaciones y Tasa (Dólares - Lempiras)
+* 01 = Tasas de Rendimiento Diario de Valores Gubernamentales
+* 02 = Créditos (Niv_Descr_4 = 1-3) e Inversiones (Niv_Descr_4 = 4-6): Monto, Número de Solicitudes y Tasa
+* 03 = Monto, Número de Operaciones y Tasa
+* 04 = Monto, Número de Operaciones y Tasa (Dólares - Lempiras)
 
 En cada una de las tablas subsiguientes, la columna N_Variables corresponde al número de variables que contiene cada nivel.
 
@@ -401,7 +402,7 @@ res_nivel_4(
     "Niv_Descr_1")
 ```
 
-Para ver todas las variables:
+Para listar todas las variables:
 
 ```{python}
 res_nivel_6(
@@ -413,18 +414,11 @@ res_nivel_6(
 La consulta para una serie individual puede realizarse solamente mediante el uso de la "Id" correspondiente; por ejemplo, el Id 701 da como resultado:
 
 ```{python}
-Id = 701
+Id = 1699
 df = get_df(Id)
-get_plot(Id)
+# get_plot(Id)
 df
 ```
-
-
-
-
-
-
-
 
 ###### 02 = Créditos (Niv_Descr_4 = 1-3) e Inversiones (Niv_Descr_4 = 4-6): Monto, Número de Solicitudes y Tasa
 
@@ -435,13 +429,22 @@ res_nivel_4(
     "Niv_Descr_5")
 ```
 
-Para ver todas las variables:
+Todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EOM","OMA",
     "Niv_Gr_3","02",
-    "Nombre","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+    "Id","Nombre","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 6261
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ###### 03 = Monto, Número de Operaciones y Tasa
@@ -453,13 +456,22 @@ res_nivel_4(
     "Niv_Descr_5")
 ```
 
-Para ver todas las variables:
+Todas las variables:
 
 ```{python}
-res_nivel_5(
+res_nivel_6(
     "EOM","OMA",
     "Niv_Gr_3","03",
-    "Nombre","Niv_Descr_5").sort("Nombre")
+    "Id","Nombre","Niv_Descr_5").sort("Nombre")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 6267
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ###### 04 = Monto, Número de Operaciones y Tasa (Dólares - Lempiras)
@@ -479,13 +491,22 @@ res_nivel_5(
     "Niv_Descr_5","Niv_Descr_6")
 ```
 
-Para ver todas las variables:
+Todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EOM","OMA",
     "Niv_Gr_3","04",
-    "Nombre","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+    "Id","Nombre","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 6270
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ### ESR = Estadísticas del Sector Real
@@ -494,13 +515,13 @@ res_nivel_6(
 res_nivel_2("ESR")
 ```
 
-- COU = Cuadro de Oferta y Utilización
-- CCI = Clasificación Cruzada Industria
-- VAB = Valor Agregado Bruto
-- PIBA = PIB Anual
-- PIBT = PIB Trimestral
-- ODA = Oferta y Demanda Agregada
-- IMAE = Índice Mensual de la Actividad Económica
+* COU = Cuadro de Oferta y Utilización
+* CCI = Clasificación Cruzada Industria
+* VAB = Valor Agregado Bruto
+* PIBA = PIB Anual
+* PIBT = PIB Trimestral
+* ODA = Oferta y Demanda Agregada
+* IMAE = Índice Mensual de la Actividad Económica
 
 #### COU = Cuadro de Oferta y Utilización
 
@@ -508,11 +529,17 @@ res_nivel_2("ESR")
 res_nivel_3("ESR","COU","Niv_Gr_3")
 ```
 
-- CONSUMO INTERMEDIO
-- OFERTA
-- UTILIZACIÓN
-- VALOR AGREGADO
-- VALOR BRUTO DE PRODUCCIóN
+Detalla la interacción del producto con la actividad (el detalle se toma de acuerdo con la estructura de la columna "Nombre"). Para conocer la estructura de las estadísticas derivadas de este cuadro, consultar en la [página web del BCH](https://www.bch.hn/estadisticas-y-publicaciones-economicas/sector-real/cuentas-nacionales-anuales-base-2000/cuadro-oferta-y-utilizacion).
+
+El orden está de acuerdo con el Nivel de Descripción 2 (Niv_Descr_2) y Nivel de Descripción 3 (Niv_Descr_3) de la columna Nombre, para los casos de:
+
+* VALOR BRUTO DE PRODUCCIÓN
+* CONSUMO INTERMEDIO
+* VALOR AGREGADO
+* OFERTA
+* UTILIZACIÓN
+
+Cada uno de estos detalles corresponde a una hoja de Excel en el archivo anual correspondiente.
 
 ```{python}
 res_nivel_4(
@@ -522,37 +549,147 @@ res_nivel_4(
     "Niv_Descr_1")
 ```
 
-Si se quiere filtrar por las variables que se enumeraron:
+##### VALOR BRUTO DE PRODUCCIÓN
+
+En el cuadro original, las filas son los productos a un nivel de dos dígitos de la Nomenclatura de Productos de Honduras (NPH) y las columnas son las actiivades económicas tomando en cuenta la Nomenclatura de Actividades Económicas de Honduras (NAEH).
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "ESR","COU",
     "Niv_Gr_3",
     "01",
-    "Niv_Descr_1","Nombre","Descripcion").filter(pl.col("Niv_Descr_1") == "VALOR AGREGADO")
+    "Niv_Descr_1","Id","Nombre","Descripcion").filter(pl.col("Niv_Descr_1") == "VALOR BRUTO DE PRODUCCIÓN")
 ```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 10410
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### CONSUMO INTERMEDIO
+
+En el cuadro original, las filas son los productos a un nivel de dos dígitos de la Nomenclatura de Productos de Honduras (NPH) y las columnas son las actiivades económicas tomando en cuenta la Nomenclatura de Actividades Económicas de Honduras (NAEH).
+
+```{python}
+res_nivel_7(
+    "ESR","COU",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_1","Id","Nombre","Descripcion").filter(pl.col("Niv_Descr_1") == "CONSUMO INTERMEDIO")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 7835
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### VALOR AGREGADO
+
+En el cuadro original, las filas son los elementos indispensables para calcular el Valor Agregado Bruto, VAB (Remuneración de los Asalariados, Impuestos sobre la Producción y las Importaciones, Subvenciones, Excedente de Explotación, Ingreso Mixto y Consumo de Capital Fijo) y las columnas son las actiivades económicas tomando en cuenta la Nomenclatura de Actividades Económicas de Honduras (NAEH).
+
+```{python}
+res_nivel_7(
+    "ESR","COU",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_1","Id","Nombre","Descripcion").filter(pl.col("Niv_Descr_1") == "VALOR AGREGADO")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 10024
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### OFERTA
+
+En el cuadro original, las filas son los productos a un nivel de dos dígitos de la Nomenclatura de Productos de Honduras (NPH) y las columnas son los componentes de la Oferta Agregada a Precios de Comprador (Producción, Importaciones CIF, Ajuste CIF/FOB, Impuestos y Subvenciones a los Productos y Márgenes de Distribución).
+
+```{python}
+res_nivel_7(
+    "ESR","COU",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_1","Id","Nombre","Descripcion").filter(pl.col("Niv_Descr_1") == "OFERTA")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 8878
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### UTILIZACIÓN
+
+En el cuadro original, las filas son los productos a un nivel de dos dígitos de la Nomenclatura de Productos de Honduras (NPH) y las columnas son los componentes de la Utilización Agregada a Precios de Comprador (Consumo Intermedio, Exportciones FOB, Gasto de Consumo Final y Formación Bruta de Capital).
+
+```{python}
+res_nivel_7(
+    "ESR","COU",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_1","Id","Nombre","Descripcion").filter(pl.col("Niv_Descr_1") == "UTILIZACIÓN")
+```
+
+Tomar en cuenta que, para realizar el cálculo del VAB por NAEH, se debe sumar las columnas de Valor Bruto de Producción y restar las de Consumo Intermedio; adicionalmente, como los datos correspondientes a Impuestos sobre los Productos y los Márgenes de Distribución solamente se encuentran a nivel de NPH, no se puede tener un VAB total que se obtenga por suma de VAB a nivel de actividad individual, en vista que debe restarse las de Subvenciones a los productos, mismas que se encuentran en el Cuadro de Oferta solamente a nivel de NPH. Esta forma de obtener el VAB se conoce como el cálculo del PIB por el enfoque del Ingreso.
+
+Como la Oferta y Utilización están detalladas a nivel de NPH, el VAB por NPH a partir de los dos detalles previos, se puede obtener por dos métodos:
+
+1. Suma de Producción + Impuestos - Subvenciones a los Productos + Márgenes de Distribución (Oferta) - Consumo Intermedio (Utilización) => PIB por el enfoque de la Produccion.
+2. Exportaciones FOB + Gasto de Consumo Final + Formación Bruta de Capital (Utilización) - Importaciones CIF - Ajuste CIF/FOB (Oferta) => PIB por el enfoque del Gasto.
 
 Para saber el contenido de todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "ESR","COU",
     "Niv_Gr_3",
     "01",
-    "Niv_Descr_1","Nombre","Descripcion").sort("Descripcion")
+    "Id","Niv_Descr_1","Nombre","Descripcion").sort("Id")
 ```
 
-#### CCI = Clasificación Cruzada Industria
+Resultados de una sola variable:
+
+```{python}
+Id = 9465
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+#### CCI = Clasificación Cruzada Industria Sector Institucional
+
+Para conocer la estructura de las estadísticas derivadas de este cuadro, consultar en la [página web del BCH](https://www.bch.hn/estadisticas-y-publicaciones-economicas/sector-real/cuentas-nacionales-anuales-base-2000/clasificacion-cruzada-industria-sector-institucional).
+
+El archivo contiene 3 hojas, que pueden filtrarse de acuerdo con el Nivel de Descripción 1 (Niv_Descr_1) de la variable:
+
+* Producción Bruta
+* Consumo Intermedio
+* Valor Agregado
+
+Los cuadros en cada hoja contienen los valores a nivel de Industria en las filas y a nivel de Sector Institucional en las columnas.
+
+Debido a que el VAB implica tomar en cuenta impuestos y subvenciones a nivel de NPH, no es posible obtener el cálculo de esta variable por suma a partir de los cuadros del CCI (ver explicación en el apartado del COU).
 
 ```{python}
 res_nivel_3("ESR","CCI","Niv_Descr_1")
 ```
 
-- Valor Agregado
-- Consumo Intermedio
-- Producción
-
-"Niv_Descr_2" es el NPH
+"Niv_Descr_2" es la Industria (filas).
 
 ```{python}
 res_nivel_5(
@@ -562,7 +699,7 @@ res_nivel_5(
     "Niv_Descr_1","Niv_Descr_2")
 ```
 
-"Niv_Descr_3" es la NAEH
+"Niv_Descr_3" es el Sector Institucional (columnas).
 
 ```{python}
 res_nivel_5(
@@ -579,37 +716,573 @@ res_nivel_7(
     "ESR","CCI",
     "Niv_Gr_3",
     "01",
-    "Nombre","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3")
+    "Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 7467
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### VAB = Valor Agregado Bruto
 
 ```{python}
-res_nivel_3("ESR","VAB","Niv_Descr_4")
+res_nivel_3("ESR","VAB","Niv_Gr_3")
+```
+
+##### Valor y Variación, Corrientes y Constantes, por NAEH
+
+```{python}
+res_nivel_4(
+    "ESR","VAB",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_4")
+```
+
+```{python}
+res_nivel_5(
+    "ESR","VAB",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_4","Niv_Descr_5")
+```
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","VAB",
+    "Niv_Gr_3",
+    "01",
+    "Id","Niv_Descr_4","Niv_Descr_5","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 220
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### Precio y Variación, Corrientes y Constantes, por NAEH
+
+```{python}
+res_nivel_4(
+    "ESR","VAB",
+    "Niv_Gr_3",
+    "02",
+    "Niv_Descr_4")
+```
+
+```{python}
+res_nivel_5(
+    "ESR","VAB",
+    "Niv_Gr_3",
+    "02",
+    "Niv_Descr_4","Niv_Descr_5")
+```
+
+Notar que aquí el Nivel de Descripción 6 (Niv_Descr_6) no es una buena opción de desagregación, puesto que los componentes son "Actividad Económica" y "Productos Alimenticios, Bebidas y Tabaco"; esta última está detallada en mayor grado en el Nivel de Descripción 7 (Niv_Descr_7).
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","VAB",
+    "Niv_Gr_3",
+    "02",
+    "Id","Niv_Descr_4","Niv_Descr_5","Niv_Descr_7")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 273
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### PIBA = PIB Anual
 
+La información se encuentra en la viñeta "Sector Real" de la [página web del BCH](https://www.bch.hn/estadisticas-y-publicaciones-economicas/reportes-dinamicos/sector-real).
+
 ```{python}
-res_nivel_3("ESR","PIBA","Niv_Descr_4")
+res_nivel_3("ESR","PIBA","Niv_Descr_3")
+```
+
+##### 01 Valores Corrientes y Constantes, por Actividad Económica
+
+```{python}
+res_nivel_4(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_4")
+```
+
+* Rama de Actividad Económica (RAE)
+* Series Agregadas
+* Variación RAE
+* Variación Series Agregadas
+
+```{python}
+res_nivel_6(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_4","Niv_Descr_5","Niv_Descr_6")
+```
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "01",
+    "Id","Niv_Descr_4","Niv_Descr_5","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 101
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 02 Precios y Variación, por Componente del Gasto
+
+```{python}
+res_nivel_4(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "02",
+    "Niv_Descr_4")
+```
+
+Tipo de Valores ("Niv_Descr_5"):
+
+* Corrientes
+* Constantes
+
+```{python}
+res_nivel_6(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "02",
+    "Niv_Descr_4","Niv_Descr_5","Niv_Descr_6")
+```
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "02",
+    "Id","Niv_Descr_4","Niv_Descr_5","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 194
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 03 Precios y Variación, por Componente del Ingreso
+
+```{python}
+res_nivel_4(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "03",
+    "Niv_Descr_4")
+```
+
+* Remuneración de los asalariados
+* Impuestos netos de subvenciones sobre la producción y las importaciones
+* Excedente de Explotación bruto
+* Ingreso Mixto bruto
+* Producto Interno Bruto (pm)
+
+```{python}
+res_nivel_5(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "03",
+    "Niv_Descr_4","Niv_Descr_5")
+```
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "03",
+    "Id","Nombre","Niv_Descr_4","Niv_Descr_5")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 202
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 04 Dólares y Lempiras
+
+```{python}
+res_nivel_4(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "04",
+    "Niv_Descr_4")
+```
+
+* Ingreso Nacional
+* Producto Interno Bruto
+* Producto Nacional Bruto
+
+```{python}
+res_nivel_5(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "04",
+    "Niv_Descr_4","Niv_Descr_6")
+```
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","PIBA",
+    "Niv_Gr_3",
+    "04",
+    "Id","Nombre","Niv_Descr_4","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 211
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### PIBT = PIB Trimestral
 
+Esta información se obtiene a partir de los datos del [Portal de Consulta del Sistema de Cuentas Trimestrales](https://sisee.bch.hn/SCNT/PortalPrincipal.aspx).
+
 ```{python}
-res_nivel_3("ESR","PIBT","Niv_Descr_4")
+res_nivel_3("ESR","PIBT","Niv_Gr_3")
+```
+
+* PROD = PIB Trimestral por el Enfoque de la Producción
+* GAST = PIB Trimestral por el Enfoque del Gasto
+* TDC = Tasas de Crecimiento
+
+##### PROD = PIB Trimestral por el Enfoque de la Producción
+
+* Serie Original
+* Serie Desestacionalizada
+* Valores Corrientes
+* Valores Constantes
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","PIBT",
+    "Niv_Gr_3",
+    "PROD",
+    "Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_4")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 2
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### GAST = PIB Trimestral por el Enfoque del Gasto
+
+* Serie Original
+* Serie Desestacionalizada
+* Valores Corrientes
+* Valores Constantes
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","PIBT",
+    "Niv_Gr_3",
+    "GAST",
+    "Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_4")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 8
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### TDC = Tasas de Crecimiento
+
+* Serie Original
+* Serie Desestacionalizada
+* Valores Corrientes
+* Valores Constantes
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_6(
+    "ESR","PIBT",
+    "Niv_Gr_3",
+    "TDC",
+    "Id","Nombre","Niv_Descr_1")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 98
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### ODA = Oferta y Demanda Agregada
 
+* Oferta Global
+* Demanda Global
+
 ```{python}
-res_nivel_3("ESR","ODA","Niv_Descr_4")
+res_nivel_3("ESR","ODA","Niv_Descr_1")
+```
+
+##### Oferta Global
+
+Estas tablas están agrupadas de dos maneras:
+
+1. Variables con valores en "Niv_Descr_2" y "Niv_Descr_3", corresponde a las siguientes series:
+
+* AGRICULTURA, GANADERÍA, CAZA, SILVICULTURA Y PESCA (A PRECIOS BÁSICOS)
+* COMERCIO, HOTELES Y RESTAURANTES (A PRECIOS BÁSICOS)
+* CONSTRUCCIÓN (A PRECIOS BÁSICOS)
+* EXPLOTACIÓN DE MINAS Y CANTERAS (A PRECIOS BÁSICOS)
+* INDUSTRIA MANUFACTURERA (A PRECIOS BÁSICOS)
+* MENOS: SERVICIOS DE INTERMEDIACIÓN FINANCIERA MEDIDOS INDIRECTAMENTE (A PRECIOS BÁSICOS)
+
+El tipo de valor ("Niv_Descr_4") de dichas variables es:
+
+* EN MILLONES DE LEMPIRAS CONSTANTES
+* EN MILLONES DE LEMPIRAS CORRIENTES
+* VARIACIONES RELATIVAS CONSTANTE
+* VARIACIONES RELATIVAS CORRIENTES
+
+```{python}
+res_nivel_7(
+    "ESR","ODA",
+    "Niv_Descr_1",
+    "OFERTA GLOBAL",
+    "Id","Niv_Descr_2","Niv_Descr_3","Niv_Descr_4"
+    ).filter((pl.col('Niv_Descr_2') != ""))
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 11518
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+2. Variables sin valores en "Niv_Descr_2" y "Niv_Descr_3", corresponde a las siguientes series:
+
+* IMPORTACIONES DE BIENES Y SERVICIOS C.I.F.
+* IMPUESTOS NETOS DE SUBVENCIONES SOBRE LA PRODUCCIÓN Y LAS IMPORTACIONES
+* OFERTA GLOBAL
+* OTROS SERVICIOS (A PRECIOS BÃSICOS)
+* PRODUCTO INTERNO BRUTO A PRECIOS DE MERCADO
+* TOTAL VALOR AGREGADO BRUTO A PRECIOS BÁSICOS
+* VALOR AGREGADO BRUTO
+* VALOR AGREGADO BRUTO A PRECIOS BÁSICOS
+
+El tipo de valor ("Niv_Descr_5") de dichas variables es:
+
+* EN MILLONES DE LEMPIRAS CONSTANTES
+* EN MILLONES DE LEMPIRAS CORRIENTES
+* VARIACIONES RELATIVAS CONSTANTE
+* VARIACIONES RELATIVAS CORRIENTES
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","ODA",
+    "Niv_Descr_1",
+    "OFERTA GLOBAL",
+    "Id","Niv_Descr_2","Niv_Descr_4","Niv_Descr_5"
+    ).filter((pl.col('Niv_Descr_2') == ""))
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 11473
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### Demanda Global
+
+Estas tablas están agrupadas de dos maneras:
+
+1. Variables con valores en "Niv_Descr_2" y "Niv_Descr_3", corresponde a las siguientes series:
+
+* FORMACIÓN BRUTA DE CAPITAL FIJO
+* GASTOS DE CONSUMO FINAL
+
+De "Niv_Descr_3" se obtiene:
+
+* SECTOR PRIVADO
+* SECTOR PÚBLICO
+
+El tipo de valor ("Niv_Descr_4") de dichas variables es:
+
+* EN MILLONES DE LEMPIRAS CONSTANTES
+* EN MILLONES DE LEMPIRAS CORRIENTES
+* VARIACIONES RELATIVAS CONSTANTE
+* VARIACIONES RELATIVAS CORRIENTES
+
+```{python}
+res_nivel_7(
+    "ESR","ODA",
+    "Niv_Descr_1",
+    "DEMANDA GLOBAL",
+    "Id","Niv_Descr_2","Niv_Descr_3","Niv_Descr_4"
+    ).filter((pl.col('Niv_Descr_2') != ""))
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 11457
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+2. Variables sin valores en "Niv_Descr_2" y "Niv_Descr_3", corresponde a las siguientes series:
+
+* DEMANDA EXTERNA
+* DEMANDA GLOBAL
+* DEMANDA INTERNA
+* EXPORTACIÓN DE BIENES Y SERVICIOS F.O.B.
+* FORMACIÓN BRUTA DE CAPITAL FIJO
+* GASTOS DE CONSUMO FINAL
+* INVERSIÓN INTERNA BRUTA
+* VARIACIÓN DE EXISTENCIAS
+
+El tipo de valor de dichas variables es:
+
+* EN MILLONES DE LEMPIRAS CONSTANTES
+* EN MILLONES DE LEMPIRAS CORRIENTES
+* VARIACIONES RELATIVAS CONSTANTE
+* VARIACIONES RELATIVAS CORRIENTES
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESR","ODA",
+    "Niv_Descr_1",
+    "DEMANDA GLOBAL",
+    "Id","Niv_Descr_2","Niv_Descr_4","Niv_Descr_5"
+    ).filter((pl.col('Niv_Descr_2') == ""))
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 11440
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### IMAE = Índice Mensual de la Actividad Económica
 
+Las actividades ("Niv_Descr_4") son:
+
+* Agricultura, Ganaderia, Silvicultura y Pesca 
+* Minas y Canteras 
+*  Industria Manufacturera 
+* Electricidad y Agua 
+* ConstrucciÃ³n 
+* Comercio 
+* Hoteles y Restaurantes 
+* Transporte y Almacenamiento 
+* Correo y Telecomunicaciones 
+* Inter. Financiera, Seguros y Fondos de Pensiones 
+* Otros Servicios 
+* Serie Original 
+* Tendencia Ciclo 
+
+El tipo de valor ("Niv_Descr_5") de dichas variables es:
+
+* Acumulada
+* Interanual
+* Índice
+
 ```{python}
-res_nivel_3("ESR","IMAE","Niv_Descr_4")
+res_nivel_3("ESR","IMAE","Niv_Descr_2")
+```
+
+Para saber el contenido de todas las variables:
+
+```{python}
+res_nivel_6(
+    "ESR","IMAE",
+    "Niv_Descr_2",
+    "IMAE",
+    "Id","Niv_Descr_4","Niv_Descr_5")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 372
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ### ESE = Estadísticas del Sector Externo
@@ -618,12 +1291,12 @@ res_nivel_3("ESR","IMAE","Niv_Descr_4")
 res_nivel_2("ESE")
 ```
 
-- DE = Deuda Externa
-- CEB = Comercio Exterior de Bienes
-- BP = Balanza de Pagos
-- IES = Ingresos y Egresos de Servicios
-- PII = Posición de Inversión Inernacional
-- IED = Inversión Extranjera Directa
+* DE = Deuda Externa
+* CEB = Comercio Exterior de Bienes
+* BP = Balanza de Pagos
+* IES = Ingresos y Egresos de Servicios
+* PII = Posición de Inversión Inernacional
+* IED = Inversión Extranjera Directa
 
 #### DE = Deuda Externa
 
@@ -633,43 +1306,52 @@ res_nivel_3("ESE","DE","Niv_Gr_3")
 
 ##### 01 - Deudor
 
-```{python}
-res_nivel_5(
-    "ESE","DE",
-    "Niv_Gr_3",
-    "01",
-    "Niv_Descr_1","Niv_Descr_2")
-```
-
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "ESE","DE",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_1","Niv_Descr_2").sort("Nombre")
+    "Id","Nombre","Niv_Descr_1","Niv_Descr_2").sort("Nombre")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 6710
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ##### 02 - Acreedor
 
-```{python}
-res_nivel_5(
-    "ESE","DE",
-    "Niv_Gr_3",
-    "02",
-    "Niv_Descr_1","Niv_Descr_2")
-```
-
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "ESE","DE",
     "Niv_Gr_3","02",
-    "Nombre","Niv_Descr_1","Niv_Descr_2").sort("Nombre")
+    "Id","Nombre","Niv_Descr_1","Niv_Descr_2").sort("Nombre")
 ```
 
-##### 03 - Acreedor
+Resultados de una sola variable:
+
+```{python}
+Id = 6714
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 03 - Por Institución
+
+* Banco Central
+* Gobierno general
+* Otras sociedades financieras
+* Otros Sectores
+* Saldo bruto de la deuda externa
+* Sociedades no financieras
 
 ```{python}
 res_nivel_4(
@@ -679,37 +1361,20 @@ res_nivel_4(
     "Niv_Descr_1")
 ```
 
-- Banco Central
-- Gobierno general
-- Otras sociedades financieras
-- Otros Sectores
-- Saldo bruto de la deuda externa
-- Sociedades no financieras
-
-```{python}
-res_nivel_5(
-    "ESE","DE",
-    "Niv_Gr_3",
-    "03",
-    "Niv_Descr_1","Niv_Descr_2"
-    ).filter(
-        pl.col("Niv_Descr_1") == "Banco Central")
-```
-
-- Asignación de Derechos especiales de giro
-- Asignación de Derechos especiales de giro 
-- Créditos y anticipos comerciales
-- Créditos y anticipos comerciales 
-- Moneda y depósitos
-- Moneda y depósitos 
-- Otros pasivos de deuda
-- Otros pasivos de deuda 
-- Préstamos
-- Préstamos 
-- Tí­tulos de deuda
-- Tí­tulos de deuda 
-- Saldo bruto de la deuda externa
-- Saldo bruto de la deuda externa 
+* Asignación de Derechos especiales de giro
+* Asignación de Derechos especiales de giro 
+* Créditos y anticipos comerciales
+* Créditos y anticipos comerciales 
+* Moneda y depósitos
+* Moneda y depósitos 
+* Otros pasivos de deuda
+* Otros pasivos de deuda 
+* Préstamos
+* Préstamos 
+* Tí­tulos de deuda
+* Tí­tulos de deuda 
+* Saldo bruto de la deuda externa
+* Saldo bruto de la deuda externa 
 
 ```{python}
 res_nivel_4(
@@ -717,6 +1382,13 @@ res_nivel_4(
     "Niv_Gr_3",
     "03",
     "Niv_Descr_2")
+```
+
+```{python}
+res_nivel_7(
+    "ESE","DE",
+    "Niv_Gr_3","03",
+    "Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3")
 ```
 
 Para ver todas las variables (Nota: el nivel de descripción sigue):
@@ -725,17 +1397,29 @@ Para ver todas las variables (Nota: el nivel de descripción sigue):
 df_all.filter(
     pl.col("Niv_Gr_1") == "ESE",
     pl.col("Niv_Gr_2") == "DE",
-    pl.col("Niv_Gr_3") == "03")
+    pl.col("Niv_Gr_3") == "03"
+    ).select(pl.all().exclude(
+        "Niv_Descr_6","Niv_Descr_7","Niv_Descr_8",
+        "Niv_Gr_4","Niv_Gr_5"))
 ```
 
-##### 04 - Acreedor
+Resultados de una sola variable:
 
-- Gobierno general
-- Banco Central
-- Otros Sectores
-- Otras sociedades financieras
-- Sociedades no financieras
-- Deuda externa total a corto plazo
+```{python}
+Id = 6720
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 04 - Pagos que vencen en un año o menos
+
+* Gobierno general
+* Banco Central
+* Otros Sectores
+* Otras sociedades financieras
+* Sociedades no financieras
+* Deuda externa total a corto plazo
 
 ```{python}
 res_nivel_4(
@@ -745,9 +1429,9 @@ res_nivel_4(
     "Niv_Descr_1")
 ```
 
-- A corto plazo según el vencimiento original
-- A largo plazo exigible dentro de un año o antes
-- Deuda externa total a corto plazo
+* A corto plazo según el vencimiento original
+* A largo plazo exigible dentro de un año o antes
+* Deuda externa total a corto plazo
 
 ```{python}
 res_nivel_4(
@@ -757,14 +1441,13 @@ res_nivel_4(
     "Niv_Descr_2")
 ```
 
-- Asignación de Derechos especiales de giro
-- Moneda y depósitos
-- Tí­tulos de deuda
-- Préstamos
-- Créditos y anticipos comerciales
-- Otros pasivos de deuda
-- Deuda externa total a corto plazo (según el vencimiento residual)
-
+* Asignación de Derechos especiales de giro
+* Moneda y depósitos
+* Tí­tulos de deuda
+* Préstamos
+* Créditos y anticipos comerciales
+* Otros pasivos de deuda
+* Deuda externa total a corto plazo (según el vencimiento residual)
 
 ```{python}
 res_nivel_4(
@@ -781,9 +1464,19 @@ res_nivel_7(
     "ESE","DE",
     "Niv_Gr_3",
     "04",
-    "Nombre","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3")
+    "Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3").sort("Id")
 ```
 
+**OJO: REVISAR LA CONSULTA A PARTIR DE 7392 HASTA 7446**
+
+Resultados de una sola variable:
+
+```{python}
+Id = 7447 # 7392 - 7446
+df = get_df(Id)
+# get_plot(Id)
+df
+```
 
 #### CEB = Comercio Exterior de Bienes
 
@@ -791,11 +1484,292 @@ res_nivel_7(
 res_nivel_3("ESE","CEB","Niv_Gr_3")
 ```
 
+##### 01 - Productos
+
+* Banano
+* Café
+* Aceite de Palma
+* Camarones
+* Melones y Sandí­as
+* Legumbres y Hortalizas
+* Puros o Cigarros
+* Textiles
+* Jabones
+* Plásticos y su Manufacturas
+* Papel y Cartón
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_5")
+```
+
+* Volumen
+* Valor
+* Precio
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_6")
+```
+
+* Trimestral
+* Anual
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_7")
+```
+
+**OJO: "Niv_Descr_7" y "Niv_Descr_8" son iguales**
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "01","Id","Niv_Descr_5","Niv_Descr_6","Niv_Descr_7")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 441
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 02 - Combustibles
+
+* Gasolina regular
+* Bunker
+* Diesel
+* Total combustibles
+* Gasolina superior
+* Kerosene
+* LPG
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "02",
+    "Niv_Descr_5")
+```
+
+* Barriles
+* Valor
+* Precio
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "02",
+    "Niv_Descr_6")
+```
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "02","Id","Nombre","Niv_Descr_5","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 503
+df = get_df(Id)
+get_plot(Id)
+df
+```
+
+##### 03
+
+* Importaciones AE 
+* Importaciones BT Sección 
+* Importaciones Secciones 
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "03",
+    "Niv_Descr_1")
+```
+
+Los dos primeros grupos solamente tienen un nivel de descripción:
+
+###### Importaciones AE
+
+```{python}
+res_nivel_7(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "03","Id","Nombre","Niv_Descr_1","Niv_Descr_2"
+    ).filter(
+    pl.col("Niv_Descr_1") == "Importaciones AE ")
+```
+
+###### Importaciones BT Sección 
+
+```{python}
+res_nivel_7(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "03","Id","Nombre","Niv_Descr_1","Niv_Descr_2"
+    ).filter(
+    pl.col("Niv_Descr_1") == "Importaciones BT Sección ")
+```
+
+El tercer grupo tiene dos niveles de descripción
+
+###### Importaciones Secciones 
+
+* Valores en Millones de USD
+* Peso en Kilos
+
+```{python}
+res_nivel_7(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "03","Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3"
+    ).filter(
+    pl.col("Niv_Descr_1") == "Importaciones Secciones ")
+```
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "03","Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3"
+    )
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 6517
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 04 AE y BT
+
+* Exportaciones AE
+* Exportaciones BT
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "04",
+    "Niv_Descr_1")
+```
+
+* Producto
+* Grupo Producto
+
+```{python}
+res_nivel_4(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "04",
+    "Niv_Descr_2")
+```
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESE","CEB",
+    "Niv_Gr_3",
+    "04","Id","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3"
+    )
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 6554
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
 #### BP = Balanza de Pagos
 
 ```{python}
 res_nivel_3("ESE","BP","Niv_Gr_3")
 ```
+
+* Anual
+* Mensual
+
+```{python}
+res_nivel_4(
+    "ESE","BP",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_2")
+```
+
+Por Componentes:
+
+```{python}
+res_nivel_4(
+    "ESE","BP",
+    "Niv_Gr_3",
+    "01",
+    "Niv_Descr_1")
+```
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_6(
+    "ESE","BP",
+    "Niv_Gr_3",
+    "01","Id","Niv_Descr_2","Niv_Descr_1")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 6292
+df = get_df(Id)
+get_plot(Id)
+df
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### IES - Ingresos y Egresos de Servicios
 
