@@ -2,7 +2,7 @@
 title: "Estadísticas del Banco Central de Honduras"
 # subtitle: "2017-2022"
 authors: 
-    - Gabriela MArgoth López Gutierrez
+    - Gabriela Margoth López Gutierrez
     - Elvis Teodoro Casco Alfaro
 institute: "Banco Central de Honduras"
 execute:
@@ -17,7 +17,7 @@ format:
     echo: false
     toc: true
     toc-depth: 7
-    code-fold: false
+    code-fold: true
     warnings: false
 # format:
 #  html:
@@ -52,40 +52,40 @@ from tabulate import tabulate
 #         self.idslist = None
 #         self.header = None
 
-#     #get_info descarga toda la información de las series disponibles en base a la estructura del url ingresado
-#     def get_info(self, url, hdr):
-#         self.header = hdr
-#         req = urllib.request.Request(url, headers=self.header)
-#         req.get_method = lambda: 'GET'
-#         response = urllib.request.urlopen(req)
-#         jsondata = response.read()
-#         bytes_data = jsondata
-#         data_str = bytes_data.decode('utf-8')
-#         data = json.loads(data_str)
-#         df = pd.read_json(json.dumps(data))
-#         self.idslist = df['Id'].unique()
-#         return df
+    # #get_info descarga toda la información de las series disponibles en base a la estructura del url ingresado
+    # def get_info(self, url, hdr):
+    #     self.header = hdr
+    #     req = urllib.request.Request(url, headers=self.header)
+    #     req.get_method = lambda: 'GET'
+    #     response = urllib.request.urlopen(req)
+    #     jsondata = response.read()
+    #     bytes_data = jsondata
+    #     data_str = bytes_data.decode('utf-8')
+    #     data = json.loads(data_str)
+    #     df = pd.read_json(json.dumps(data))
+    #     self.idslist = df['Id'].unique()
+    #     return df
 
-#     #graph descarga los valores en formato dataframe de la serie seleccionada en base al id
-#     def graph(self, id):
-#         id = self.idslist[idx] - 1
-#         url = f'https://bchapi-am.azure-api.net/api/v1/indicadores/{id}/cifras'
-#         df = self.get_info(url, self.header)
-#         ts = pd.DataFrame(
-#             data = df['Valor'].values, 
-#             index = pd.DatetimeIndex(df['Fecha']))
-#         fig = px.line(
-#             ts, 
-#             title = df['Descripcion'].unique()[0],)
-#         fig.update_layout(
-#             autosize=False,
-#             width=800,
-#             height=500,
-#             template = 'plotly_white',
-#             showlegend=False)
-#         fig.update_xaxes(title=None)
-#         fig.update_yaxes(title=None)
-#         fig.show()
+    # #graph descarga los valores en formato dataframe de la serie seleccionada en base al id
+    # def graph(self, id):
+    #     id = self.idslist[idx] - 1
+    #     url = f'https://bchapi-am.azure-api.net/api/v1/indicadores/{id}/cifras'
+    #     df = self.get_info(url, self.header)
+    #     ts = pd.DataFrame(
+    #         data = df['Valor'].values, 
+    #         index = pd.DatetimeIndex(df['Fecha']))
+    #     fig = px.line(
+    #         ts, 
+    #         title = df['Descripcion'].unique()[0],)
+    #     fig.update_layout(
+    #         autosize=False,
+    #         width=800,
+    #         height=500,
+    #         template = 'plotly_white',
+    #         showlegend=False)
+    #     fig.update_xaxes(title=None)
+    #     fig.update_yaxes(title=None)
+    #     fig.show()
 ```
 
 ```{python}
@@ -1743,10 +1743,10 @@ res_nivel_4(
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "ESE","BP",
     "Niv_Gr_3",
-    "01","Id","Niv_Descr_2","Niv_Descr_1")
+    "01","Id","Nombre","Niv_Descr_2","Niv_Descr_1").sort("Niv_Descr_2")
 ```
 
 Resultados de una sola variable:
@@ -1754,27 +1754,76 @@ Resultados de una sola variable:
 ```{python}
 Id = 6292
 df = get_df(Id)
-get_plot(Id)
+# get_plot(Id)
 df
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #### IES - Ingresos y Egresos de Servicios
 
 ```{python}
 res_nivel_3("ESE","IES","Niv_Gr_3")
+```
+
+Periodicidad:
+
+* Anual
+* Trimestral
+
+```{python}
+res_nivel_4(
+    "ESE","IES",
+    "Niv_Descr_3",
+    "01","Niv_Descr_5")
+```
+
+Ingresos y Egresos:
+
+* Exportaciones (Ingresos)
+* Importaciones (Egresos)
+
+```{python}
+res_nivel_4(
+    "ESE","IES",
+    "Niv_Descr_3",
+    "01","Niv_Descr_6")
+```
+
+Variables:
+
+* Transporte
+* Viajes
+* Servicios de Comunicaciones
+* Otros Servicios Empresariales
+* Servicios de Gobierno
+* Otros Servicios
+* Servicios de Seguro
+* Servicios de InformÃ¡tica e Información
+* Servicios de RegalÃ­as y Derechos de Licencia
+
+
+```{python}
+res_nivel_4(
+    "ESE","IES",
+    "Niv_Descr_3",
+    "01","Niv_Descr_7")
+```
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESE","IES",
+    "Niv_Gr_3",
+    "01","Id","Niv_Descr_5","Niv_Descr_6","Niv_Descr_7")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 388
+# df = get_df(Id)
+get_plot(Id)
+df
 ```
 
 #### PII = Posición de Inversión Inernacional
@@ -1783,10 +1832,78 @@ res_nivel_3("ESE","IES","Niv_Gr_3")
 res_nivel_3("ESE","PII","Niv_Gr_3")
 ```
 
+Agrupación:
+
+* Posición de Inversión Internacional por Categorí­a  
+* Posición de los Activos Financieros con no Residentes por Componente 
+* Posición de los Pasivos Financieros con no Residentes por Componente 
+* Posición de Inversión Internacional Neta por Componente 
+
+```{python}
+res_nivel_4(
+    "ESE","PII",
+    "Niv_Gr_3",
+    "01","Niv_Descr_5")
+```
+
+Cuentas:
+
+* Activos 
+* Pasivos
+* PII Neta
+* Inversió³n extranjera directa
+* Inversión de cartera
+* Derivados financieros
+* Otra inversión
+* Activos de reservas lí­quidos oficiales
+ 
+```{python}
+res_nivel_4(
+    "ESE","PII",
+    "Niv_Gr_3",
+    "01","Niv_Descr_6")
+```
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_7(
+    "ESE","PII",
+    "Niv_Gr_3",
+    "01","Id","Nombre","Niv_Descr_5","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 496
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
 #### IED = Inversión Extranjera Directa
 
 ```{python}
 res_nivel_3("ESE","IED","Niv_Gr_3")
+```
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_6(
+    "ESE","IED",
+    "Niv_Gr_3",
+    "01","Id","Nombre","Niv_Descr_4")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 409
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ### EMF = Estadísiticas Monetarias y Financieras
@@ -1801,7 +1918,9 @@ res_nivel_2("EMF")
 res_nivel_3("EMF","AMCC","Niv_Gr_3").sort("Niv_Gr_3")
 ```
 
-##### 01 
+##### 01 Agregados Monetarios, Crédito y Captación
+
+Grupos:
 
 ```{python}
 res_nivel_4(
@@ -1810,22 +1929,34 @@ res_nivel_4(
     "Niv_Descr_5")
 ```
 
+Variables:
+
 ```{python}
 res_nivel_4(
     "EMF","AMCC",
     "Niv_Gr_3","01",
     "Niv_Descr_6")
 ```
+
 Para ver todas las variables:
 
 ```{python}
 res_nivel_7(
     "EMF","AMCC",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_4","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+    "Id","Niv_Descr_5","Niv_Descr_6","Niv_Descr_4")
 ```
 
-##### 02 
+Resultados de una sola variable:
+
+```{python}
+Id = 548
+# df = get_df(Id)
+get_plot(Id)
+df
+```
+
+##### 02 Captación: Bancos Comerciales y Otras Sociedades de Depósito (Variación y Saldo)
 
 ```{python}
 res_nivel_4(
@@ -1838,14 +1969,14 @@ res_nivel_4(
 res_nivel_4(
     "EMF","AMCC",
     "Niv_Gr_3","02",
-    "Niv_Descr_2")
+    "Niv_Descr_3")
 ```
 
 ```{python}
 res_nivel_4(
     "EMF","AMCC",
     "Niv_Gr_3","02",
-    "Niv_Descr_3")
+    "Niv_Descr_4")
 ```
 
 Para ver todas las variables:
@@ -1854,7 +1985,16 @@ Para ver todas las variables:
 res_nivel_7(
     "EMF","AMCC",
     "Niv_Gr_3","02",
-    "Nombre","Niv_Descr_1","Niv_Descr_2","Niv_Descr_3").sort("Nombre")
+    "Id","Niv_Descr_1","Niv_Descr_3","Niv_Descr_4")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 622
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ##### 03 Crédito de los Bancos Comerciales
@@ -1867,10 +2007,17 @@ res_nivel_4(
 ```
 
 ```{python}
-res_nivel_5(
+res_nivel_4(
     "EMF","AMCC",
     "Niv_Gr_3","03",
-    "Niv_Descr_2","Niv_Descr_4")
+    "Niv_Descr_4")
+```
+
+```{python}
+res_nivel_4(
+    "EMF","AMCC",
+    "Niv_Gr_3","03",
+    "Niv_Descr_3")
 ```
 
 Para ver todas las variables:
@@ -1879,10 +2026,19 @@ Para ver todas las variables:
 res_nivel_7(
     "EMF","AMCC",
     "Niv_Gr_3","03",
-    "Nombre","Niv_Descr_1","Niv_Descr_2","Niv_Descr_4").sort("Nombre")
+    "Id","Niv_Descr_1","Niv_Descr_3","Niv_Descr_4")
 ```
 
-##### 04 Crédito de los Bancos Comerciales
+Resultados de una sola variable:
+
+```{python}
+Id = 638
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 04 Crédito Otras Sociedades de Depósito
 
 ```{python}
 res_nivel_4(
@@ -1895,7 +2051,7 @@ res_nivel_4(
 res_nivel_5(
     "EMF","AMCC",
     "Niv_Gr_3","04",
-    "Niv_Descr_2","Niv_Descr_4")
+    "Niv_Descr_3","Niv_Descr_4")
 ```
 
 Para ver todas las variables:
@@ -1904,7 +2060,16 @@ Para ver todas las variables:
 res_nivel_7(
     "EMF","AMCC",
     "Niv_Gr_3","04",
-    "Nombre","Niv_Descr_1","Niv_Descr_2","Niv_Descr_4").sort("Nombre")
+    "Id","Niv_Descr_1","Niv_Descr_3","Niv_Descr_4")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 648
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ##### 05 Saldo de Préstamos (Millones de Lempiras)
@@ -1916,12 +2081,18 @@ res_nivel_4(
     "Niv_Descr_1")
 ```
 
-```{python}
-res_nivel_5(
-    "EMF","AMCC",
-    "Niv_Gr_3","05",
-    "Niv_Descr_1","Niv_Descr_4")
-```
+* Variación
+* Saldo
+
+De los siguientes sectores:
+
+* Agropecuaria
+* Comercio
+* Consumo
+* Industria
+* Propiedad Raí­z
+* Servicios
+* Total
 
 Para ver todas las variables:
 
@@ -1929,7 +2100,16 @@ Para ver todas las variables:
 res_nivel_7(
     "EMF","AMCC",
     "Niv_Gr_3","05",
-    "Nombre","Niv_Descr_1","Niv_Descr_3","Niv_Descr_4").sort("Niv_Descr_4")
+    "Id","Niv_Descr_1","Niv_Descr_3","Niv_Descr_4").sort("Niv_Descr_4")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 650
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ##### 06 Préstamos Nuevos (Flujos acumulados en millones de lempiras)
@@ -1941,6 +2121,19 @@ res_nivel_4(
     "Niv_Descr_1")
 ```
 
+* Variación
+* Saldo
+
+De los siguientes sectores:
+
+* Agropecuaria
+* Comercio
+* Consumo
+* Industria
+* Propiedad Raí­z
+* Servicios
+* Total
+
 ```{python}
 res_nivel_5(
     "EMF","AMCC",
@@ -1954,7 +2147,16 @@ Para ver todas las variables:
 res_nivel_7(
     "EMF","AMCC",
     "Niv_Gr_3","06",
-    "Nombre","Niv_Descr_1","Niv_Descr_3","Niv_Descr_4").sort("Niv_Descr_4")
+    "Id","Niv_Descr_1","Niv_Descr_3","Niv_Descr_4").sort("Niv_Descr_4")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 663
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### TI = Tasas de Interés
@@ -1963,18 +2165,64 @@ res_nivel_7(
 res_nivel_3("EMF","TI","Niv_Gr_3").sort("Niv_Gr_3")
 ```
 
-##### 01 
+##### 01 Tasas de Interés, Activa y Pasiva, por Moneda
+
+Por Tipo:
+
+* Activa Préstamos 
+* Pasiva Ahorros 
+* Pasiva Cheques 
+* Pasiva Plazo 
 
 ```{python}
 res_nivel_4(
     "EMF","TI",
     "Niv_Gr_3","01",
-    "Niv_Descr_1")
+    "Niv_Descr_5")
 ```
+
+Por Moneda:
+
+* Moneda Nacional
+* Moneda Extranjera
+
+Para ver todas las variables:
+
+```{python}
+res_nivel_7(
+    "EMF","TI",
+    "Niv_Gr_3","01",
+    "Id","Nombre","Niv_Descr_5","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 587
+df = get_df(Id)
+# get_plot(Id)
+df
+```
+
+##### 02 Por Actividad
+
+```{python}
+res_nivel_4(
+    "EMF","TI",
+    "Niv_Gr_3","02",
+    "Niv_Descr_5")
+```
+
+Por Moneda:
+
+* Moneda Nacional
+* Moneda Extranjera
+
+
 ```{python}
 res_nivel_5(
     "EMF","TI",
-    "Niv_Gr_3","01",
+    "Niv_Gr_3","02",
     "Niv_Descr_1","Niv_Descr_4")
 ```
 
@@ -1983,56 +2231,61 @@ Para ver todas las variables:
 ```{python}
 res_nivel_7(
     "EMF","TI",
-    "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_6","Niv_Descr_5","Niv_Descr_4").sort("Niv_Descr_4")
+    "Niv_Gr_3","02",
+    "Id","Nombre","Niv_Descr_5","Niv_Descr_4").sort("Niv_Descr_4")
 ```
 
-##### 02 
+Resultados de una sola variable:
 
 ```{python}
-res_nivel_4(
-    "EMF","TI",
-    "Niv_Gr_3","02",
-    "Niv_Descr_1")
-```
-```{python}
-res_nivel_5(
-    "EMF","TI",
-    "Niv_Gr_3","02",
-    "Niv_Descr_1","Niv_Descr_4")
-```
-
-Para ver todas las variables:
-
-```{python}
-res_nivel_6(
-    "EMF","TI",
-    "Niv_Gr_3","02",
-    "Nombre","Niv_Descr_4","Niv_Descr_5").sort("Niv_Descr_4")
+Id = 605
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ##### 03 Tasas de Interés Anuales
 
+* Tasas de Interés Anuales Mí­nimas y Máximas del Sistema Bancario Comercial
+* Tasas de Interés Anuales Promedio Ponderadas del Sistema Financiero
+
 ```{python}
 res_nivel_4(
     "EMF","TI",
     "Niv_Gr_3","03",
-    "Niv_Descr_1")
+    "Niv_Descr_6")
 ```
-```{python}
-res_nivel_5(
-    "EMF","TI",
-    "Niv_Gr_3","03",
-    "Niv_Descr_1","Niv_Descr_6")
-```
+
+* Activa
+* Pasiva
+
+Por Unidad de Medida:
+
+* Máxima
+* Mínima
+* Promedio
+
+Por Moneda:
+
+* Nacional
+* Extranjera
 
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EMF","TI",
     "Niv_Gr_3","03",
-    "Nombre","Niv_Descr_6","Niv_Descr_5").sort("Niv_Descr_6")
+    "Id","Nombre","Niv_Descr_6","Niv_Descr_5").sort("Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 689
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### PFS = Panorama de las Sociedades Financieras
@@ -2041,28 +2294,24 @@ res_nivel_6(
 res_nivel_3("EMF","PFS","Niv_Gr_3").sort("Niv_Gr_3")
 ```
 
-##### 01 Bancos Comerciales
-
-```{python}
-res_nivel_4(
-    "EMF","PFS",
-    "Niv_Gr_3","01",
-    "Niv_Descr_1")
-```
-```{python}
-res_nivel_5(
-    "EMF","PFS",
-    "Niv_Gr_3","01",
-    "Niv_Descr_2","Niv_Descr_1")
-```
+##### 01 Bancos Comerciales, Activos y Pasivos Externos
 
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EMF","PFS",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_2","Niv_Descr_1").sort("Nombre")
+    "Id","Nombre","Niv_Descr_2","Niv_Descr_1").sort("Nombre")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 677
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ##### 02 Activos y Pasivos Externos
@@ -2084,10 +2333,19 @@ res_nivel_4(
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EMF","PFS",
     "Niv_Gr_3","02",
-    "Nombre","Niv_Descr_1","Niv_Descr_2").sort("Niv_Descr_2")
+    "Id","Nombre","Niv_Descr_1","Niv_Descr_2")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 687
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### EBM = Emisión y Base Monetaria
@@ -2112,10 +2370,19 @@ res_nivel_5(
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EMF","EBM",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_4","Niv_Descr_5").sort("Nombre")
+    "Id","Nombre","Niv_Descr_4","Niv_Descr_5")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 523
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ### ESP = Estadísticas de Sistema de Pagos
@@ -2147,16 +2414,25 @@ res_nivel_4(
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "ESP","ACH",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+    "Id","Nombre","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 611
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### CCECH = Cheques Compensados en Ceproban y Liquidados en BCH
 
 ```{python}
-res_nivel_3("ESP","CCECH","Niv_Gr_3").sort("Niv_Gr_3")
+res_nivel_3("ESP","CCECH","Niv_Gr_3")
 ```
 
 ```{python}
@@ -2176,10 +2452,19 @@ res_nivel_4(
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "ESP","CCECH",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_5","Niv_Descr_6").sort("Nombre")
+    "Id","Nombre","Niv_Descr_5","Niv_Descr_6")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 615
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ### EM = Estadísticas Monetarias (TPM y RIN)
@@ -2194,6 +2479,14 @@ res_nivel_2("EM")
 res_nivel_3("EM","RIN","Niv_Gr_3").sort("Niv_Gr_3")
 ```
 
+* Saldo
+* Variación
+
+Variables:
+
+* Reservas Internacionales Netas
+* Activos de Reserva Oficial
+
 ```{python}
 res_nivel_4(
     "EM","RIN",
@@ -2201,28 +2494,53 @@ res_nivel_4(
     "Niv_Descr_4")
 ```
 
+```{python}
+res_nivel_4(
+    "EM","RIN",
+    "Niv_Gr_3","01",
+    "Niv_Descr_5")
+```
+
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EM","RIN",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_4","Niv_Descr_5").sort("Niv_Descr_4")
+    "Id","Nombre","Niv_Descr_4","Niv_Descr_5")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 532
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### TPM = Tasa de Política Monetaria
 
 ```{python}
-res_nivel_3("EM","TPM","Niv_Gr_3").sort("Niv_Gr_3")
+res_nivel_3("EM","TPM","Niv_Gr_3")
 ```
 
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EM","TPM",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_1","Niv_Descr_2").sort("Niv_Descr_2")
+    "Id","Nombre","Niv_Descr_1","Niv_Descr_2").sort("Niv_Descr_2")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 699
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ### EC = Estadísticas Cambiarias
@@ -2240,22 +2558,41 @@ res_nivel_3("EC","TCR","Niv_Gr_3").sort("Niv_Gr_3")
 Para ver todas las variables:
 
 ```{python}
-df_all.filter(pl.col("Nombre") == "EC-TCR-01")
+# df_all.filter(pl.col("Nombre") == "EC-TCR-01").select(pl.all().is_not_null())
+df_all.filter(pl.col("Nombre") == "EC-TCR-01")[:, df_all.select(pl.all().is_not_null().all()).row(0)]
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 97
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 #### TCN = Tipo de Cambio Nominal
 
 ```{python}
-res_nivel_3("EC","TCN","Niv_Gr_3").sort("Niv_Gr_3")
+res_nivel_3("EC","TCN","Niv_Gr_3")
 ```
 
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EC","TCN",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_1","Niv_Descr_2").sort("Niv_Descr_2")
+    "Id","Nombre","Niv_Descr_1","Niv_Descr_2").sort("Niv_Descr_2")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 619
+df = get_df(Id)
+# get_plot(Id)
+df
 ```
 
 ### EP = EStadísticas de Precios
@@ -2267,16 +2604,25 @@ res_nivel_2("EP")
 #### IPC  Índice de Precios al Consumidor
 
 ```{python}
-res_nivel_3("EP","IPC","Niv_Gr_3").sort("Niv_Gr_3")
+res_nivel_3("EP","IPC","Niv_Gr_3")
 ```
 
 Para ver todas las variables:
 
 ```{python}
-res_nivel_6(
+res_nivel_7(
     "EP","IPC",
     "Niv_Gr_3","01",
-    "Nombre","Niv_Descr_2","Niv_Descr_4").sort("Niv_Descr_2")
+    "Id","Nombre","Niv_Descr_2","Niv_Descr_4").sort("Niv_Descr_2")
+```
+
+Resultados de una sola variable:
+
+```{python}
+Id = 608
+df = get_df(Id)
+get_plot(Id)
+df
 ```
 
 ## Nombre
@@ -2312,8 +2658,9 @@ res
 # Graficar una Variable por Id
 
 ```{python}
-Id = 11519
+Id = 6552
 df = get_df(Id)
 get_plot(Id)
 df.columns
+df
 ```
