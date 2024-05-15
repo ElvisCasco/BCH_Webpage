@@ -1,0 +1,82 @@
+---
+title: 'BeaData.jl'
+author: stephenbnicar
+execute:
+  echo: true
+format:
+  html:
+      code-fold: true
+      code-tools: true
+      toc: true
+      echo: false
+keep-ipynb: true
+jupyter: julia-1.10
+---
+
+```{julia}
+#import Pkg; Pkg.add("IMFData")
+using CSV, DataFrames, DataFramesMeta, HTTP, JSON, BeaData
+
+wd = @__DIR__
+```
+
+
+```{julia}
+USER_ID = "342C0C58-DC60-4103-A823-959F809DE12A"
+bea_datasets(;user_id = USER_ID)
+```
+
+
+
+```{julia}
+nipa116 = bea_table("NIPA", "T10106", "Q", 2015, 2018;user_id = USER_ID)
+```
+
+
+
+```{julia}
+bea_parameterlist("NIPA";user_id = USER_ID)
+```
+
+
+
+```{julia}
+df = bea_parametervalues("NIPA", "TableName";user_id = USER_ID);
+df[1:3, :]
+```
+
+
+
+```{julia}
+
+```
+
+
+
+```{julia}
+
+```
+
+
+
+```{julia}
+
+```
+
+
+
+```{julia}
+
+```
+
+
+
+```{julia}
+
+```
+
+
+
+```{julia}
+
+```

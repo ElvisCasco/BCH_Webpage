@@ -255,6 +255,7 @@ function PIB_Enfoque_Produccion()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data[!, :Tipo_Valores] .= "Enfoque_Produccion, " .* data[!, :Tipo_Valores]
@@ -310,6 +311,7 @@ function PIB_Enfoque_Gasto()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data[!, :Tipo_Valores] .= "Enfoque_Gasto, " .* data[!, :Tipo_Valores]
@@ -346,6 +348,7 @@ function PIB_Enfoque_Ingreso()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data[!, :Tipo_Valores] .= "Corrientes, Millones de Lempiras"
@@ -378,6 +381,7 @@ function PIB_INPC_L()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data[!, :Tipo_Valores] .= "Corrientes, Millones de Lempiras"
@@ -410,6 +414,7 @@ function PIB_INPC_D()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data[!, :Tipo_Valores] .= "Corrientes, Millones de Lempiras"
@@ -450,6 +455,7 @@ function Oferta_Demanda()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data[!, :Tipo_Valores] .= "Corrientes, Millones de Lempiras"
@@ -497,6 +503,7 @@ function VAB_Agro()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data = data[:, [2,1,4,3]]
@@ -543,6 +550,7 @@ function VAB_Manufactura()
     data[!, :Fechas] = Vector{Union{String}}(data[!, :Fechas])
     data[!, :Fechas] = replace_text.(data[!, :Fechas], "p/")
     data[!, :Fechas] = StrToFloat.(data[!, :Fechas])
+    data = DataFrames.dropmissing(data, DataFrames.names(data)[2])
     data[!, :Fechas] = Int.(data[!, :Fechas])
     data[!, :Fechas] = Dates.Date.(data[!, :Fechas],1,1)
     data = data[:, [2,1,4,3]]
@@ -1267,7 +1275,7 @@ function BalCam()
     R"""
     library("readxl")
     library("rio")
-    data <- rio::import(file = webpage, which = 2)
+    data <- rio::import(file = webpage, which = 3)
     """
     data = RCall.@rget data	
     data = DataFrames.DataFrame(data)
@@ -1305,6 +1313,7 @@ function BalCam()
     data[!, :Fuente] .= "https://www.bch.hn/estadisticas-y-publicaciones-economicas/Grupo-externo/balanza-de-pagos/cuenta-corriente/importaciones"
     data = data[!, [1,2,3,5,4,6,7]]
     data = data[!,[1,2,3,4,6,5,7]]
+    data = DataFrames.dropmissing(data, names(data)[2])
     # Escribir en CSV
     # CSV.write(
     #     wd * "/data/csv/BalCam.csv",
@@ -1324,14 +1333,14 @@ function get_data()
     TCN_Diario(),
     TCN_Mensual(),
     ## Sector Real
-    # PIB_Enfoque_Produccion(),
-    # PIB_Enfoque_Gasto(),
-    # PIB_Enfoque_Ingreso(),
-    # PIB_INPC_L(),
-    # PIB_INPC_D(),
-    # Oferta_Demanda(),
-    # VAB_Agro(),
-    # VAB_Manufactura(),
+    PIB_Enfoque_Produccion(),
+    PIB_Enfoque_Gasto(),
+    PIB_Enfoque_Ingreso(),
+    PIB_INPC_L(),
+    PIB_INPC_D(),
+    Oferta_Demanda(),
+    VAB_Agro(),
+    VAB_Manufactura(),
     Imae_Original_TC(),
     Imae_Actividad(),
     ## Sector Externo
