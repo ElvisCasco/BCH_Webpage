@@ -1,4 +1,4 @@
-# PaginaWebBCH
+# BCH_Webpage.qmd
 Proceso para descargar y procesar datos desde la página web del [Banco Central de Honduras (BCH)](www.bch.hn) usando Julia, teniendo como resultado un solo archivo.
 
 Para ejecutar este proceso desde una computadora, una vez descargados todos los archivos que contiene este repositorio, se necesitan tres cosas:
