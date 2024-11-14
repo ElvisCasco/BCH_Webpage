@@ -1299,7 +1299,13 @@ function BalCam()
         DataFrames.rename!(data, names(data)[i] .=> string(Fechas[i-1]))
     end
     data[30,1] = "TOTAL INGRESOS"
+    for i in 1:30
+        data[i,1] = "01." * data[i,1]
+    end
     data[56,1] = "TOTAL EGRESOS"
+    for i in 31:56
+        data[i,1] = "01." * data[i,1]
+    end
     c = Base.size(data)[2]
     data = DataFrames.stack(data, 2:c)
     DataFrames.rename!(data, ["Variable","Fechas","Valores"])
