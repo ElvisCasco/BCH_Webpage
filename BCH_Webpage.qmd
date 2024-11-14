@@ -31,9 +31,8 @@ Las librerías de R que deben instalarse previamente son:
 - readxl
 - rio
 
+
 ```{julia}
-import Pkg
-# Pkg.add(["Chain","CSV","DataFrames","Dates","RCall","StatsBase"])
 using Chain,CSV,DataFrames,Dates,RCall,StatsBase
 
 wd = @__DIR__;
@@ -52,12 +51,27 @@ CSV.write(
 # Resultados
 
 ```{julia}
-sort(data,[:Fechas,:Variable])
+data
 ```
 
-# Prueba BalCam
+# Prueba con BalCam
 
 ```{julia}
 data = BalCam()
-sort(data,[:Fechas,:Variable])
+data.code .= "";
+pat = r"[0-9.]"
+function get_code(s)
+    matches = eachmatch(pat, s)
+    return join([m.match for m in matches], "")
+end
+data.code = [get_code(x) for x in data.Variable]
+data
+```
+
+```{julia}
+data_filt = filter(:code => f-> f=="01." || f=="02.", data)
+# CSV.write(
+#     wd * "/data/balcam.csv",
+#     data_filt;
+#     delim = ";")
 ```
