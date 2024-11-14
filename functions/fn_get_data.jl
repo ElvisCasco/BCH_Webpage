@@ -1304,7 +1304,7 @@ function BalCam()
     end
     data[56,1] = "TOTAL EGRESOS"
     for i in 31:56
-        data[i,1] = "01." * data[i,1]
+        data[i,1] = "02." * data[i,1]
     end
     c = Base.size(data)[2]
     data = DataFrames.stack(data, 2:c)
